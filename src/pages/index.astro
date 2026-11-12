@@ -1,0 +1,129 @@
+---
+import Base from "../layouts/Base.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import { Image } from "astro:assets";
+import { photos, destinations, getArticles } from "../lib";
+const articles = await getArticles();
+---
+
+<Base
+  title="Travel a little deeper"
+  description="Discover destination inspiration, thoughtful travel guides, and ideas for your next getaway."
+>
+  <section class="hero">
+    <Image
+      class="hero-image"
+      src={photos.italy}
+      alt="Colorful Italian coastal village above the Mediterranean"
+      widths={[800, 1400, 2000]}
+      sizes="100vw"
+      width={2000}
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow light">A little curiosity. A world of possibility.</p>
+      <h1>
+        Go somewhere.
+        <br />
+        <em>Feel something.</em>
+      </h1>
+      <p>
+        Thoughtful guides. Unforgettable places.
+        <br />
+        Find the inspiration for your next great getaway.
+      </p>
+      <a class="button cream" href="/destinations/">
+        Find your next destination <span>↗</span>
+      </a>
+    </div>
+    <div class="hero-caption">
+      <span>THE VIEW FROM HERE</span>
+      <b>Italian Riviera, Italy</b>
+      <small>Placeholder destination photography</small>
+    </div>
+    <span class="hero-index">
+      01 <span>/ 03</span>
+    </span>
+  </section>
+  <section class="intro-strip">
+    <span class="eyebrow">Less ordinary. More discovery.</span>
+    <p>
+      For the big adventures.
+      <br />
+      And the little moments in between.
+    </p>
+    <a href="/about/" class="text-link">
+      Meet N2Getaways ↗
+    </a>
+  </section>
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Where will curiosity take you?</p>
+        <h2>A world worth exploring.</h2>
+      </div>
+      <a class="text-link" href="/destinations/">
+        All destinations ↗
+      </a>
+    </div>
+    <div class="destination-grid">
+      {destinations.map((d) => (
+        <a class="destination-tile" href={`/destinations/${d.slug}/`}>
+          <Image
+            src={photos[d.slug]}
+            alt={`${d.name} destination inspiration`}
+            width={700}
+            widths={[400, 700]}
+            sizes="(max-width:700px) 100vw, 33vw"
+          />
+          <div>
+            <span class="eyebrow light">{d.region}</span>
+            <h3>{d.name}</h3>
+          </div>
+          <span class="tile-arrow">↗</span>
+        </a>
+      ))}
+    </div>
+  </section>
+  <section class="section journal">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">The travel journal</p>
+        <h2>A little inspiration goes a long way.</h2>
+      </div>
+      <a class="text-link" href="/guides/">
+        Browse the journal ↗
+      </a>
+    </div>
+    <div class="article-grid">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+  <section class="planning">
+    <div class="planning-symbol">✳</div>
+    <div>
+      <p class="eyebrow light">Your trip, your way</p>
+      <h2>
+        Great getaways start
+        <br />
+        with a little imagination.
+      </h2>
+      <p>
+        Have a destination in mind? Explore the custom itinerary inquiry preview
+        and start shaping your next adventure.
+      </p>
+      <a class="button cream" href="/contact/">
+        Let’s plan something memorable <span>↗</span>
+      </a>
+    </div>
+    <div class="planning-note">
+      Take the scenic route.
+      <br />
+      <em>It’s worth it.</em>
+    </div>
+  </section>
+</Base>

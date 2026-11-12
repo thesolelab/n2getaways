@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import { photos } from "../lib";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  article: CollectionEntry<"articles">;
+}
+const { data } = Astro.props.article;
+---
+
+<article class="article-card">
+  <a href={data.permalink}>
+    <div class="card-photo">
+      <Image
+        src={photos[data.image]}
+        alt={data.imageAlt}
+        widths={[400, 700, 1000]}
+        sizes="(max-width:700px) 100vw, 33vw"
+        width={700}
+      />
+      <span>{data.category}</span>
+    </div>
+    <div class="card-meta">
+      {data.destination} <span>· {data.readTime} min read · Sample</span>
+    </div>
+    <h3>{data.title}</h3>
+    <p>{data.description}</p>
+    <span class="text-link">
+      Explore the guide <span>↗</span>
+    </span>
+  </a>
+</article>

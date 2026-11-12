@@ -1,0 +1,83 @@
+---
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import { render } from "astro:content";
+import { getArticles, photos } from "../lib";
+export async function getStaticPaths() {
+  return (await getArticles()).map((article) => ({
+    params: { path: article.data.permalink.replace(/^\/|\/$/g, "") },
+    props: { article },
+  }));
+}
+const { article } = Astro.props;
+const { data } = article;
+const { Content, headings } = await render(article);
+---
+
+<Base
+  title={data.title}
+  description={data.description}
+  image={photos[data.image].src}
+  article
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: data.title,
+      description: data.description,
+      image: new URL(photos[data.image].src, Astro.site).href,
+      mainEntityOfPage: new URL(data.permalink, Astro.site).href,
+    })}
+  />
+  <article>
+    <header class="article-heading">
+      <a
+        class="eyebrow"
+        href={`/destinations/${data.destination.toLowerCase()}/`}
+      >
+        {data.destination} / {data.category}
+      </a>
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
+      <div class="card-meta">
+        Editorial placeholder · {data.readTime} min read
+      </div>
+    </header>
+    <Image
+      class="article-cover"
+      src={photos[data.image]}
+      alt={data.imageAlt}
+      width={1600}
+      widths={[800, 1200, 1600]}
+      sizes="100vw"
+      loading="eager"
+    />
+    <div class="article-body">
+      <aside>
+        <p class="eyebrow">In this guide</p>
+        <nav aria-label="Table of contents">
+          {headings
+            .filter((h) => h.depth === 2)
+            .map((h) => (
+              <a href={`#${h.slug}`}>{h.text}</a>
+            ))}
+        </nav>
+      </aside>
+      <div class="prose">
+        <p class="notice">
+          Sample content — a template demonstration, not a published travel
+          recommendation or account of personal experience.
+        </p>
+        <Content />
+        <a
+          class="text-link"
+          href={`/destinations/${data.destination.toLowerCase()}/`}
+        >
+          More from {data.destination} ↗
+        </a>
+      </div>
+    </div>
+  </article>
+</Base>

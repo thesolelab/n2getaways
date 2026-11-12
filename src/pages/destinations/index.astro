@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+import { Image } from "astro:assets";
+import { photos, destinations } from "../../lib";
+---
+
+<Base
+  title="Explore destinations"
+  description="Browse sample destination collections for Italy, Japan, and Portugal."
+>
+  <section class="section page-intro">
+    <p class="eyebrow">Choose your next chapter</p>
+    <h1>A world worth exploring.</h1>
+    <p>Sample collections to show how destination discovery will work.</p>
+    <div class="destination-grid">
+      {destinations.map((d) => (
+        <a class="destination-tile" href={`/destinations/${d.slug}/`}>
+          <Image src={photos[d.slug]} alt={`${d.name} scenery`} width={800} />
+          <div>
+            <span class="eyebrow light">{d.region}</span>
+            <h3>{d.name}</h3>
+          </div>
+          <span class="tile-arrow">↗</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

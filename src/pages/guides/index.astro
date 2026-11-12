@@ -1,0 +1,22 @@
+---
+import Base from "../../layouts/Base.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import { getArticles } from "../../lib";
+const articles = await getArticles();
+---
+
+<Base
+  title="The travel journal"
+  description="Explore sample travel guides and itinerary ideas."
+>
+  <section class="section page-intro">
+    <p class="eyebrow">Ideas for the journey</p>
+    <h1>The travel journal.</h1>
+    <p>All articles below are labeled editorial placeholders.</p>
+    <div class="article-grid">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+</Base>

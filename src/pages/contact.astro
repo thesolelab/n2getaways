@@ -1,0 +1,62 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Plan your getaway"
+  description="Preview the custom itinerary inquiry experience."
+>
+  <section class="section narrow page-intro">
+    <p class="eyebrow">Your trip, your way</p>
+    <h1>
+      Where are you
+      <br />
+      dreaming of?
+    </h1>
+    <p class="notice">
+      Inquiry preview only. This form does not send or store information. A
+      verified delivery destination and privacy policy are required before
+      activation.
+    </p>
+    <form id="inquiry">
+      <label>
+        Your name
+        <input name="name" autocomplete="name" required />
+      </label>
+      <label>
+        Email address
+        <input name="email" type="email" autocomplete="email" required />
+      </label>
+      <label>
+        Destination
+        <input
+          name="destination"
+          required
+          placeholder="Where would you like to go?"
+        />
+      </label>
+      <label>
+        Tell us about your trip
+        <textarea
+          name="details"
+          rows="5"
+          required
+          placeholder="Dates, interests, and the kind of getaway you have in mind"
+        ></textarea>
+      </label>
+      <button class="button" type="submit">
+        Preview inquiry ↗
+      </button>
+      <p id="form-result" role="status"></p>
+    </form>
+  </section>
+</Base>
+<script>
+  document.querySelector("form")?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const result = document.querySelector("#form-result");
+    if (result)
+      result.textContent =
+        "Your sample inquiry is complete. Nothing was sent or saved. The live inquiry service is not yet connected.";
+  });
+</script>

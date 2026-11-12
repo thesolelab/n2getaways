@@ -1,0 +1,55 @@
+---
+import Base from "../../layouts/Base.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import { Image } from "astro:assets";
+import { photos, destinations, getArticles } from "../../lib";
+export function getStaticPaths() {
+  return destinations.map((destination) => ({
+    params: { slug: destination.slug },
+    props: { destination },
+  }));
+}
+const { destination } = Astro.props;
+const articles = (await getArticles()).filter(
+  (a) => a.data.destination === destination.name,
+);
+---
+
+<Base
+  title={`${destination.name} travel inspiration`}
+  description={destination.line}
+>
+  <section class="destination-hero">
+    <Image
+      src={photos[destination.slug]}
+      alt={`${destination.name} destination landscape`}
+      width={1800}
+      loading="eager"
+    />
+    <div>
+      <p class="eyebrow light">
+        {destination.region} · Sample destination collection
+      </p>
+      <h1>{destination.name}</h1>
+      <p>{destination.line}</p>
+    </div>
+  </section>
+  <section class="section">
+    <p class="notice">
+      Placeholder content: this collection demonstrates the destination
+      template. Guides require editorial research and verification before
+      publication.
+    </p>
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Get to know {destination.name}</p>
+        <h2>Start exploring.</h2>
+      </div>
+    </div>
+    <div class="article-grid">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+</Base>
