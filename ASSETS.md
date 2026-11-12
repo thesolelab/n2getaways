@@ -30,3 +30,7 @@ All 18 requested files were received in the owner's four ZIPs. They are stored u
 - License: https://unsplash.com/license; the source page explicitly identifies this as a free Unsplash License image (checked November 12, 2026).
 - Download: https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1600&q=85&fit=crop&fm=jpg
 - Attribution is displayed on the Maui destination page. This is licensed destination imagery, not an owner travel photograph or evidence of a personal visit.
+
+## Editorial cover selected by the owner
+
+`src/assets/editorial/sf-painted-ladies.jpg` is the unchanged `joshua-sortino-HadloobmnQs-unsplash.jpg` supplied in `SF Image.zip` on November 12, 2026. Photo: Joshua Sortino / Unsplash; source https://unsplash.com/photos/HadloobmnQs, license https://unsplash.com/license. It shows the Painted Ladies with the San Francisco skyline and moon. It is destination imagery, not evidence of an author visit. The original SHA-256 receipt is recorded in `editorial/research/sf-without-a-car.json`. Astro generates optimized responsive display variants.

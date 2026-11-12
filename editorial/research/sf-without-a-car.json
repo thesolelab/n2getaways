@@ -99,8 +99,8 @@
     "Confirm BART payment rules for families and any concession fares; draft deliberately gives no child-fare or price guarantee.",
     "Check current Visitor Passport coverage, validity and purchase methods; no specific fare prices are quoted.",
     "Check cable-car operating lines and accessibility statements against current operator information.",
-    "REQUIRED IMAGE REPLACEMENT: owner selected a San Francisco cityscape/Golden Gate Bridge at dusk photo in chat. Original downloadable JPG/PNG is pending; current Golden Gate cover is provisional and must be replaced before approval.",
-    "Set actual publication date and confirm all internal links at editorial approval."
+    "Set actual publication date and confirm all internal links at editorial approval.",
+    "Confirm the contextual Painted Ladies cover and alt text in the article layout during final editorial review."
   ],
   "overlapReview": "Reviewed existing 48-hour itinerary, lodging and scenic-view articles. They mention walking/cable cars but do not explain network selection, airport transfers or current payment/pass distinctions. This guide answers transport-planning intent and links to the itinerary rather than restating its stops.",
   "limitations": [
@@ -128,9 +128,18 @@
     "imageryChecked": false
   },
   "imagery": {
-    "status": "awaiting-original-file",
-    "ownerSelection": "San Francisco cityscape and Golden Gate Bridge at dusk, provided inline in chat",
-    "currentCover": "Provisional existing golden-gate key; not the requested replacement",
-    "articleApproval": false
+    "status": "owner-selected-file-received",
+    "filename": "joshua-sortino-HadloobmnQs-unsplash.jpg",
+    "asset": "src/assets/editorial/sf-painted-ladies.jpg",
+    "key": "sf-painted-ladies",
+    "source": "https://unsplash.com/photos/HadloobmnQs",
+    "photographer": "Joshua Sortino",
+    "license": "https://unsplash.com/license",
+    "receivedAt": "2026-11-12",
+    "sha256": "95c82f377eff34913fea88f480852dd0cb4737512de2ce6009687cd42f9d9b9f",
+    "description": "Colorful Painted Ladies houses with the San Francisco skyline and moon beyond",
+    "note": "Original bytes preserved from owner upload SF Image.zip. Uploaded file depicts the Painted Ladies and skyline, replacing the earlier inline cityscape selection. Owner selection authorizes image use in this draft, not article publication.",
+    "articleApproval": false,
+    "sourceVerification": "Photographer and Unsplash photo identifier are taken from the owner-supplied filename; direct source-page retrieval required authentication in this session."
   }
 }

@@ -124,6 +124,7 @@ export function knownImages() {
     "portugal",
     "asheville",
     "san-francisco",
+    "sf-painted-ladies",
     ...Object.values(received).map((x) => x.key),
   ]);
 }
