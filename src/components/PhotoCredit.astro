@@ -1,0 +1,24 @@
+---
+import credits from "../config/photo-credits.json";
+interface Props {
+  imageKey?: string;
+  placement: "destination" | "article";
+}
+const { imageKey, placement } = Astro.props;
+const credit = imageKey ? credits[imageKey as keyof typeof credits] : undefined;
+---
+
+{credit && (
+  <div class:list={["photo-credit", `photo-credit--${placement}`]}>
+    <p>
+      Photo:{" "}
+      <a href={credit.source} target="_blank" rel="noopener noreferrer">
+        {credit.name}
+      </a>
+      <span aria-hidden="true"> · </span>
+      <a href={credit.license} target="_blank" rel="noopener noreferrer">
+        License
+      </a>
+    </p>
+  </div>
+)}

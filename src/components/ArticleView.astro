@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { isProduction } from "../config/site.mjs";
+import PhotoCredit from "./PhotoCredit.astro";
 import Base from "../layouts/Base.astro";
 import { Image, getImage } from "astro:assets";
 import { render } from "astro:content";
@@ -145,6 +146,7 @@ const related = (await getArticles())
         loading="eager"
       />
     )}
+    <PhotoCredit imageKey={data.image} placement="article" />
     <div class="article-body">
       <aside>
         <p class="eyebrow">In this guide</p>
