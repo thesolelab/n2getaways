@@ -1,4 +1,5 @@
 import type { ImageMetadata } from "astro";
+import mauiCoast from "./assets/maui-coast.jpg";
 import italy from "./assets/italy.jpg";
 import japan from "./assets/japan.jpg";
 import portugal from "./assets/portugal.jpg";
@@ -10,6 +11,7 @@ const files = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 export const photos: Record<string, ImageMetadata> = {
+  "maui-coast": mauiCoast,
   italy,
   japan,
   portugal,

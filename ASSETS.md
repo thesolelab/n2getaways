@@ -20,3 +20,13 @@ Astro creates responsive WebP variants for cards and article covers. Alt text de
 ## WordPress image Batches 1–4
 
 All 18 requested files were received in the owner's four ZIPs. They are stored unchanged in `src/assets/wordpress/`; `docs/migration/received-media.json` records original filenames, batch numbers, descriptive alt text and SHA-256 receipts. The original WordPress export determines where each asset is used. No supplied image was generated, edited or substituted; Astro produces optimized display variants. The two airport-security illustrations are described as illustrative, not evidence of current queues or wait times.
+
+## Maui destination photograph
+
+`src/assets/maui-coast.jpg` replaces the food photograph only in Maui destination discovery and its landing-page hero. The lunch article retains its original `Maui-Fishn-Chips-scaled.jpg` image.
+
+- Photographer: Ganapathy Kumar (@gkumar2175).
+- Source and location: https://unsplash.com/photos/tropical-beach-at-sunset-in-maui-7782WXBriyM — Secret Cove Beach, Kihei, Maui, per the photographer's caption.
+- License: https://unsplash.com/license; the source page explicitly identifies this as a free Unsplash License image (checked November 12, 2026).
+- Download: https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1600&q=85&fit=crop&fm=jpg
+- Attribution is displayed on the Maui destination page. This is licensed destination imagery, not an owner travel photograph or evidence of a personal visit.

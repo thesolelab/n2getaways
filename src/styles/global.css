@@ -1088,3 +1088,12 @@ textarea {
   color: var(--teal);
   padding: 10px 0;
 }
+.destination-photo-credit {
+  font-size: 10px;
+  color: #626962;
+  margin: 14px 6% 0;
+}
+.destination-photo-credit a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

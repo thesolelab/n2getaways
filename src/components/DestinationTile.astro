@@ -20,11 +20,13 @@ const { destination: d } = Astro.props;
     <Image
       src={photos[d.image]}
       alt={
-        d.image === "asheville"
-          ? "Autumn street scene in Biltmore Village"
-          : d.image === "san-francisco"
-            ? "Street performance in San Francisco"
-            : `${d.name} destination photograph`
+        d.image === "maui-coast"
+          ? "Palms and lava rocks beside a Maui beach at sunset"
+          : d.image === "asheville"
+            ? "Autumn street scene in Biltmore Village"
+            : d.image === "san-francisco"
+              ? "Street performance in San Francisco"
+              : `${d.name} destination photograph`
       }
       width={700}
       widths={[400, 700]}

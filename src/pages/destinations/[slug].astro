@@ -55,6 +55,19 @@ const imageKey = d.image as keyof typeof photos | undefined;
       <p>{d.line}</p>
     </div>
   </section>
+  {d.slug === "maui" && (
+    <p class="destination-photo-credit">
+      Destination photograph:{" "}
+      <a
+        href="https://unsplash.com/photos/tropical-beach-at-sunset-in-maui-7782WXBriyM"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ganapathy Kumar / Unsplash
+      </a>{" "}
+      · <a href="https://unsplash.com/license">Unsplash License</a>
+    </p>
+  )}
   <section class="section">
     <p class="notice">
       {sample

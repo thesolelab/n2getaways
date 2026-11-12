@@ -14,7 +14,7 @@ export const destinations = [
     name: "Maui",
     region: "Hawaii",
     line: "Travel guides, local food recommendations, and island inspiration.",
-    image: "maui-food",
+    image: "maui-coast",
   },
   {
     slug: "costa-rica",

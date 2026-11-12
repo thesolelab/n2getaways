@@ -44,3 +44,7 @@ The narrow checklist no longer inherits viewport-based section gutters, which co
 ## Image Batches 1–4
 
 Received and matched all 18 batch files. Cover/card selection and inline images are restored; original bytes are checksum-verified. The media checks verify every original usage path from the batch checklist and confirm that received files are not listed as missing. Source prose comparisons still pass for all 25 original paths. Original batch numbering is retained with per-file Received status. Six older page-layout references and two external references remain separate from the completed article batches.
+
+## Maui destination image
+
+Maui's discovery tile and landing-page hero now use a licensed, source-verified Secret Cove Beach photograph. The food article retains its original image. Existing build and migration checks pass, with an additional output inspection confirming the homepage tile, unchanged food-article image and destination-page attribution.
