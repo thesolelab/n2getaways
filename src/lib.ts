@@ -23,8 +23,14 @@ export const destinations = [
     line: "Atlantic horizons, tiled streets, and a slower rhythm.",
   },
 ] as const;
-export const getArticles = () =>
-  getCollection(
-    "articles",
-    ({ data }) => !data.draft && data.publishDate <= new Date(),
+export const getArticles = async () =>
+  (
+    await getCollection(
+      "articles",
+      ({ data }) => !data.draft && data.publishDate <= new Date(),
+    )
+  ).sort(
+    (a, b) =>
+      Number(a.data.placeholder) - Number(b.data.placeholder) ||
+      b.data.publishDate.getTime() - a.data.publishDate.getTime(),
   );

@@ -4,7 +4,7 @@ import Base from "../layouts/Base.astro";
 
 <Base
   title="Plan your getaway"
-  description="Preview the custom itinerary inquiry experience."
+  description="Contact N2Getaways about a custom itinerary."
 >
   <section class="section narrow page-intro">
     <p class="eyebrow">Your trip, your way</p>
@@ -14,9 +14,15 @@ import Base from "../layouts/Base.astro";
       dreaming of?
     </h1>
     <p class="notice">
-      Inquiry preview only. This form does not send or store information. A
-      verified delivery destination and privacy policy are required before
-      activation.
+      This form opens a draft in your email app addressed to
+      hello@n2getaways.com. Review and send it there. This website does not send
+      or store your inquiry.
+    </p>
+    <p>
+      Prefer to email directly?{" "}
+      <a class="text-link" href="mailto:hello@n2getaways.com">
+        hello@n2getaways.com
+      </a>
     </p>
     <form id="inquiry">
       <label>
@@ -45,18 +51,26 @@ import Base from "../layouts/Base.astro";
         ></textarea>
       </label>
       <button class="button" type="submit">
-        Preview inquiry ↗
+        Open inquiry in email app ↗
       </button>
       <p id="form-result" role="status"></p>
     </form>
   </section>
 </Base>
 <script>
-  document.querySelector("form")?.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const result = document.querySelector("#form-result");
-    if (result)
-      result.textContent =
-        "Your sample inquiry is complete. Nothing was sent or saved. The live inquiry service is not yet connected.";
-  });
+  document
+    .querySelector<HTMLFormElement>("#inquiry")
+    ?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const form = e.currentTarget as HTMLFormElement;
+      const fields = new FormData(form);
+      const value = (key: string) => String(fields.get(key) || "").trim();
+      const subject = `Custom itinerary inquiry: ${value("destination")}`;
+      const body = `Name: ${value("name")}\nReply email: ${value("email")}\nDestination: ${value("destination")}\n\n${value("details")}`;
+      window.location.href = `mailto:hello@n2getaways.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const result = document.querySelector("#form-result");
+      if (result)
+        result.textContent =
+          "Your email app should open with a draft. Please send it there. If nothing opens, email hello@n2getaways.com directly. Nothing has been sent by this website.";
+    });
 </script>

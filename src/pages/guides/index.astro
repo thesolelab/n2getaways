@@ -7,12 +7,15 @@ const articles = await getArticles();
 
 <Base
   title="The travel journal"
-  description="Explore sample travel guides and itinerary ideas."
+  description="Explore travel guides, itinerary ideas, and the WordPress migration pilot."
 >
   <section class="section page-intro">
     <p class="eyebrow">Ideas for the journey</p>
     <h1>The travel journal.</h1>
-    <p>All articles below are labeled editorial placeholders.</p>
+    <p>
+      Browse original WordPress articles under migration review alongside
+      clearly labeled sample guides.
+    </p>
     <div class="article-grid">
       {articles.map((article) => (
         <ArticleCard article={article} />

@@ -22,3 +22,7 @@ Normal local machines can use the README commands. CI validates on Node 24. Clou
 ## GitHub handoff
 
 The initial milestone is committed and pushed to `main` in https://github.com/thesolelab/n2getaways. The initial HTTP 403 was resolved after the owner updated the GitHub app repository access. No deployment, WordPress migration, or DNS changes were performed.
+
+## WordPress pilot update
+
+The supplied export was inventoried (14 posts, 11 pages, 71 attachment records), and two original articles were imported at their existing URL paths. Prose-fidelity checks pass for both. Current static build: 14 pages. Migration checks cover original paths, review labels, single h1, table-of-contents targets and the inquiry recipient. Contact now composes a `mailto:` draft to the owner-specified address; actual website email sending remains unconnected. Source media is blocked by HTTP 202 bot challenges. Details and follow-up review items: `docs/migration/README.md`.

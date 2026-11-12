@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import { getArticles } from "../lib";
+const articles = (await getArticles()).filter((a) => a.data.migrationReview);
+---
+
+<Base
+  title="WordPress migration review"
+  description="Review the first two original N2Getaways articles in the redesigned publication."
+>
+  <section class="section page-intro">
+    <p class="eyebrow">Your content, a new chapter</p>
+    <h1>From the N2Getaways archive.</h1>
+    <p>
+      These two articles come from your WordPress export. Their original URLs
+      and article text are preserved. The remaining content is inventoried for a
+      later migration batch.
+    </p>
+    <p class="notice">
+      Review copy. WordPress image downloads are blocked by a bot challenge;
+      cover photos are intentionally omitted. This is a content transfer, not an
+      editorial fact-check. Links to articles outside this batch still open the
+      current website.
+    </p>
+    <div class="article-grid">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+</Base>

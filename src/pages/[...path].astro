@@ -17,7 +17,7 @@ const { Content, headings } = await render(article);
 <Base
   title={data.title}
   description={data.description}
-  image={photos[data.image].src}
+  image={data.image ? photos[data.image].src : undefined}
   article
 >
   <script
@@ -27,7 +27,12 @@ const { Content, headings } = await render(article);
       "@type": "Article",
       headline: data.title,
       description: data.description,
-      image: new URL(photos[data.image].src, Astro.site).href,
+      ...(data.image
+        ? { image: new URL(photos[data.image].src, Astro.site).href }
+        : {}),
+      ...(!data.placeholder
+        ? { datePublished: data.publishDate.toISOString() }
+        : {}),
       mainEntityOfPage: new URL(data.permalink, Astro.site).href,
     })}
   />
@@ -35,25 +40,34 @@ const { Content, headings } = await render(article);
     <header class="article-heading">
       <a
         class="eyebrow"
-        href={`/destinations/${data.destination.toLowerCase()}/`}
+        href={
+          data.placeholder
+            ? `/destinations/${data.destination.toLowerCase()}/`
+            : "/migration-review/"
+        }
       >
         {data.destination} / {data.category}
       </a>
       <h1>{data.title}</h1>
       <p>{data.description}</p>
       <div class="card-meta">
-        Editorial placeholder · {data.readTime} min read
+        {data.placeholder
+          ? "Editorial placeholder"
+          : "Imported from WordPress · Review copy"}{" "}
+        · {data.readTime} min read
       </div>
     </header>
-    <Image
-      class="article-cover"
-      src={photos[data.image]}
-      alt={data.imageAlt}
-      width={1600}
-      widths={[800, 1200, 1600]}
-      sizes="100vw"
-      loading="eager"
-    />
+    {data.image && (
+      <Image
+        class="article-cover"
+        src={photos[data.image]}
+        alt={data.imageAlt}
+        width={1600}
+        widths={[800, 1200, 1600]}
+        sizes="100vw"
+        loading="eager"
+      />
+    )}
     <div class="article-body">
       <aside>
         <p class="eyebrow">In this guide</p>
@@ -67,15 +81,23 @@ const { Content, headings } = await render(article);
       </aside>
       <div class="prose">
         <p class="notice">
-          Sample content — a template demonstration, not a published travel
-          recommendation or account of personal experience.
+          {data.placeholder
+            ? "Sample content — a template demonstration, not a published travel recommendation or account of personal experience."
+            : "Migration review — original WordPress article text. Photography is pending transfer; travel details have not been reverified."}
         </p>
         <Content />
         <a
           class="text-link"
-          href={`/destinations/${data.destination.toLowerCase()}/`}
+          href={
+            data.placeholder
+              ? `/destinations/${data.destination.toLowerCase()}/`
+              : "/migration-review/"
+          }
         >
-          More from {data.destination} ↗
+          {data.placeholder
+            ? `More from ${data.destination}`
+            : "Back to migration review"}{" "}
+          ↗
         </a>
       </div>
     </div>

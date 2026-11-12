@@ -1,6 +1,6 @@
 # N2Getaways — Astro editorial redesign
 
-Initial milestone. No WordPress migration, DNS changes, production deployment, or automated AI publishing has occurred.
+Initial Astro milestone plus a two-article WordPress migration pilot. Only the separate private design preview is deployed; no WordPress site changes, DNS changes, production-domain deployment, or automated AI publishing has occurred.
 
 ## Preview locally
 
@@ -25,13 +25,13 @@ Open http://localhost:4321 (or the URL Astro prints). In restricted environments
 - Responsive editorial homepage, accessible navigation with native mobile disclosure, skip link, visible keyboard focus, and reduced-motion support.
 - Destination index and generated Italy, Japan, Portugal collections.
 - Markdown article collection, reusable article view, table of contents and guide index.
-- About scaffold and custom itinerary form preview. Form does not send or store anything; no backend or delivery provider is connected.
+- About scaffold and custom itinerary form preview. Form opens a draft to `hello@n2getaways.com` in the visitor's email app; no backend or delivery provider is connected.
 - Canonical URLs, social metadata, WebSite/Article JSON-LD, generated XML sitemap, local optimized responsive images.
 - TypeScript, static Cloudflare Pages configuration, GitHub validation workflow, and deliberately disabled scheduling example.
 
 ## Content workflow
 
-Add Markdown in `src/content/articles/`. Schema lives in `src/content.config.ts`. Explicit `permalink` determines the article route, allowing verified existing WordPress URLs to be retained later. `draft: true` and future `publishDate` values exclude articles from generated routes, discovery, and sitemaps. Static pages only update on a rebuild. All current entries are placeholders; the schema intentionally requires `placeholder: true` until a reviewed production content model is introduced.
+Add Markdown in `src/content/articles/`. Schema lives in `src/content.config.ts`. Explicit `permalink` determines the article route, allowing verified existing WordPress URLs to be retained later. `draft: true` and future `publishDate` values exclude articles from generated routes, discovery, and sitemaps. Static pages only update on a rebuild. Sample entries use `placeholder: true`. The two imported WordPress entries use `placeholder: false`, `migrationReview: true`, and a source URL. Their original text is preserved, with media pending transfer. See `docs/migration/README.md`.
 
 Templates can render guides, itineraries, stories, and reviews. No review endorsements or first-hand experiences are fabricated. Replace sample copy only with verified material. Date fields on examples are build gating values, not claimed publication dates.
 
@@ -49,7 +49,7 @@ Before a separately authorized production launch, remove the noindex meta in Bas
 
 ## Eventual migration
 
-Do not guess WordPress slugs. Obtain a full URL/content export and inventory, retain matching paths through `permalink`, and create reviewed 301 redirects in Cloudflare's `_redirects` only for changed paths. WordPress currently presents a bot challenge to this environment; no article inventory or migration has been performed.
+Do not guess WordPress slugs. Obtain a full URL/content export and inventory, retain matching paths through `permalink`, and create reviewed 301 redirects in Cloudflare's `_redirects` only for changed paths. The supplied WordPress export has been inventoried and two original articles imported at their existing paths. WordPress media still presents a bot challenge; see the migration report.
 
 ## Images and fonts
 

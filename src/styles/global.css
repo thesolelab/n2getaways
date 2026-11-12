@@ -847,3 +847,39 @@ textarea {
     transition: none !important;
   }
 }
+.text-cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  background: var(--teal);
+  color: var(--ivory);
+}
+.text-cover span {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.text-cover b {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.text-cover small {
+  font-size: 11px;
+  color: var(--sand);
+}
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose h3 {
+  margin: 30px 0 15px;
+  font-size: 25px;
+}
+.prose hr {
+  border: 0;
+  border-top: 1px solid #d7d8cd;
+  margin: 30px 0;
+}
