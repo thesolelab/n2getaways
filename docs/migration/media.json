@@ -63,5 +63,11 @@
     "key": "santorini-sunset",
     "file": "wordpress/IMG_1527-scaled.jpg",
     "alt": "Sunset over the sea beside a white church and two glasses on a terrace"
+  },
+  "/where-to-stay-in-san-francisco/": {
+    "key": "golden-gate",
+    "file": "wordpress/neve-travel-blog-25-1.jpg",
+    "alt": "Golden Gate Bridge spanning blue water beneath a clear sky",
+    "selectionNote": "Reused owner-supplied San Francisco city photograph as editorial cover; not an original photo from this article."
   }
 }

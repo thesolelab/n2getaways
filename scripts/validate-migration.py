@@ -61,3 +61,10 @@ checklist=Path('dist/migration-review/media/index.html').read_text()
 for b in batches:
     assert f'id="batch-{b["number"]}"' in checklist,'Unstable batch numbering'
 print(f'PASS: {len(received)} received image checksums, rendered uses/alt text, checklist receipts and original batch numbers.')
+
+for entry in manifest['imported']:
+    if entry['type']!='post':continue
+    rendered=(Path('dist')/entry['path'].strip('/')/'index.html').read_text()
+    assert 'class="article-cover"' in rendered,f'Article cover missing: {entry["path"]}'
+    assert 'class="media-pending"' not in rendered,f'Pending image block in article: {entry["path"]}'
+print('PASS: all 14 original articles have covers and no pending-image blocks.')

@@ -21,11 +21,11 @@ Source files are in `src/content/articles/wp-*.md` and `src/content/pages/*.md`.
 
 The owner supplied the two pilot photos and all 18 requested files in Batches 1–4. Their original bytes are retained in source control, with SHA-256 receipts in `received-media.json`. Article covers/cards and inline images are restored using Astro image processing; `src/media.ts` loads the received assets for cover selection. Image descriptions were written from visual inspection without identifying people or presenting illustrative airport graphics as documentary evidence.
 
-`media.json` maps covers to original article paths. The importer replaces image placeholders with local Markdown images and reuses received originals for unambiguous WordPress size variants. All 25 rendered-source text checks still pass. `missing-media.json` now lists eight references: six older page-layout files and two externally hosted images in the San Francisco accommodation article. The 18 requested batch files are no longer missing.
+`media.json` maps covers to original article paths. The importer replaces image placeholders with local Markdown images and reuses received originals for unambiguous WordPress size variants. All 25 rendered-source text checks still pass. `missing-media.json` now lists six older page-layout files. The San Francisco accommodation guide uses an existing owner-supplied Golden Gate Bridge photograph as its cover. The 18 requested batch files are no longer missing.
 
 `media-batches.json` preserves the original four batch numbers and filenames. The private checklist marks each received file and retains completed batches, so pre-created ZIPs never become mislabeled when files arrive. The media validator checks the byte receipts and verifies that each image appears with its descriptive alt text at every original usage path listed in those batches.
 
-The two external references are hosted at `images.openai.com`, not in WordPress uploads. Original files or reviewed replacements will be needed, and source/licensing relevance should be reviewed. Lower-priority page-layout media may be unnecessary after the new design is approved.
+The accommodation guide's two unavailable `images.openai.com` references are deliberately retired in `retired-media.json`; their empty inline slots are removed. A city-context cover is reused from the supplied San Francisco imagery without presenting it as a hotel or Union Square photograph. Source image URLs remain in the export-derived manifest for provenance. All 14 original articles now have covers and no pending-image blocks. Lower-priority page-layout media may be unnecessary after the new design is approved.
 
 ## Editorial review findings
 

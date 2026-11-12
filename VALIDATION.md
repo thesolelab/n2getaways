@@ -48,3 +48,7 @@ Received and matched all 18 batch files. Cover/card selection and inline images 
 ## Maui destination image
 
 Maui's discovery tile and landing-page hero now use a licensed, source-verified Secret Cove Beach photograph. The food article retains its original image. Existing build and migration checks pass, with an additional output inspection confirming the homepage tile, unchanged food-article image and destination-page attribution.
+
+## San Francisco accommodation cover
+
+Added an editorial cover using the owner-supplied Golden Gate Bridge photograph. The two unavailable external image slots from the original accommodation article are retired explicitly in `docs/migration/retired-media.json`, without substituting misleading restaurant or hotel images. All 14 original articles now have rendered covers and no pending-image blocks; this is included in migration validation. Original article prose still matches the export-derived hashes. Six old page-layout image references remain inside source-copy review disclosures.

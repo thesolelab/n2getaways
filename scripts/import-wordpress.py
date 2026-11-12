@@ -24,14 +24,15 @@ def resolve_media(filename,received):
     return matches[0] if len(matches)==1 else None
 class Clean(HTMLParser):
     allowed={'p','a','strong','em','b','i','ul','ol','li','br','hr','h1','h2','h3','h4','h5','h6','blockquote','figcaption','table','thead','tbody','tr','th','td','sup','sub'}
-    def __init__(self,routes,known_first=None,received=None):
-        super().__init__(convert_charrefs=True);self.parts=[];self.skip=0;self.routes=routes;self.images=[];self.links=[];self.known_first=known_first;self.received=received or {}
+    def __init__(self,routes,known_first=None,received=None,retired=None):
+        super().__init__(convert_charrefs=True);self.parts=[];self.skip=0;self.routes=routes;self.images=[];self.links=[];self.known_first=known_first;self.received=received or {};self.retired=retired or set()
     def handle_starttag(self,t,attrs):
         if t in {'script','style','iframe','form','button','noscript'}:self.skip+=1
         if self.skip:return
         attrs=dict(attrs)
         if t=='img':
             src=attrs.get('src','');alt=attrs.get('alt','');self.images.append({'url':src,'alt':alt})
+            if src in self.retired:return
             if len(self.images)==1 and self.known_first:return
             filename=Path(urlparse(src).path).name
             local=resolve_media(filename,self.received)
@@ -67,6 +68,7 @@ def main(path):
     routes={urlparse(i.findtext('link')).path or '/' for i in eligible}
     media=json.loads(Path('docs/migration/media.json').read_text())
     received=json.loads(Path('docs/migration/received-media.json').read_text())
+    retired=json.loads(Path('docs/migration/retired-media.json').read_text())
     inv=[];migrated=[];missing={};unresolved=set()
     for i in eligible:
         kind=i.findtext('wp:post_type',namespaces=NS);url=i.findtext('link');route=urlparse(url).path or '/';title=html.unescape(i.findtext('title') or '')
@@ -74,7 +76,8 @@ def main(path):
         if re.search(r'<!-- wp:(?:block|shortcode|embed)\b',content):raise ValueError('Unsupported reusable block/shortcode/embed: '+route)
         known=media.get(route)
         if known and not Path('src/assets',known['file']).is_file():raise ValueError('Missing mapped photo '+route)
-        parser=Clean(routes,known,received);parser.feed(content)
+        retired_urls={m['url'] for m in retired if m['path']==route}
+        parser=Clean(routes,known,received,retired_urls);parser.feed(content)
         body=''.join(parser.parts);body=re.sub(r'<a[^>]*>\s*</a>','',body);body=re.sub(r'<figure>\s*</figure>','',body)
         # Original h1s become h2s: the Astro template provides the only document h1.
         body=re.sub(r'<h([1-6])>(.*?)</h\1>',lambda m:'\n\n'+'#'*max(2,int(m[1]))+' '+text(m[2]).strip()+'\n\n' if text(m[2]).strip() else '',body,flags=re.S)
@@ -108,6 +111,7 @@ def main(path):
         inv.append(row)
         migrated.append({'path':route,'type':kind,'sourceImages':[p['url'] for p in parser.images],'proseFidelity':'passed','proseSha256':hashlib.sha256(normalized(source).encode()).hexdigest(),'headings':len(re.findall(r'^#{2,6} ',body,re.M)),'reviewNotes':flags,'legacyFormRemoved':bool(re.search('<form',content)),'legacyLoadMoreRemoved':bool(re.search('<button',content))})
         for index,img in enumerate(parser.images):
+            if img['url'] in retired_urls:continue
             if known and index==0:continue
             u=urlparse(img['url']);filename=Path(u.path).name
             if not filename or resolve_media(filename,received):continue

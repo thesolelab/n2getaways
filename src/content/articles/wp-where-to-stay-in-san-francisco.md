@@ -6,12 +6,13 @@ sourceUrl: "https://n2getaways.com/where-to-stay-in-san-francisco/"
 migrationReview: true
 destination: "San Francisco"
 category: "Travel guide"
-imageAlt: ""
+imageAlt: "Golden Gate Bridge spanning blue water beneath a clear sky"
 readTime: 3
 placeholder: false
 draft: false
 publishDate: "2026-04-01T17:04:14Z"
 reviewNotes: []
+image: "golden-gate"
 ---
 
 <p>Choosing where to stay in San Francisco can make or break your trip.</p>
@@ -23,8 +24,6 @@ reviewNotes: []
 <hr>
 
 ## Why Union Square Is a Great Place to Stay
-
-<figure class="media-pending"><figcaption>Original photo pending transfer: https://images.openai.com/static-rsc-4/gS88OHfhtMGWmLZkF8rAuX_Uu4njo71ziBLPzmU1hW_fYI2qWqI5oYF7C2bSHiUjqWun9z2y194k4jlFYAMJEyrrw6ocrlpeCu6S8u4q6d4rznbzONS0tKchQGTN4x5T2nEDITqnikrr-o4u0txGcJ5TXDVMOGrXaxNo2TpxhsaioZwLUixCYM3V2DQFYsXq?purpose=fullsize.</figcaption></figure>
 
 <p>Union Square puts you right in the middle of everything.</p>
 
@@ -97,8 +96,6 @@ reviewNotes: []
 <hr>
 
 ## Where to Eat Near Union Square
-
-<figure class="media-pending"><figcaption>Original photo pending transfer: https://images.openai.com/static-rsc-4/SCGE3YeiFertqmJXhiz_ZMkWD2cGDeRJmfvDfvS5p0Ov6yVl8eimJYYrnNTX7SmL1609j2Bv0lnP65hD5WNcPX2UQdA47LWjBsD2e6e2x3UIVigPB3OFmZIAmk41a3jTSoZPzwu_JBzDSuzcrAxrp83O-b-RrrU7Bf_ydwhGUlKalVrEc1_2_K97E4LkDrdO?purpose=fullsize.</figcaption></figure>
 
 <p></p>
 
