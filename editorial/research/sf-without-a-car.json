@@ -1,0 +1,130 @@
+{
+  "sources": [
+    {
+      "url": "https://www.sfmta.com/visitors",
+      "title": "Visitors — SFMTA",
+      "summary": "Lists Muni buses, Metro, historic streetcars and cable cars, with journey-planning and accessibility resources.",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "url": "https://www.bart.gov/guide/airport/sfo",
+      "title": "Airport Connections: SFO — BART",
+      "summary": "SFO station is in the International Terminal; AirTrain connects terminals. Current instructions describe contactless/Clipper options and using the same payment method at entry and exit.",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "url": "https://www.sftravel.com/info/transportation-basics-how-to-get-around-san-francisco",
+      "title": "Transportation Basics — San Francisco Travel",
+      "summary": "Tourism-board overview of local and regional transportation. Used for general orientation, not exact fares or universal payment assertions.",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "url": "https://www.sfmta.com/getting-around/muni/fares/munimobile",
+      "title": "MuniMobile — SFMTA",
+      "summary": "September 1, 2026 ended sales of single-ride tickets in the app; some products remain during the phased retirement.",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "url": "https://www.sfmta.com/fares/7-day-visitor-passport",
+      "title": "Visitor Passports — SFMTA",
+      "summary": "Describes 1-, 3- and 7-day Muni coverage including cable cars, and excludes BART/airport transportation.",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "url": "https://www.sfmta.com/getting-around/muni/cable-cars",
+      "title": "Cable Cars — SFMTA",
+      "summary": "Lists California, Powell-Hyde and Powell-Mason lines and states that cable cars do not have accessible boarding.",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "url": "https://www.sfmta.com/accessibility-all",
+      "title": "Accessibility for All — SFMTA",
+      "summary": "Links to accessible transit information and current Muni Metro elevator status; individual route suitability must be checked.",
+      "accessedAt": "2026-11-12"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Muni includes buses, Metro, historic streetcars and cable cars.",
+      "sourceUrls": [
+        "https://www.sfmta.com/visitors"
+      ],
+      "verificationRequired": false
+    },
+    {
+      "claim": "BART connects SFO and downtown; airport station/terminal access instructions are published by BART.",
+      "sourceUrls": [
+        "https://www.bart.gov/guide/airport/sfo"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "BART currently describes contactless and Clipper options and requires the same payment method at entry and exit.",
+      "sourceUrls": [
+        "https://www.bart.gov/guide/airport/sfo"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "MuniMobile stopped selling single-ride tickets on September 1, 2026; products and transition details are changing.",
+      "sourceUrls": [
+        "https://www.sfmta.com/getting-around/muni/fares/munimobile"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Visitor Passports cover specified Muni services including cable cars, not BART or SFO airport transportation.",
+      "sourceUrls": [
+        "https://www.sfmta.com/fares/7-day-visitor-passport"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Three cable car lines are listed; cable cars do not offer accessible boarding.",
+      "sourceUrls": [
+        "https://www.sfmta.com/getting-around/muni/cable-cars"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "SFMTA offers accessible transit and Metro elevator-status resources; suitability is journey-specific.",
+      "sourceUrls": [
+        "https://www.sfmta.com/accessibility-all"
+      ],
+      "verificationRequired": true
+    }
+  ],
+  "verificationFlags": [
+    "Re-open all operator pages before publication: MuniMobile is in a phased transition and payment products may change.",
+    "Confirm BART payment rules for families and any concession fares; draft deliberately gives no child-fare or price guarantee.",
+    "Check current Visitor Passport coverage, validity and purchase methods; no specific fare prices are quoted.",
+    "Check cable-car operating lines and accessibility statements against current operator information.",
+    "Approve Golden Gate image as contextual destination photography, not a picture of the transit being described.",
+    "Set actual publication date and confirm all internal links at editorial approval."
+  ],
+  "overlapReview": "Reviewed existing 48-hour itinerary, lodging and scenic-view articles. They mention walking/cable cars but do not explain network selection, airport transfers or current payment/pass distinctions. This guide answers transport-planning intent and links to the itinerary rather than restating its stops.",
+  "limitations": [
+    "No first-hand travel, tested routes, queue timings, fare quotes or guaranteed accessibility are claimed.",
+    "The SFMTA generic visitors page still promotes MuniMobile broadly; the dated MuniMobile service notice is treated as authoritative for changed ticket availability.",
+    "San Francisco Travel broadly describes tap-to-pay; detailed fare-use instructions are instead attributed to the operating agencies.",
+    "Official page retrieval is not an independent operational audit; all time-sensitive claims remain flagged for owner review."
+  ],
+  "researchQueries": [
+    "site.sfmta.com getting around San Francisco visitors Muni BART cable cars Clipper",
+    "site.bart.gov guide airport SFO San Francisco Clipper payment",
+    "site.sftravel.com getting around San Francisco without a car hills walking"
+  ],
+  "topicId": "sf-without-a-car",
+  "slug": "getting-around-san-francisco-without-a-car",
+  "assistedBy": "Existing ChatGPT session; no paid API",
+  "preparedAt": "2026-11-12T20:00:45.601Z",
+  "review": {
+    "approved": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "sourcesChecked": false,
+    "claimsChecked": false,
+    "linksChecked": false,
+    "imageryChecked": false
+  }
+}
