@@ -50,6 +50,6 @@ Validation checks all original route paths, rendered prose against export-derive
 
 ## Inquiry and release boundaries
 
-Recipient: `hello@n2getaways.com`. Visitors must send the composed inquiry using their email app. Direct server email delivery, provider credentials, spam protection and inbox delivery tests remain unconfigured. No test email was sent.
+Recipient: `hello@n2getaways.com`. The owner-supplied Formspree endpoint is now configured for direct website submissions, with a honeypot and accessible feedback states. A direct email link remains available. No mailbox password or DNS change was required. Provider routing and inbox delivery require an owner-submitted test; no test email was sent by the agent.
 
 No Cloudflare Pages project, production-domain deployment, DNS change, WordPress modification, or automatic AI publishing is included. All 25 original paths are retained, so no redirects are required for this set. `/guides/` is retained as a development alias; decide whether to redirect it to `/travel-guides/` at launch. Next: owner review and small photo batches, then direct inquiry delivery and a Cloudflare Pages preview.

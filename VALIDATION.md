@@ -62,3 +62,7 @@ Initial checks identified production-domain metadata and SPA-style 200 responses
 ## Direct inquiry integration (prepared, not activated)
 
 Implemented a configurable Formspree endpoint using its official AJAX library, with native POST/security fallback, required fields, trimming/length checks, loading and feedback states, provider-side honeypot and contextual privacy disclosure. A blank form ID preserves the working email-app mode rather than falsely reporting delivery. Configured-mode and fallback-mode builds pass (38 pages, zero Astro diagnostics). Configured output used an unissued test ID for local checks only. No messages were sent. Recipient verification, actual provider/CAPTCHA behavior and inbox delivery still require the owner's Formspree setup. Setup and test steps: `docs/INQUIRIES.md`.
+
+## Owner endpoint activation
+
+Configured the owner-supplied public Formspree endpoint `https://formspree.io/f/xaeonjpv`. The direct-mode release passes the complete 38-page build and preservation checks. Output inspection confirms the exact endpoint, Send inquiry label, honeypot, visitor email field and current privacy disclosure. No email submission was sent by the agent. An owner-submitted test is still required to confirm provider routing, any CAPTCHA challenge and actual delivery to `hello@n2getaways.com`.
