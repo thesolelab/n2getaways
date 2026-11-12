@@ -1,6 +1,6 @@
 # N2Getaways production cutover plan
 
-Status: **prepared only — no domain, DNS, nameserver or production-mode setting has been changed.** The user approved the preview and confirmed receiving a Formspree submission. A separate approval is required before the DNS/custom-domain steps below.
+Status: **website cutover pending.** The owner has moved nameservers to Cloudflare and confirmed an incoming email arrived in Spam. The copied website records still target SiteGround. Production build variables are now maintained in `wrangler.toml`; dashboard variables were not reaching the build. The user approved the preview and confirmed receiving a Formspree submission. A separate approval is required before the DNS/custom-domain steps below.
 
 ## Reviewable release settings
 
@@ -54,7 +54,7 @@ An apex domain on Cloudflare Pages requires Cloudflare authoritative nameservers
 
 ## Website cutover — still within the explicitly approved window
 
-1. Set the existing Pages project's **production environment** to `SITE_MODE=production` and `SITE_URL=https://n2getaways.com`. Leave branch-preview environments at `SITE_MODE=preview` or unset. Trigger a production build and verify it succeeds. The generated pages.dev response-header rules continue to block indexing on that host.
+1. Verify `wrangler.toml` has production `[vars]` with `SITE_MODE=production` and `SITE_URL=https://n2getaways.com`, and `[env.preview.vars]` with `SITE_MODE=preview` and no fixed SITE_URL. Variables in the repository configuration are authoritative for these builds. Trigger a production build and verify it succeeds. The generated pages.dev response-header rules continue to block indexing on that host.
 2. In Pages → n2getaways-preview → Custom domains, associate `n2getaways.com` through the Pages workflow. **This can automatically add/change the apex CNAME when the zone is active; it is an actual DNS change.** Do not add a bare CNAME without associating the custom domain in Pages.
 3. Add `www.n2getaways.com` as required and configure a single canonical redirect to `https://n2getaways.com`, preserving path and query. Confirm the TLS/custom-domain state is active and there is no redirect loop. Do not alter mail/FTP/autodiscover records as part of the website change.
 4. Verify all 25 original paths in `url-map.csv`, including `/contact/`, `/about/`, `/privacy-policy/`, `/travel-guides/`, `/travel-stories/` and the destination/article routes. Article redirects are unnecessary because the original paths are retained. The development-only `/guides/` alias redirects to `/travel-guides/` in production.

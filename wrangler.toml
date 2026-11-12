@@ -1,3 +1,15 @@
 name = "n2getaways-preview"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-11-12"
+
+# Pages reads build variables from this file when it is present.
+# Main-branch production builds are prepared for the custom domain.
+[vars]
+NODE_VERSION = "24"
+SITE_MODE = "production"
+SITE_URL = "https://n2getaways.com"
+
+# Branch previews must remain non-indexable and use their deployment URL.
+[env.preview.vars]
+NODE_VERSION = "24"
+SITE_MODE = "preview"
