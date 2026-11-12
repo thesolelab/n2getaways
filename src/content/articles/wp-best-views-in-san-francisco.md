@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/best-views-in-san-francisco/"
 migrationReview: true
 destination: "San Francisco"
 category: "Travel guide"
-imageAlt: ""
+imageAlt: "Tree-lined waterfront promenade with a Ferris wheel in San Francisco"
 readTime: 3
 placeholder: false
 draft: false
 publishDate: "2026-03-31T15:40:20Z"
 reviewNotes: []
+image: "sf-waterfront"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 <p>San Francisco is one of the most photogenic cities in the U.S., with iconic landmarks, rolling hills, and views that change around every corner.</p>
 
@@ -36,7 +35,7 @@ reviewNotes: []
 
 ## Golden Gate Bridge Views (Iconic Must-See)
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
+![Golden Gate Bridge spanning blue water beneath a clear sky](<../../assets/wordpress/neve-travel-blog-25-1.jpg>)
 
 <p>No trip to San Francisco is complete without seeing the <strong>Golden Gate Bridge</strong>.</p>
 
@@ -126,7 +125,7 @@ reviewNotes: []
 
 ## Street Photography in San Francisco
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: Street Photograph of a Sloth Painting in San Francisco, CA.</figcaption></figure></figure>
+![A colorful sloth mural holding flowers on a dark doorway](<../../assets/wordpress/San-Francisco-Travel-Guide_Sloth-768x1024.jpg>)
 
 <p>Some of the best photos in San Francisco aren’t from viewpoints — they’re from the streets.</p>
 

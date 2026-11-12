@@ -1,41 +1,34 @@
 import { getCollection } from "astro:content";
-import italy from "./assets/italy.jpg";
-import japan from "./assets/japan.jpg";
-import portugal from "./assets/portugal.jpg";
-import asheville from "./assets/asheville.jpg";
-import sanFrancisco from "./assets/san-francisco.jpeg";
-export const photos = {
-  italy,
-  japan,
-  portugal,
-  asheville,
-  "san-francisco": sanFrancisco,
-};
+import { photos } from "./media";
+export { photos };
 export const destinations = [
   {
     slug: "san-francisco",
     name: "San Francisco",
     region: "California",
     line: "Explore one of California’s most iconic cities with simple travel guides, local food spots, and easy itineraries.",
-    image: "san-francisco",
+    image: "golden-gate",
   },
   {
     slug: "maui",
     name: "Maui",
     region: "Hawaii",
     line: "Travel guides, local food recommendations, and island inspiration.",
+    image: "maui-food",
   },
   {
     slug: "costa-rica",
     name: "Costa Rica",
     region: "Central America",
     line: "Resort recommendations, natural beauty, and outdoor experiences.",
+    image: "arenal-view",
   },
   {
     slug: "waikiki",
     name: "Waikiki",
     region: "Hawaii",
     line: "Beachfront energy, food finds, and Honolulu travel guides.",
+    image: "diamond-head",
   },
   {
     slug: "asheville",
@@ -49,6 +42,7 @@ export const destinations = [
     name: "Santorini",
     region: "Greece",
     line: "An original N2Getaways itinerary for a stay in Fira.",
+    image: "santorini-sunset",
   },
 ] satisfies Array<{
   slug: string;

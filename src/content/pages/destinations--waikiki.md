@@ -20,7 +20,7 @@ View Waikiki Guide
 
 ## Start Here
 
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>																
+![Pancakes topped with bananas, berries and a purple scoop](<../../assets/wordpress/Eggs-N-Things-Pancakes-1024x683.png>)
 
 ## Best Place to Eat Breakfast by Waikiki Beach
 

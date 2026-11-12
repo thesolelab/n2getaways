@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-a
 migrationReview: true
 destination: "Costa Rica"
 category: "Travel guide"
-imageAlt: ""
+imageAlt: "Resort buildings and landscaped pools surrounded by tropical gardens"
 readTime: 4
 placeholder: false
 draft: false
 publishDate: "2026-03-17T17:41:42Z"
 reviewNotes: []
+image: "springs-resort"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: A view of The Springs Resort and Spa in Costa Rica.</figcaption></figure></figure>
 
 <p>If you&#x27;re staying at <strong>The Springs Resort &amp; Spa at Arenal</strong>, you’re not just booking a luxury resort — you’re stepping into one of the most experience-packed destinations in Costa Rica.</p>
 

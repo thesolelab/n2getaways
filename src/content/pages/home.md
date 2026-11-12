@@ -24,7 +24,10 @@ Plan My Trip
 ## San Francisco
 
 <a href="/destinations/san-francisco/">
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>								</a>
+
+![Golden Gate Bridge spanning blue water beneath a clear sky](<../../assets/wordpress/neve-travel-blog-25-1.jpg>)
+
+</a>
 
 ## Maui
 
@@ -34,7 +37,10 @@ Plan My Trip
 ## Costa Rica
 
 <a href="/destinations/costa-rica/">
-<figure class="media-pending"><figcaption>Original photo pending transfer: Arenal Volcano view from The Springs Resort &amp; Spa.</figcaption></figure>								</a>
+
+![Arenal Volcano beyond tropical gardens and resort lounge chairs](<../../assets/wordpress/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg>)
+
+</a>
 
 ## Latest Travel Guides
 
@@ -45,7 +51,8 @@ Plan My Trip
 <p>Explore the best area to stay in San Francisco for first-time visitors.</p>								<a href="/where-to-stay-in-san-francisco/">
 Read Guide →
 </a>
-<figure class="media-pending"><figcaption>Original photo pending transfer: SkyStar Wheel Fisherman’s Wharf.</figcaption></figure>																
+
+![Tree-lined waterfront promenade with a Ferris wheel in San Francisco](<../../assets/wordpress/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png>)
 
 ## Best Views in SF
 
@@ -73,7 +80,8 @@ Read Guide →
 <p>Plan your first day at Waikiki Beach the right way.</p>								<a href="/things-to-do-in-waikiki-first-time-visitors/">
 Read Guide →
 </a>
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>																
+
+![Sunlight breaking through clouds above layers of forested mountain ridges](<../../assets/wordpress/Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg>)
 
 ## Things to Do in Asheville
 

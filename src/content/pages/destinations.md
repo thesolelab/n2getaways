@@ -34,7 +34,7 @@ Read the Guide
 
 ## Popular Travel Guides
 
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>
+![Sunlight breaking through clouds above layers of forested mountain ridges](<../../assets/wordpress/Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg>)
 
 ### Best Things to Do in Asheville (Top Attractions + Local Spots)
 
@@ -50,19 +50,19 @@ Read the Guide
 
 <p>Choosing where to stay in San Francisco can make or break your trip. After spending time exploring the...</p><a href="/where-to-stay-in-san-francisco/">View Guide</a>
 
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>
+![Golden Gate Bridge spanning blue water beneath a clear sky](<../../assets/wordpress/neve-travel-blog-25-1.jpg>)
 
 ### Best Views in San Francisco (Most Scenic Spots)
 
 <p>San Francisco is one of the most photogenic cities in the U.S., with iconic landmarks, rolling hills, and...</p><a href="/best-views-in-san-francisco/">View Guide</a>
 
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>
+![View across the Diamond Head crater and surrounding Honolulu hills](<../../assets/wordpress/View-from-Diamond-Head-State-Park-1024x768.jpg>)
 
 ### Best Things to Do in Waikiki for First-Time Visitors
 
 <p>Waikiki is one of the most iconic destinations in Hawaii, known for its beaches, ocean views, and easy...</p><a href="/things-to-do-in-waikiki-first-time-visitors/">View Guide</a>
 
-<figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure>
+![Illustrative phone display showing airport security wait times beside luggage](<../../assets/wordpress/How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png>)
 
 ### How to Get Through TSA Faster Right Now (Avoid Airport Delays in 2026)
 

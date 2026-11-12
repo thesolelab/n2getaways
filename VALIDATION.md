@@ -40,3 +40,7 @@ Media remains a separate transfer task: two original photos restored, 18 missing
 ## Photo checklist readability fix
 
 The narrow checklist no longer inherits viewport-based section gutters, which could consume its entire content width on wide screens. Each file now has a separate folder label, a single-line selectable filename, and a copy button with a manual-selection fallback. Shared narrow-page gutters are capped for About, Contact and Privacy as well. The existing 37-page build, Astro checks and migration validations pass; no browser measurement is claimed.
+
+## Image Batches 1–4
+
+Received and matched all 18 batch files. Cover/card selection and inline images are restored; original bytes are checksum-verified. The media checks verify every original usage path from the batch checklist and confirm that received files are not listed as missing. Source prose comparisons still pass for all 25 original paths. Original batch numbering is retained with per-file Received status. Six older page-layout references and two external references remain separate from the completed article batches.

@@ -16,3 +16,7 @@ The owner supplied both files in `Biltmore-Village-ANC-1024x683.zip`. These are 
 - `src/assets/san-francisco.jpeg`: `2026/03/IMG_1762-1024x683.jpeg`, 1024 × 683.
 
 Astro creates responsive WebP variants for cards and article covers. Alt text describes visible content without identifying people.
+
+## WordPress image Batches 1–4
+
+All 18 requested files were received in the owner's four ZIPs. They are stored unchanged in `src/assets/wordpress/`; `docs/migration/received-media.json` records original filenames, batch numbers, descriptive alt text and SHA-256 receipts. The original WordPress export determines where each asset is used. No supplied image was generated, edited or substituted; Astro produces optimized display variants. The two airport-security illustrations are described as illustrative, not evidence of current queues or wait times.

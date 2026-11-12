@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-esc
 migrationReview: true
 destination: "Costa Rica"
 category: "Review"
-imageAlt: ""
+imageAlt: "Arenal Volcano beyond tropical gardens and resort lounge chairs"
 readTime: 7
 placeholder: false
 draft: false
 publishDate: "2026-03-17T00:29:06Z"
 reviewNotes: []
+image: "arenal-view"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: Arenal Volcano view from The Springs Resort &amp; Spa.</figcaption></figure></figure>
 
 <p>If you&#x27;re looking for one of the most spectacular luxury resorts in Costa Rica, <strong>The Springs Resort &amp; Spa at Arenal</strong> should be at the top of your list.</p>
 
@@ -60,7 +59,7 @@ reviewNotes: []
 
 <hr>
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: Arenal Volcano view from The Springs Resort &amp; Spa.</figcaption></figure></figure>
+![Resort pool and swim-up bar with Arenal Volcano in the distance](<../../assets/wordpress/IMG_0509-1024x768.jpeg>)
 
 ## What Makes The Springs Resort & Spa at Arenal Special?
 
@@ -86,7 +85,7 @@ reviewNotes: []
 
 <hr>
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: Horseback riding near Arenal Volcano Costa Rica.</figcaption></figure></figure>
+![Three riders on horseback crossing a shallow river beside tropical forest](<../../assets/wordpress/Horseback-Riding-1024x576.jpg>)
 
 ## Resort Activities and Excursions
 
@@ -158,7 +157,7 @@ reviewNotes: []
 
 <hr>
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: Hot springs at The Springs Resort La Fortuna.</figcaption></figure></figure>
+![Water cascading into a turquoise pool surrounded by tropical foliage](<../../assets/wordpress/Arenal-Hot-Springs-768x1024.jpg>)
 
 ## Sample 7-Day Itinerary at The Springs Resort & Spa at Arenal
 

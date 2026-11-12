@@ -16,10 +16,16 @@ def write_json(path,obj):Path(path).write_text(json.dumps(obj,indent=2,ensure_as
 def brief(s):
     s=re.sub(r'\s+',' ',s).strip()
     return s if len(s)<=180 else s[:177].rsplit(' ',1)[0]+'…'
+def resolve_media(filename,received):
+    if filename in received:return received[filename]
+    # Reuse a received original for WordPress-generated size variants of the same file.
+    family=lambda name:re.sub(r'-(?:[0-9]+x[0-9]+|scaled)(?=\.[^.]+$)','',name).lower()
+    matches=[v for k,v in received.items() if family(k)==family(filename)]
+    return matches[0] if len(matches)==1 else None
 class Clean(HTMLParser):
-    allowed={'p','a','strong','em','b','i','ul','ol','li','br','hr','h1','h2','h3','h4','h5','h6','blockquote','figure','figcaption','table','thead','tbody','tr','th','td','sup','sub'}
-    def __init__(self,routes,known_first=None):
-        super().__init__(convert_charrefs=True);self.parts=[];self.skip=0;self.routes=routes;self.images=[];self.links=[];self.known_first=known_first
+    allowed={'p','a','strong','em','b','i','ul','ol','li','br','hr','h1','h2','h3','h4','h5','h6','blockquote','figcaption','table','thead','tbody','tr','th','td','sup','sub'}
+    def __init__(self,routes,known_first=None,received=None):
+        super().__init__(convert_charrefs=True);self.parts=[];self.skip=0;self.routes=routes;self.images=[];self.links=[];self.known_first=known_first;self.received=received or {}
     def handle_starttag(self,t,attrs):
         if t in {'script','style','iframe','form','button','noscript'}:self.skip+=1
         if self.skip:return
@@ -27,6 +33,12 @@ class Clean(HTMLParser):
         if t=='img':
             src=attrs.get('src','');alt=attrs.get('alt','');self.images.append({'url':src,'alt':alt})
             if len(self.images)==1 and self.known_first:return
+            filename=Path(urlparse(src).path).name
+            local=resolve_media(filename,self.received)
+            if local:
+                alt=local['alt'].replace('\\','\\\\').replace('[','\\[').replace(']','\\]')
+                self.parts.append('\n\n!['+alt+'](<../../assets/wordpress/'+local['filename']+'>)\n\n')
+                return
             self.parts.append('<figure class="media-pending"><figcaption>Original photo pending transfer'+(': '+html.escape(alt) if alt else '')+'.</figcaption></figure>')
         if t in self.allowed:
             a=''
@@ -54,6 +66,7 @@ def main(path):
     eligible=[i for i in items if i.findtext('wp:post_type',namespaces=NS) in {'post','page'} and i.findtext('wp:status',namespaces=NS)=='publish']
     routes={urlparse(i.findtext('link')).path or '/' for i in eligible}
     media=json.loads(Path('docs/migration/media.json').read_text())
+    received=json.loads(Path('docs/migration/received-media.json').read_text())
     inv=[];migrated=[];missing={};unresolved=set()
     for i in eligible:
         kind=i.findtext('wp:post_type',namespaces=NS);url=i.findtext('link');route=urlparse(url).path or '/';title=html.unescape(i.findtext('title') or '')
@@ -61,7 +74,7 @@ def main(path):
         if re.search(r'<!-- wp:(?:block|shortcode|embed)\b',content):raise ValueError('Unsupported reusable block/shortcode/embed: '+route)
         known=media.get(route)
         if known and not Path('src/assets',known['file']).is_file():raise ValueError('Missing mapped photo '+route)
-        parser=Clean(routes,known);parser.feed(content)
+        parser=Clean(routes,known,received);parser.feed(content)
         body=''.join(parser.parts);body=re.sub(r'<a[^>]*>\s*</a>','',body);body=re.sub(r'<figure>\s*</figure>','',body)
         # Original h1s become h2s: the Astro template provides the only document h1.
         body=re.sub(r'<h([1-6])>(.*?)</h\1>',lambda m:'\n\n'+'#'*max(2,int(m[1]))+' '+text(m[2]).strip()+'\n\n' if text(m[2]).strip() else '',body,flags=re.S)
@@ -70,6 +83,7 @@ def main(path):
         # Compare all source prose outside legacy forms/scripts/buttons with the converted body.
         source=re.sub(r'<(form|script|style|iframe|button|noscript)\b[^>]*>.*?</\1>','',content,flags=re.S|re.I)
         converted=re.sub(r'<figure class="media-pending">.*?</figure>','',body,flags=re.S)
+        converted=re.sub(r'!\[[^\]]*\]\(<[^>]*>\)','',converted)
         if normalized(source)!=normalized(converted):raise ValueError('Prose fidelity mismatch: '+route)
         first=re.search(r'<p>(.*?)</p>',body,re.S);description=brief(text(first[1])) if first else title
         display=re.search(r'<h1[^>]*>(.*?)</h1>',content,re.S)
@@ -96,7 +110,7 @@ def main(path):
         for index,img in enumerate(parser.images):
             if known and index==0:continue
             u=urlparse(img['url']);filename=Path(u.path).name
-            if not filename:continue
+            if not filename or resolve_media(filename,received):continue
             # Group identical filenames; keep all source locations for disambiguation.
             row=missing.setdefault(filename,{'filename':filename,'folder':str(Path(u.path).parent).replace('/wp-content/uploads/',''),'urls':[],'usedBy':[],'articlePhoto':False,'external':u.hostname not in {'n2getaways.com','www.n2getaways.com'}})
             if img['url'] not in row['urls']:row['urls'].append(img['url'])

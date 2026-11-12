@@ -21,7 +21,7 @@ View 48 Hour Guide
 
 ## Start Here
 
-<figure class="media-pending"><figcaption>Original photo pending transfer: SkyStar Wheel Fisherman’s Wharf.</figcaption></figure>																
+![Tree-lined waterfront promenade with a Ferris wheel in San Francisco](<../../assets/wordpress/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png>)
 
 ## Best Views in San Francisco
 

@@ -1,12 +1,20 @@
 ---
 import Base from "../../layouts/Base.astro";
 import MediaFile from "../../components/MediaFile.astro";
+import received from "../../../docs/migration/received-media.json";
+import batches from "../../../docs/migration/media-batches.json";
 import media from "../../../docs/migration/missing-media.json";
 const priority = media.filter((m) => m.articlePhoto && !m.external);
 const secondary = media.filter((m) => !m.articlePhoto && !m.external);
 const external = media.filter((m) => m.external);
-const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
-  priority.slice(i * 5, (i + 1) * 5),
+const receivedNames = new Set(Object.keys(received));
+const total = batches.reduce((sum, b) => sum + b.files.length, 0);
+const receivedCount = batches.reduce(
+  (sum, b) => sum + b.files.filter((f) => receivedNames.has(f.filename)).length,
+  0,
+);
+const nextBatch = batches.find((b) =>
+  b.files.some((f) => !receivedNames.has(f.filename)),
 );
 ---
 
@@ -18,9 +26,13 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
     <p class="eyebrow">Migration review</p>
     <h1>Bring the photos along.</h1>
     <p>
-      The two pilot photos are already restored. This checklist covers the
-      remaining {priority.length} article image files, followed by{" "}
-      {secondary.length} files referenced only by the old page layouts.
+      The two pilot photos are already restored. Of the {total} article files
+      requested in batches, {receivedCount} are now received.{" "}
+      {priority.length > 0
+        ? `There are ${priority.length} article files still to transfer.`
+        : "No files remain in these article-image batches."}{" "}
+      There are also {secondary.length} older page-layout references and{" "}
+      {external.length} externally hosted references to review.
     </p>
     <p class="notice">
       Download only the listed files from SiteGround's{" "}
@@ -29,15 +41,33 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
       a filename is unavailable, keep it on the checklist rather than
       substituting an unrelated photo.
     </p>
+    {!nextBatch && (
+      <p class="notice">
+        ✓ All four article-image batches are received and restored. The
+        completed batches stay listed below for reference.
+      </p>
+    )}
+    {nextBatch && (
+      <p>
+        <a class="text-link" href={`#batch-${nextBatch.number}`}>
+          Next upload: Batch {nextBatch.number} ↓
+        </a>
+      </p>
+    )}
     <p class="media-copy-status" role="status" aria-live="polite"></p>
-    {batches.map((batch, index) => (
-      <section class="media-batch">
+    {batches.map((batch) => (
+      <section class="media-batch" id={`batch-${batch.number}`}>
         <h2>
-          Batch {index + 1} · {batch.length} files
+          Batch {batch.number} ·{" "}
+          {batch.files.filter((f) => receivedNames.has(f.filename)).length}/
+          {batch.files.length} received
         </h2>
         <ul class="media-file-list">
-          {batch.map((item) => (
-            <MediaFile item={item} />
+          {batch.files.map((item) => (
+            <MediaFile
+              item={item}
+              received={receivedNames.has(item.filename)}
+            />
           ))}
         </ul>
       </section>
@@ -71,7 +101,7 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
       </p>
       <ul class="media-file-list">
         {secondary.map((item) => (
-          <MediaFile item={item} />
+          <MediaFile item={item} received={receivedNames.has(item.filename)} />
         ))}
       </ul>
     </details>

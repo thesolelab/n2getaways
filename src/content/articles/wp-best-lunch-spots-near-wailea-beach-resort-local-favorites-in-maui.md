@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/best-lunch-spots-near-wailea-beach-resort-loc
 migrationReview: true
 destination: "Maui"
 category: "Review"
-imageAlt: ""
+imageAlt: "Fish, shrimp, rice and coleslaw served in red-and-white paper-lined baskets"
 readTime: 4
 placeholder: false
 draft: false
 publishDate: "2026-03-16T17:08:26Z"
 reviewNotes: []
+image: "maui-food"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 <p>If you&#x27;re staying near or at the Wailea Beach Resorts in Maui, you’re surrounded by some incredible food options. Whether you’re coming back from the Road to Hana, finishing a morning at the beach, or just looking for a relaxed mid-day meal, there are several great lunch spots just minutes away.</p>
 

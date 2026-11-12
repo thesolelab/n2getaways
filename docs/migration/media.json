@@ -8,5 +8,60 @@
     "key": "san-francisco",
     "file": "san-francisco.jpeg",
     "alt": "A street performer dancing in front of spectators on waterfront steps"
+  },
+  "/best-lunch-spots-near-wailea-beach-resort-local-favorites-in-maui/": {
+    "key": "maui-food",
+    "file": "wordpress/Maui-Fishn-Chips-scaled.jpg",
+    "alt": "Fish, shrimp, rice and coleslaw served in red-and-white paper-lined baskets"
+  },
+  "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/": {
+    "key": "arenal-view",
+    "file": "wordpress/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
+    "alt": "Arenal Volcano beyond tropical gardens and resort lounge chairs"
+  },
+  "/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/": {
+    "key": "waikiki-pancakes",
+    "file": "wordpress/Eggs-N-Things-Pancakes-1024x683.png",
+    "alt": "Pancakes topped with bananas, berries and a purple scoop"
+  },
+  "/airports-without-tsa/": {
+    "key": "airport-security",
+    "file": "wordpress/Airport-Security-TSA-1024x683.png",
+    "alt": "Illustration of a crowd at an airport security checkpoint"
+  },
+  "/how-to-get-through-tsa-faster/": {
+    "key": "airport-wait-times",
+    "file": "wordpress/How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png",
+    "alt": "Illustrative phone display showing airport security wait times beside luggage"
+  },
+  "/best-views-in-san-francisco/": {
+    "key": "sf-waterfront",
+    "file": "wordpress/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png",
+    "alt": "Tree-lined waterfront promenade with a Ferris wheel in San Francisco"
+  },
+  "/things-to-do-in-asheville/": {
+    "key": "blue-ridge",
+    "file": "wordpress/Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg",
+    "alt": "Sunlight breaking through clouds above layers of forested mountain ridges"
+  },
+  "/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/": {
+    "key": "springs-resort",
+    "file": "wordpress/TheSprings_CostaRica_Arenal-scaled.jpg",
+    "alt": "Resort buildings and landscaped pools surrounded by tropical gardens"
+  },
+  "/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/": {
+    "key": "lulus-view",
+    "file": "wordpress/View-from-Lulus-Restaurant-Sidewalk-Seating-1024x570.jpg",
+    "alt": "A glass on a restaurant ledge overlooking palms and the Waikiki shoreline"
+  },
+  "/things-to-do-in-waikiki-first-time-visitors/": {
+    "key": "diamond-head",
+    "file": "wordpress/View-from-Diamond-Head-State-Park-1024x768.jpg",
+    "alt": "View across the Diamond Head crater and surrounding Honolulu hills"
+  },
+  "/santorini-fira-itinerary-3-to-7-days/": {
+    "key": "santorini-sunset",
+    "file": "wordpress/IMG_1527-scaled.jpg",
+    "alt": "Sunset over the sea beside a white church and two glasses on a terrace"
   }
 }

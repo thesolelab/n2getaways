@@ -9,7 +9,8 @@ const articles = defineCollection({
     destination: z.string(),
     category: z.enum(["Travel guide", "Itinerary", "Travel story", "Review"]),
     image: z
-      .enum(["italy", "japan", "portugal", "asheville", "san-francisco"])
+      .string()
+      .regex(/^[a-z0-9-]+$/)
       .optional(),
     imageAlt: z.string(),
     readTime: z.number(),

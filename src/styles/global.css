@@ -1073,3 +1073,18 @@ textarea {
     padding: 8px 10px;
   }
 }
+.prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 24px 0;
+}
+.media-received {
+  border-color: #a2b6a3;
+  background: #eff3ec;
+}
+.media-received-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--teal);
+  padding: 10px 0;
+}

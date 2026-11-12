@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/lunch-at-lulus-waikiki-the-perfect-way-to-sta
 migrationReview: true
 destination: "Waikiki"
 category: "Review"
-imageAlt: ""
+imageAlt: "A glass on a restaurant ledge overlooking palms and the Waikiki shoreline"
 readTime: 3
 placeholder: false
 draft: false
 publishDate: "2026-03-18T03:35:59Z"
 reviewNotes: []
+image: "lulus-view"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer: Lulu&#x27;s Waikiki Restaurant Sidewalk View Oahu, Hawaii.</figcaption></figure></figure>
 
 <p>There’s something about stepping off the plane in Hawaii, dropping your bags at the hotel, and heading straight to the beach.</p>
 

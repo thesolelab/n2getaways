@@ -40,3 +40,24 @@ for entry in manifest['imported']:
     assert not re.search(r'<(?:script|form)[^>]+(?:wp-admin|wpforms)',path.read_text()),f'Legacy executable markup: {entry["path"]}'
 assert not manifest['unresolvedInternalLinks'],manifest['unresolvedInternalLinks']
 print('PASS: 14 article and 11 page routes; rendered prose matches export-derived checksums; h1/IDs/anchors; legacy form removed; internal links mapped.')
+
+# Uploaded media must remain byte-for-byte intact and appear on every original usage page.
+received=json.loads(Path('docs/migration/received-media.json').read_text())
+batches=json.loads(Path('docs/migration/media-batches.json').read_text())
+class Images(HTMLParser):
+    def __init__(self):super().__init__(convert_charrefs=True);self.alts=[]
+    def handle_starttag(self,t,a):
+        if t=='img':self.alts.append(dict(a).get('alt',''))
+for filename,item in received.items():
+    assert hashlib.sha256(Path('src/assets/wordpress',filename).read_bytes()).hexdigest()==item['sha256'],f'Received file changed: {filename}'
+    expected=next((f for b in batches for f in b['files'] if f['filename']==filename),None)
+    assert expected,f'Received file not in original checklist: {filename}'
+    for route in expected['usedBy']:
+        parser=Images();parser.feed((Path('dist')/route.strip('/')/'index.html').read_text())
+        assert item['alt'] in parser.alts,f'Received image missing from {route}: {filename}'
+missing=json.loads(Path('docs/migration/missing-media.json').read_text())
+assert not any(item['filename'] in received for item in missing),'Received image still listed as missing'
+checklist=Path('dist/migration-review/media/index.html').read_text()
+for b in batches:
+    assert f'id="batch-{b["number"]}"' in checklist,'Unstable batch numbering'
+print(f'PASS: {len(received)} received image checksums, rendered uses/alt text, checklist receipts and original batch numbers.')

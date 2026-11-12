@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/things-to-do-in-asheville/"
 migrationReview: true
 destination: "Asheville"
 category: "Travel guide"
-imageAlt: ""
+imageAlt: "Sunlight breaking through clouds above layers of forested mountain ridges"
 readTime: 5
 placeholder: false
 draft: false
 publishDate: "2026-04-14T14:39:32Z"
 reviewNotes: []
+image: "blue-ridge"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 <p>Asheville is one of those cities that balances nature, food, and creativity without feeling overwhelming.</p>
 
@@ -118,7 +117,7 @@ reviewNotes: []
 
 ## Check Out the Omni Grove Park Inn
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
+![Indoor spa pool beneath stone arches and hanging lanterns](<../../assets/wordpress/Omni-Grove-Park-Inn-Spa-1024x578.jpg>)
 
 <p>Even if you’re not staying there, <strong>Omni Grove Park Inn</strong> is worth a visit.</p>
 

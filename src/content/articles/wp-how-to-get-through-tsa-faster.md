@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/how-to-get-through-tsa-faster/"
 migrationReview: true
 destination: "Travel tips"
 category: "Travel guide"
-imageAlt: ""
+imageAlt: "Illustrative phone display showing airport security wait times beside luggage"
 readTime: 4
 placeholder: false
 draft: false
 publishDate: "2026-03-26T15:20:09Z"
 reviewNotes: ["Time-sensitive airport-security reporting: verify dates, shutdown claims and current official guidance before publication."]
+image: "airport-wait-times"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 <p>Traveling right now isn’t business as usual.</p>
 

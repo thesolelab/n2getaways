@@ -20,7 +20,7 @@ Explore Costa Rica
 
 ## Start Here
 
-<figure class="media-pending"><figcaption>Original photo pending transfer: A view of The Springs Resort and Spa in Costa Rica.</figcaption></figure>																
+![Resort buildings and landscaped pools surrounded by tropical gardens](<../../assets/wordpress/TheSprings_CostaRica_Arenal-scaled.jpg>)
 
 ## The Springs Resort & Spa at Arenal: Complete Travel Guide
 

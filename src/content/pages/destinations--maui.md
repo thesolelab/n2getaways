@@ -20,7 +20,7 @@ View Maui Guide
 
 ## Start Here
 
-<figure class="media-pending"><figcaption>Original photo pending transfer: Maui Fish&#x27;n Chips Meals.</figcaption></figure>																
+![Fish, shrimp, rice and coleslaw served in red-and-white paper-lined baskets](<../../assets/wordpress/Maui-Fishn-Chips-scaled.jpg>)
 
 ## Best Lunch Spots Near Wailea Beach Resort
 

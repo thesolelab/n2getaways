@@ -6,15 +6,14 @@ sourceUrl: "https://n2getaways.com/eggs-n-things-waikiki-beach-the-perfect-break
 migrationReview: true
 destination: "Waikiki"
 category: "Review"
-imageAlt: ""
+imageAlt: "Pancakes topped with bananas, berries and a purple scoop"
 readTime: 3
 placeholder: false
 draft: false
 publishDate: "2026-03-24T00:57:59Z"
 reviewNotes: []
+image: "waikiki-pancakes"
 ---
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 ## A Breakfast Option That's Worth the Wait
 

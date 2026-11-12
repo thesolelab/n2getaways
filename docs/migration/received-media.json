@@ -1,0 +1,128 @@
+{
+  "neve-travel-blog-25-1.jpg": {
+    "filename": "neve-travel-blog-25-1.jpg",
+    "key": "golden-gate",
+    "alt": "Golden Gate Bridge spanning blue water beneath a clear sky",
+    "batch": 1,
+    "sha256": "6535e2cff911fa93f536e34d1a27423daef51a385e3c9f8b433a3d857ee27547"
+  },
+  "897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png": {
+    "filename": "897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png",
+    "key": "sf-waterfront",
+    "alt": "Tree-lined waterfront promenade with a Ferris wheel in San Francisco",
+    "batch": 1,
+    "sha256": "5ddf571cc1785cacb29cfede97366da58d6a908fcd6ecec3453857889c2569e1"
+  },
+  "Airport-Security-TSA-1024x683.png": {
+    "filename": "Airport-Security-TSA-1024x683.png",
+    "key": "airport-security",
+    "alt": "Illustration of a crowd at an airport security checkpoint",
+    "batch": 1,
+    "sha256": "d803be0dd25b3e78f3996fb3c9859d68843ebd1ed239d2a0d4319db5852a103f"
+  },
+  "Arenal-Hot-Springs-768x1024.jpg": {
+    "filename": "Arenal-Hot-Springs-768x1024.jpg",
+    "key": "arenal-hot-springs",
+    "alt": "Water cascading into a turquoise pool surrounded by tropical foliage",
+    "batch": 1,
+    "sha256": "a076645c5fb3c7fb6668399baea291fb8d8da263b52b6917827fc64b9b0af079"
+  },
+  "Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg": {
+    "filename": "Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
+    "key": "arenal-view",
+    "alt": "Arenal Volcano beyond tropical gardens and resort lounge chairs",
+    "batch": 1,
+    "sha256": "081ded0bdb5e805368dc3932bd8b47bc43d42e09ca4cb62fa2df0a3481390b94"
+  },
+  "Eggs-N-Things-Pancakes-1024x683.png": {
+    "filename": "Eggs-N-Things-Pancakes-1024x683.png",
+    "key": "waikiki-pancakes",
+    "alt": "Pancakes topped with bananas, berries and a purple scoop",
+    "batch": 2,
+    "sha256": "09e1c5856ed442e4721ee68e7f24331b33515dca4c4fec74f9ebfa331fce24b1"
+  },
+  "Horseback-Riding-1024x576.jpg": {
+    "filename": "Horseback-Riding-1024x576.jpg",
+    "key": "arenal-horseback",
+    "alt": "Three riders on horseback crossing a shallow river beside tropical forest",
+    "batch": 2,
+    "sha256": "95d8fad5957f44294eaf217687b4e7a13b63c4b47b3b0b723925cdce37e32514"
+  },
+  "How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png": {
+    "filename": "How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png",
+    "key": "airport-wait-times",
+    "alt": "Illustrative phone display showing airport security wait times beside luggage",
+    "batch": 2,
+    "sha256": "c034065a417d6a0f3aaaf39044a03cf8be82b922c120be8fbd8ca23cef705dac"
+  },
+  "IMG_0509-1024x768.jpeg": {
+    "filename": "IMG_0509-1024x768.jpeg",
+    "key": "arenal-pool",
+    "alt": "Resort pool and swim-up bar with Arenal Volcano in the distance",
+    "batch": 2,
+    "sha256": "83f672cf32cd0fc51697f2ecd5d5fa1605721bd7987f00826e2546a837d9a917"
+  },
+  "Maui-Fishn-Chips-scaled.jpg": {
+    "filename": "Maui-Fishn-Chips-scaled.jpg",
+    "key": "maui-food",
+    "alt": "Fish, shrimp, rice and coleslaw served in red-and-white paper-lined baskets",
+    "batch": 2,
+    "sha256": "2c655497dfae7a3852a1fd4f39cf0612c048155b4b9ad50b8a47d98200a6284b"
+  },
+  "San-Francisco-Travel-Guide_Sloth-768x1024.jpg": {
+    "filename": "San-Francisco-Travel-Guide_Sloth-768x1024.jpg",
+    "key": "sf-sloth-mural",
+    "alt": "A colorful sloth mural holding flowers on a dark doorway",
+    "batch": 3,
+    "sha256": "e1561575acf8c2a4c459be883bb8e70dbc46482ccf42a9913fb4139945907319"
+  },
+  "TheSprings_CostaRica_Arenal-scaled.jpg": {
+    "filename": "TheSprings_CostaRica_Arenal-scaled.jpg",
+    "key": "springs-resort",
+    "alt": "Resort buildings and landscaped pools surrounded by tropical gardens",
+    "batch": 3,
+    "sha256": "e645f5e735e73ac124ec40e8c0098d7e65250728f74bb25d54b4e5694e88cfc8"
+  },
+  "View-from-Diamond-Head-State-Park-1024x768.jpg": {
+    "filename": "View-from-Diamond-Head-State-Park-1024x768.jpg",
+    "key": "diamond-head",
+    "alt": "View across the Diamond Head crater and surrounding Honolulu hills",
+    "batch": 3,
+    "sha256": "ad37c246c9af08fc74c45b3974e5b3d79f26aad938d5aac452ab5a9ae93097f1"
+  },
+  "View-from-Lulus-Restaurant-Sidewalk-Seating-1024x570.jpg": {
+    "filename": "View-from-Lulus-Restaurant-Sidewalk-Seating-1024x570.jpg",
+    "key": "lulus-view",
+    "alt": "A glass on a restaurant ledge overlooking palms and the Waikiki shoreline",
+    "batch": 3,
+    "sha256": "e17d2b9a585db47c44de91b0ea4d375cf29e14ad713883d338189527771c2030"
+  },
+  "Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg": {
+    "filename": "Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg",
+    "key": "blue-ridge",
+    "alt": "Sunlight breaking through clouds above layers of forested mountain ridges",
+    "batch": 3,
+    "sha256": "fa5bb0b8f5382e349f4a7367280324a4a1485c5ce1a9ebf41688d2233b86c67f"
+  },
+  "Omni-Grove-Park-Inn-Spa-1024x578.jpg": {
+    "filename": "Omni-Grove-Park-Inn-Spa-1024x578.jpg",
+    "key": "grove-park-spa",
+    "alt": "Indoor spa pool beneath stone arches and hanging lanterns",
+    "batch": 4,
+    "sha256": "46dc715e2576499bbfdf123032e1e573a2f48a6277fb8ec18bd2d93cf4c4f04a"
+  },
+  "IMG_1527-scaled.jpg": {
+    "filename": "IMG_1527-scaled.jpg",
+    "key": "santorini-sunset",
+    "alt": "Sunset over the sea beside a white church and two glasses on a terrace",
+    "batch": 4,
+    "sha256": "74e8c0e0b1057a63eb845ee47db24d4a03b902a3dce6f4e4eb9d35ddb48e771d"
+  },
+  "IMG_1671-1-edited-2.jpg": {
+    "filename": "IMG_1671-1-edited-2.jpg",
+    "key": "santorini-port",
+    "alt": "Rocky coastal cliffs, waterfront buildings and a cruise ship at sea",
+    "batch": 4,
+    "sha256": "dd0d3c5c593defd38684eda8a214fab0b1470a9f304027dfc307d68d54556528"
+  }
+}

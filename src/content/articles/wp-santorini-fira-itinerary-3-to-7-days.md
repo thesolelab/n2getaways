@@ -6,12 +6,13 @@ sourceUrl: "https://n2getaways.com/santorini-fira-itinerary-3-to-7-days/"
 migrationReview: true
 destination: "Santorini"
 category: "Itinerary"
-imageAlt: ""
+imageAlt: "Sunset over the sea beside a white church and two glasses on a terrace"
 readTime: 4
 placeholder: false
 draft: false
 publishDate: "2026-06-15T20:16:11Z"
 reviewNotes: []
+image: "santorini-sunset"
 ---
 
 ## The Smart Santorini Itinerary: 3 to 7 Days from the Island's Best Base
@@ -21,8 +22,6 @@ reviewNotes: []
 <p>The smartest base on the island is <strong>Fira</strong>. As Santorini&#x27;s capital and central transit hub, it offers iconic cliffside views, a vibrant food scene, and effortless connections to everywhere else.</p>
 
 <p>Whether you are stopping by for a quick 3-day island-hop or unpacking for a full week, this flexible itinerary ensures you hit the absolute best of Santorini without the unnecessary stress.</p>
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 ### The Base: Fira Deep Blue Suites
 
@@ -58,7 +57,7 @@ reviewNotes: []
 <li><strong>Late Afternoon:</strong> Skip the steps on the way back up and take the <strong>Fira Cable Car</strong> straight to the top. Grab a quick, world-class gyro at <strong>Lucky’s Souvlakis</strong> for a late lunch.</li>
 </ul>
 
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
+![Rocky coastal cliffs, waterfront buildings and a cruise ship at sea](<../../assets/wordpress/IMG_1671-1-edited-2.jpg>)
 
 #### Day 3: Ancient History & Black Sand Beaches
 

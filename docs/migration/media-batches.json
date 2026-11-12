@@ -1,0 +1,225 @@
+[
+  {
+    "number": 1,
+    "files": [
+      {
+        "filename": "neve-travel-blog-25-1.jpg",
+        "folder": "2020/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2020/03/neve-travel-blog-25-1.jpg"
+        ],
+        "usedBy": ["/", "/destinations/", "/best-views-in-san-francisco/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png"
+        ],
+        "usedBy": [
+          "/destinations/san-francisco/",
+          "/best-views-in-san-francisco/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "Airport-Security-TSA-1024x683.png",
+        "folder": "2026/03",
+        "urls": [
+          "https://n2getaways.com/wp-content/uploads/2026/03/Airport-Security-TSA-1024x683.png"
+        ],
+        "usedBy": ["/airports-without-tsa/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "Arenal-Hot-Springs-768x1024.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/Arenal-Hot-Springs-768x1024.jpg"
+        ],
+        "usedBy": [
+          "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg"
+        ],
+        "usedBy": [
+          "/",
+          "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "files": [
+      {
+        "filename": "Eggs-N-Things-Pancakes-1024x683.png",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/Eggs-N-Things-Pancakes-1024x683.png"
+        ],
+        "usedBy": [
+          "/destinations/waikiki/",
+          "/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "Horseback-Riding-1024x576.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/Horseback-Riding-1024x576.jpg"
+        ],
+        "usedBy": [
+          "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png"
+        ],
+        "usedBy": ["/how-to-get-through-tsa-faster/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "IMG_0509-1024x768.jpeg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/IMG_0509-1024x768.jpeg"
+        ],
+        "usedBy": [
+          "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "Maui-Fishn-Chips-scaled.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "https://n2getaways.com/wp-content/uploads/2026/03/Maui-Fishn-Chips-scaled.jpg"
+        ],
+        "usedBy": [
+          "/best-lunch-spots-near-wailea-beach-resort-local-favorites-in-maui/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "files": [
+      {
+        "filename": "San-Francisco-Travel-Guide_Sloth-768x1024.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/San-Francisco-Travel-Guide_Sloth-768x1024.jpg"
+        ],
+        "usedBy": ["/best-views-in-san-francisco/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "TheSprings_CostaRica_Arenal-scaled.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/TheSprings_CostaRica_Arenal-scaled.jpg",
+          "https://n2getaways.com/wp-content/uploads/2026/03/TheSprings_CostaRica_Arenal-scaled.jpg"
+        ],
+        "usedBy": [
+          "/destinations/costa-rica/",
+          "/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "View-from-Diamond-Head-State-Park-1024x768.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Diamond-Head-State-Park-1024x768.jpg"
+        ],
+        "usedBy": ["/things-to-do-in-waikiki-first-time-visitors/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "View-from-Lulus-Restaurant-Sidewalk-Seating-1024x570.jpg",
+        "folder": "2026/03",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Lulus-Restaurant-Sidewalk-Seating-1024x570.jpg"
+        ],
+        "usedBy": [
+          "/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/"
+        ],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg",
+        "folder": "2026/04",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/04/Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg"
+        ],
+        "usedBy": ["/things-to-do-in-asheville/"],
+        "articlePhoto": true,
+        "external": false
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "files": [
+      {
+        "filename": "Omni-Grove-Park-Inn-Spa-1024x578.jpg",
+        "folder": "2026/04",
+        "urls": [
+          "http://n2getaways.com/wp-content/uploads/2026/04/Omni-Grove-Park-Inn-Spa-1024x578.jpg"
+        ],
+        "usedBy": ["/things-to-do-in-asheville/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "IMG_1527-scaled.jpg",
+        "folder": "2026/06",
+        "urls": [
+          "https://n2getaways.com/wp-content/uploads/2026/06/IMG_1527-scaled.jpg"
+        ],
+        "usedBy": ["/santorini-fira-itinerary-3-to-7-days/"],
+        "articlePhoto": true,
+        "external": false
+      },
+      {
+        "filename": "IMG_1671-1-edited-2.jpg",
+        "folder": "2026/06",
+        "urls": [
+          "https://n2getaways.com/wp-content/uploads/2026/06/IMG_1671-1-edited-2.jpg"
+        ],
+        "usedBy": ["/santorini-fira-itinerary-3-to-7-days/"],
+        "articlePhoto": true,
+        "external": false
+      }
+    ]
+  }
+]

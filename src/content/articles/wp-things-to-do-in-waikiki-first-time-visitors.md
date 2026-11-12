@@ -6,12 +6,13 @@ sourceUrl: "https://n2getaways.com/things-to-do-in-waikiki-first-time-visitors/"
 migrationReview: true
 destination: "Waikiki"
 category: "Travel guide"
-imageAlt: ""
+imageAlt: "View across the Diamond Head crater and surrounding Honolulu hills"
 readTime: 3
 placeholder: false
 draft: false
 publishDate: "2026-03-27T20:32:24Z"
 reviewNotes: []
+image: "diamond-head"
 ---
 
 <p>Waikiki is one of the most iconic destinations in Hawaii, known for its beaches, ocean views, and easy access to some of Oahu’s top experiences.</p>
@@ -23,8 +24,6 @@ reviewNotes: []
 <hr>
 
 ## Start Your Morning with a Diamond Head Hike
-
-<figure><figure class="media-pending"><figcaption>Original photo pending transfer.</figcaption></figure></figure>
 
 <p>One of the best ways to start your day in <a href="/destinations/waikiki/">Waikiki</a> is with a hike up <strong>Diamond Head</strong>.</p>
 

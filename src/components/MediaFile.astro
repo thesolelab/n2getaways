@@ -1,23 +1,28 @@
 ---
 interface Props {
   item: { folder: string; filename: string; usedBy: string[] };
+  received?: boolean;
 }
-const { item } = Astro.props;
+const { item, received = false } = Astro.props;
 ---
 
-<li class="media-file">
+<li class:list={["media-file", { "media-received": received }]}>
   <div class="media-file-heading">
     <p>
       <span>Folder</span> <code>{item.folder}</code>
     </p>
-    <button
-      type="button"
-      class="media-copy"
-      data-copy-filename={item.filename}
-      aria-label={`Copy filename ${item.filename}`}
-    >
-      Copy filename
-    </button>
+    {received ? (
+      <span class="media-received-label">✓ Received</span>
+    ) : (
+      <button
+        type="button"
+        class="media-copy"
+        data-copy-filename={item.filename}
+        aria-label={`Copy filename ${item.filename}`}
+      >
+        Copy filename
+      </button>
+    )}
   </div>
   <input
     class="media-filename"

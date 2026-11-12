@@ -19,9 +19,11 @@ Source files are in `src/content/articles/wp-*.md` and `src/content/pages/*.md`.
 
 ## Media status
 
-The owner supplied the two pilot photos. Both covers/cards are restored and optimized by Astro; the Asheville photo is also used on the homepage. `media.json` maps local files and alt text.
+The owner supplied the two pilot photos and all 18 requested files in Batches 1–4. Their original bytes are retained in source control, with SHA-256 receipts in `received-media.json`. Article covers/cards and inline images are restored using Astro image processing; `src/media.ts` loads the received assets for cover selection. Image descriptions were written from visual inspection without identifying people or presenting illustrative airport graphics as documentary evidence.
 
-`missing-media.json` lists 38 remaining filename references: 18 WordPress files used in articles, 18 files referenced only by original page layouts, and two externally hosted images in the San Francisco accommodation article. Some filenames are size variants or old theme imagery rather than unique photographs. The private `/migration-review/media/` page groups the 18 article files into batches of five and excludes external URLs from SiteGround instructions. Missing image positions are labeled; no unrelated stock images are presented as the original article photos.
+`media.json` maps covers to original article paths. The importer replaces image placeholders with local Markdown images and reuses received originals for unambiguous WordPress size variants. All 25 rendered-source text checks still pass. `missing-media.json` now lists eight references: six older page-layout files and two externally hosted images in the San Francisco accommodation article. The 18 requested batch files are no longer missing.
+
+`media-batches.json` preserves the original four batch numbers and filenames. The private checklist marks each received file and retains completed batches, so pre-created ZIPs never become mislabeled when files arrive. The media validator checks the byte receipts and verifies that each image appears with its descriptive alt text at every original usage path listed in those batches.
 
 The two external references are hosted at `images.openai.com`, not in WordPress uploads. Original files or reviewed replacements will be needed, and source/licensing relevance should be reviewed. Lower-priority page-layout media may be unnecessary after the new design is approved.
 
@@ -42,7 +44,7 @@ python3 scripts/import-wordpress.py /path/to/WordPress-export.xml
 npm run validate
 ```
 
-The importer fails on a prose mismatch or an unsupported reusable-block/shortcode/embed reference. It imports published posts/pages only and preserves the two pilot media mappings on reimport. After importing, do not automatically reformat the generated Markdown: whitespace affects HTML-versus-code rendering. The importer normalizes legacy indentation deliberately.
+The importer fails on a prose mismatch or an unsupported reusable-block/shortcode/embed reference. It imports published posts/pages only and preserves the cover and received-image mappings on reimport. After importing, do not automatically reformat the generated Markdown: whitespace affects HTML-versus-code rendering. The importer normalizes legacy indentation deliberately.
 
 Validation checks all original route paths, rendered prose against export-derived checksums, one h1, unique element IDs, working same-page anchors, local links/assets, metadata, noindex safeguards, original pilot table-of-contents links, removal of the executable WordPress form, and the inquiry recipient. These are content/build checks; browser interaction, Lighthouse and real email deliverability are not claimed.
 
