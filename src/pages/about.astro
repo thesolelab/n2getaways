@@ -1,31 +1,7 @@
 ---
-import Base from "../layouts/Base.astro";
+import ImportedPage from "../layouts/ImportedPage.astro";
+import { getSourcePage } from "../lib";
+const page = await getSourcePage("/about/");
 ---
 
-<Base title="About" description="The next chapter for N2Getaways.">
-  <section class="section narrow page-intro">
-    <p class="eyebrow">The next chapter</p>
-    <h1>
-      For the places
-      <br />
-      that stay with you.
-    </h1>
-    <p>
-      N2Getaways is being redesigned as a travel publication built around useful
-      destination guides, thoughtful itineraries, and clear planning resources.
-    </p>
-    <p class="notice">
-      Placeholder About page. The owner's story, editorial credentials, and
-      first-hand travel experiences will be added only after verification.
-    </p>
-    <h2>Thoughtful travel starts here.</h2>
-    <p>
-      Our planned editorial approach puts practical detail, transparent
-      sourcing, and honest recommendations first. Any future affiliate links
-      will be disclosed clearly.
-    </p>
-    <a class="button" href="/destinations/">
-      Explore sample destinations ↗
-    </a>
-  </section>
-</Base>
+<ImportedPage page={page} />

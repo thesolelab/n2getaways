@@ -16,9 +16,22 @@ const articles = defineCollection({
     placeholder: z.boolean(),
     sourceUrl: z.url().optional(),
     migrationReview: z.boolean().default(false),
+    reviewNotes: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     publishDate: z.coerce.date(),
     permalink: z.string().regex(/^\/[a-z0-9/-]+\/$/),
   }),
 });
-export const collections = { articles };
+const pages = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/pages" }),
+  schema: z.object({
+    title: z.string(),
+    displayTitle: z.string(),
+    description: z.string(),
+    permalink: z.string().regex(/^\/(?:[a-z0-9/-]+\/)?$/),
+    sourceUrl: z.url(),
+    migrationReview: z.literal(true),
+    reviewNotes: z.array(z.string()).default([]),
+  }),
+});
+export const collections = { articles, pages };

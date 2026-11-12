@@ -3,19 +3,33 @@
   "imported": [
     {
       "path": "/48-hours-in-san-francisco-the-perfect-quick-city-guide/",
+      "type": "post",
       "sourceImages": [
         "http://n2getaways.com/wp-content/uploads/2026/03/IMG_1762-1024x683.jpeg"
       ],
       "proseFidelity": "passed",
-      "headings": 12
+      "proseSha256": "37c6f12372c05d426fdf70b5e4c75454bf86c3c33bf5f1499f32da3f72f5dc85",
+      "headings": 12,
+      "reviewNotes": [
+        "Pilot review findings remain recorded in the migration report."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
     },
     {
       "path": "/48-hours-in-asheville/",
+      "type": "post",
       "sourceImages": [
         "https://n2getaways.com/wp-content/uploads/2026/04/Biltmore-Village-ANC-1024x683.jpg"
       ],
       "proseFidelity": "passed",
-      "headings": 9
+      "proseSha256": "87bb3ed27abe9582c33918e5e876d9e29a8658e3c86b0b211944f86c436bf42b",
+      "headings": 9,
+      "reviewNotes": [
+        "Pilot review findings remain recorded in the migration report."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
     }
   ]
 }

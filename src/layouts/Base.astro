@@ -49,7 +49,7 @@ const social = new URL(image, Astro.site);
     </a>
     <div class="preview-note">
       A new chapter for N2Getaways{" "}
-      <span>· Development preview — migration review & samples</span>
+      <span>· Development preview — WordPress content under review</span>
     </div>
     <header class="header">
       <a class="wordmark" href="/" aria-label="N2Getaways home">
@@ -66,9 +66,9 @@ const social = new URL(image, Astro.site);
           Destinations
         </a>
         <a
-          href="/guides/"
+          href="/travel-guides/"
           aria-current={
-            Astro.url.pathname.startsWith("/guides") ? "page" : undefined
+            Astro.url.pathname.startsWith("/travel-guides") ? "page" : undefined
           }
         >
           Travel journal
@@ -82,7 +82,7 @@ const social = new URL(image, Astro.site);
         <summary aria-label="Open navigation">Menu ☰</summary>
         <nav aria-label="Mobile navigation">
           <a href="/destinations/">Destinations</a>
-          <a href="/guides/">Travel journal</a>
+          <a href="/travel-guides/">Travel journal</a>
           <a href="/about/">Our story</a>
           <a href="/contact/">Plan your getaway</a>
         </nav>
@@ -103,10 +103,11 @@ const social = new URL(image, Astro.site);
         <a href="/destinations/">Explore destinations</a>
         <a href="/about/">About N2Getaways</a>
         <a href="/contact/">Get in touch</a>
+        <a href="/privacy-policy/">Privacy</a>
       </div>
       <div class="footer-bottom">
         <span>© {new Date().getFullYear()} N2Getaways</span>
-        <span>Development preview · No affiliate partnerships represented</span>
+        <span>Private migration preview · Content awaiting review</span>
       </div>
     </footer>
   </body>

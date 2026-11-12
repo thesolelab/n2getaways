@@ -1,17 +1,18 @@
 ---
 title: "48 Hours in San Francisco: The Perfect Weekend Itinerary"
-description: "San Francisco is one of those cities where 48 hours can feel packed with adventure. From historic cable cars and waterfront views to incredible food and iconic neighborhoods, the city offers plenty to explore even on a quick trip."
+description: "San Francisco is one of those cities where 48 hours can feel packed with adventure. From historic cable cars and waterfront views to incredible food and iconic neighborhoods,…"
+permalink: "/48-hours-in-san-francisco-the-perfect-quick-city-guide/"
+sourceUrl: "https://n2getaways.com/48-hours-in-san-francisco-the-perfect-quick-city-guide/"
+migrationReview: true
 destination: "San Francisco"
 category: "Itinerary"
-image: "san-francisco"
 imageAlt: "A street performer dancing in front of spectators on waterfront steps"
 readTime: 5
 placeholder: false
 draft: false
 publishDate: "2026-03-14T08:25:04Z"
-permalink: "/48-hours-in-san-francisco-the-perfect-quick-city-guide/"
-sourceUrl: "https://n2getaways.com/48-hours-in-san-francisco-the-perfect-quick-city-guide/"
-migrationReview: true
+reviewNotes: ["Pilot review findings remain recorded in the migration report."]
+image: "san-francisco"
 ---
 
 ## A Quick San Francisco Itinerary
@@ -160,6 +161,6 @@ migrationReview: true
 
 <p>The key is keeping your itinerary balanced — mixing a few must-see locations with time to simply walk the city and enjoy its energy.</p>
 
-<p>And chances are, after your first visit, <strong>you’ll already be planning your next trip back</strong>. For hotel recommendations, see <strong><a href="https://n2getaways.com/where-to-stay-in-san-francisco/">where to stay in San Francisco</a></strong>.</p>
+<p>And chances are, after your first visit, <strong>you’ll already be planning your next trip back</strong>. For hotel recommendations, see <strong><a href="/where-to-stay-in-san-francisco/">where to stay in San Francisco</a></strong>.</p>
 
 <p></p>

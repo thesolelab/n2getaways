@@ -8,9 +8,10 @@
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0",
     "check": "astro check",
-    "validate": "npm run check && npm run build && node scripts/validate.mjs"
+    "validate": "npm run check && npm run build && node scripts/validate.mjs && python3 scripts/validate-migration.py"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.9",
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.4.11"
   },

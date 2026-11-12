@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
 import ArticleCard from "../components/ArticleCard.astro";
+import DestinationTile from "../components/DestinationTile.astro";
+import SourceCopy from "../components/SourceCopy.astro";
 import { Image } from "astro:assets";
 import { photos, destinations, getArticles } from "../lib";
 const articles = await getArticles();
@@ -13,11 +15,11 @@ const articles = await getArticles();
   <section class="hero">
     <Image
       class="hero-image"
-      src={photos.italy}
-      alt="Colorful Italian coastal village above the Mediterranean"
-      widths={[800, 1400, 2000]}
+      src={photos.asheville}
+      alt="Boston Way street sign and autumn trees in Biltmore Village"
+      widths={[600, 1024]}
       sizes="100vw"
-      width={2000}
+      width={1024}
       loading="eager"
       fetchpriority="high"
     />
@@ -40,12 +42,10 @@ const articles = await getArticles();
     </div>
     <div class="hero-caption">
       <span>THE VIEW FROM HERE</span>
-      <b>Italian Riviera, Italy</b>
-      <small>Placeholder destination photography</small>
+      <b>Biltmore Village, Asheville</b>
+      <small>From the N2Getaways archive</small>
     </div>
-    <span class="hero-index">
-      01 <span>/ 03</span>
-    </span>
+    <span class="hero-index">THE JOURNEY STARTS HERE</span>
   </section>
   <section class="intro-strip">
     <span class="eyebrow">Less ordinary. More discovery.</span>
@@ -69,21 +69,8 @@ const articles = await getArticles();
       </a>
     </div>
     <div class="destination-grid">
-      {destinations.map((d) => (
-        <a class="destination-tile" href={`/destinations/${d.slug}/`}>
-          <Image
-            src={photos[d.slug]}
-            alt={`${d.name} destination inspiration`}
-            width={700}
-            widths={[400, 700]}
-            sizes="(max-width:700px) 100vw, 33vw"
-          />
-          <div>
-            <span class="eyebrow light">{d.region}</span>
-            <h3>{d.name}</h3>
-          </div>
-          <span class="tile-arrow">↗</span>
-        </a>
+      {destinations.slice(0, 3).map((destination) => (
+        <DestinationTile destination={destination} />
       ))}
     </div>
   </section>
@@ -93,7 +80,7 @@ const articles = await getArticles();
         <p class="eyebrow">The travel journal</p>
         <h2>A little inspiration goes a long way.</h2>
       </div>
-      <a class="text-link" href="/guides/">
+      <a class="text-link" href="/travel-guides/">
         Browse the journal ↗
       </a>
     </div>
@@ -113,8 +100,8 @@ const articles = await getArticles();
         with a little imagination.
       </h2>
       <p>
-        Have a destination in mind? Explore the custom itinerary inquiry preview
-        and start shaping your next adventure.
+        Have a destination in mind? Start an itinerary inquiry and start shaping
+        your next adventure.
       </p>
       <a class="button cream" href="/contact/">
         Let’s plan something memorable <span>↗</span>
@@ -125,5 +112,8 @@ const articles = await getArticles();
       <br />
       <em>It’s worth it.</em>
     </div>
+  </section>
+  <section class="section">
+    <SourceCopy path="/" collapsible />
   </section>
 </Base>

@@ -1,0 +1,360 @@
+{
+  "exportSha256": "71ba72ae58512a8b508d3d30e7f15d66520b6d6a810368d1873a6250aac52416",
+  "imported": [
+    {
+      "path": "/48-hours-in-san-francisco-the-perfect-quick-city-guide/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/IMG_1762-1024x683.jpeg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "37c6f12372c05d426fdf70b5e4c75454bf86c3c33bf5f1499f32da3f72f5dc85",
+      "headings": 12,
+      "reviewNotes": [
+        "Pilot review findings remain recorded in the migration report."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/travel-guides/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Diamond-Head-State-Park-768x576.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-768x512.png",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Airport-Security-TSA-768x512.png",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Eggs-N-Things-Pancakes-768x512.png",
+        "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Lulus-Restaurant-Sidewalk-Seating-768x428.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/TheSprings_CostaRica_Arenal-768x432.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "e282d2cc53cdb9c11f2e5835e2c9daa3cd22f75a762004a0675871d143767a3e",
+      "headings": 8,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": true
+    },
+    {
+      "path": "/contact/",
+      "type": "page",
+      "sourceImages": [],
+      "proseFidelity": "passed",
+      "proseSha256": "b8837c82e486025fb6fc7b600d51a66879e4bb95712f3f66f8aa958c036795a5",
+      "headings": 4,
+      "reviewNotes": [],
+      "legacyFormRemoved": true,
+      "legacyLoadMoreRemoved": true
+    },
+    {
+      "path": "/about/",
+      "type": "page",
+      "sourceImages": [],
+      "proseFidelity": "passed",
+      "proseSha256": "12c613a5f16863a63981723da90abaf6ceeaf4318b05cabc4dd5c80143d0ece0",
+      "headings": 6,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2020/03/neve-travel-blog-25-1.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Hawaii_Oahu-Sunset-1024x768.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Golden-Gate-Bridge-in-San-Francisco-150x150.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-150x150.png",
+        "http://n2getaways.com/wp-content/uploads/2026/03/IMG_1762-150x150.jpeg",
+        "http://n2getaways.com/wp-content/uploads/2026/04/Biltmore-Village-ANC-150x150.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Hawaii_Oahu-Sunset-150x150.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/04/Blue-Ridge-Mountains-Asheville-North-Carolina-150x150.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "15a78d99f93944841ca83f461e8adb3f84772757807ff0815edb3da17af10804",
+      "headings": 13,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/best-lunch-spots-near-wailea-beach-resort-local-favorites-in-maui/",
+      "type": "post",
+      "sourceImages": [
+        "https://n2getaways.com/wp-content/uploads/2026/03/Maui-Fishn-Chips-scaled.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "fd5b5ffc2f2084757600107e1b2b3c427c8636d5aae8ca83cd9b9ef11564c75b",
+      "headings": 7,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/destinations/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/04/Blue-Ridge-Mountains-Asheville-North-Carolina-scaled.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/04/Biltmore-Village-ANC-scaled.jpg",
+        "http://n2getaways.com/wp-content/uploads/2020/03/neve-travel-blog-25-1.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Diamond-Head-State-Park-scaled.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone.png"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "9cfb1868bc22002240119f70850e488ac1cbe9441a3335fcd605c0ab90d76d82",
+      "headings": 12,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": true
+    },
+    {
+      "path": "/destinations/san-francisco/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "d6ea696be23c772b9ca3ab1fd5eccc03fe9013a5b4065019eb4f2eac913ef14c",
+      "headings": 10,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/destinations/maui/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/Maui-Fishn-Chips-1024x768.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "266bf5b15807794fe17a694e5af3e927a567ace2c2bbd938ecf8ea1a738e01d7",
+      "headings": 10,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/destinations/costa-rica/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/TheSprings_CostaRica_Arenal-scaled.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "13c7a892b944654ff010422f1a683f2fffdaa46f7fd24677b7d54c7ff6eee48f",
+      "headings": 10,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/privacy-policy/",
+      "type": "page",
+      "sourceImages": [],
+      "proseFidelity": "passed",
+      "proseSha256": "b3d68b82fffa18c52ba4941c5030d061f96d4492a69dfdaa8f2f5cacf22995b8",
+      "headings": 0,
+      "reviewNotes": [
+        "Imported policy describes the original WordPress site. Analytics, cookie-banner and affiliate-program claims require owner verification; these integrations are not enabled in this preview."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/destinations/waikiki/",
+      "type": "page",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/Eggs-N-Things-Pancakes-1024x683.png"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "1180cf956a06f3ca889e3a677e211314f39fa8af6f308d0564dd2f9a05e1e51a",
+      "headings": 7,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/travel-stories/",
+      "type": "page",
+      "sourceImages": [],
+      "proseFidelity": "passed",
+      "proseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "headings": 0,
+      "reviewNotes": [
+        "The WordPress export contains no body content for this page."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/48-hours-in-asheville/",
+      "type": "post",
+      "sourceImages": [
+        "https://n2getaways.com/wp-content/uploads/2026/04/Biltmore-Village-ANC-1024x683.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "87bb3ed27abe9582c33918e5e876d9e29a8658e3c86b0b211944f86c436bf42b",
+      "headings": 9,
+      "reviewNotes": [
+        "Pilot review findings remain recorded in the migration report."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/things-to-do-in-asheville/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/04/Blue-Ridge-Mountains-Asheville-North-Carolina-1024x683.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/04/Omni-Grove-Park-Inn-Spa-1024x578.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "9dd09d97996328083bd74ec0a22c162e0d48da078ff9e3db731d0066a7c8473e",
+      "headings": 13,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/santorini-fira-itinerary-3-to-7-days/",
+      "type": "post",
+      "sourceImages": [
+        "https://n2getaways.com/wp-content/uploads/2026/06/IMG_1527-scaled.jpg",
+        "https://n2getaways.com/wp-content/uploads/2026/06/IMG_1671-1-edited-2.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "f58a90f656264cb0fca7d4925ac3c838ed79cef1238da04a682061d9cd3d7f16",
+      "headings": 8,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/IMG_0509-1024x768.jpeg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Horseback-Riding-1024x576.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/Arenal-Hot-Springs-768x1024.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "39c110c5a3515ef92ef3e76fd451fbb65a2782e106657e15cef0c3dbe75c59df",
+      "headings": 26,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/",
+      "type": "post",
+      "sourceImages": [
+        "https://n2getaways.com/wp-content/uploads/2026/03/TheSprings_CostaRica_Arenal-scaled.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "8f929f9174059fae694746c0980055a73a3d9625940ea21e5392f0970adabdda",
+      "headings": 13,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Lulus-Restaurant-Sidewalk-Seating-1024x570.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "abd7c8a65b1734b55e441365c79ae5471c86911e269efff43884c8a11a2ae958",
+      "headings": 7,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/Eggs-N-Things-Pancakes-1024x683.png"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "333ecbfe8785f507169f6819507d4de4e39698cb1e22a31ce88b9f298227258b",
+      "headings": 7,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/airports-without-tsa/",
+      "type": "post",
+      "sourceImages": [
+        "https://n2getaways.com/wp-content/uploads/2026/03/Airport-Security-TSA-1024x683.png"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "8b4b5257cd7a3c7a6a844dc21c00d592748fa5e9a1b9e10e82f37f8ae8e6ec2e",
+      "headings": 14,
+      "reviewNotes": [
+        "Time-sensitive airport-security reporting: verify dates, shutdown claims and current official guidance before publication."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/how-to-get-through-tsa-faster/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/How-to-Get-Through-TSA-Faster-Right-Now_Wait-Times-on-Phone-1024x683.png"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "7f90944f80bca6b20260609684e4ee7eaff54b2d74f58ada1add479c35f43522",
+      "headings": 19,
+      "reviewNotes": [
+        "Time-sensitive airport-security reporting: verify dates, shutdown claims and current official guidance before publication."
+      ],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/things-to-do-in-waikiki-first-time-visitors/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/View-from-Diamond-Head-State-Park-1024x768.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "e9c14522547586e40b40bf4c7b0fd9e4979f7df3948b73debacf0b9f587e7341",
+      "headings": 8,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/best-views-in-san-francisco/",
+      "type": "post",
+      "sourceImages": [
+        "http://n2getaways.com/wp-content/uploads/2026/03/897A9D28-F6F4-4AA8-AEFE-A6F695FB58AB-1024x683.png",
+        "http://n2getaways.com/wp-content/uploads/2020/03/neve-travel-blog-25-1.jpg",
+        "http://n2getaways.com/wp-content/uploads/2026/03/San-Francisco-Travel-Guide_Sloth-768x1024.jpg"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "d8f7bd44bb57d1b7dd2f37d32262872bf4daec6fcd2f422714d2a7a26d45ef24",
+      "headings": 8,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    },
+    {
+      "path": "/where-to-stay-in-san-francisco/",
+      "type": "post",
+      "sourceImages": [
+        "https://images.openai.com/static-rsc-4/o1d6vppR9BaKHb0qendA3ux6Bk9vajpGmMiEosvgDtLZoAqKSCcBR-Zzr63NGjQXDa-BYGNkolO-EMb3Zv3Gd2WNsmLUfxahcYPNpJ1jgNE11V_RjIYQblzVQJM-3sEVLFidAEIevS6e5WLIhNJzfP4B1-BlUNGEdqQjgkL804VYqSKjNT2VjJGtLadD9Z5j?purpose=inline",
+        "https://images.openai.com/static-rsc-4/sXt5aVOgZqKOZ1x17VyW_9aUlu4TZi-MAAtgPyWfBOg29OgXsWeypHnuAvXOJZQguZi06sV6PZwnFKCZcrATXh3vgwScPiTZaJP3ldsBwRBUcXPPjctqiq3EfMtRL99xjIRRwicjaGOFcuPESVlyKN3T7WarayGJhfWcT4lY46OuKlt8DGmX-EtOz0VabzPO?purpose=inline"
+      ],
+      "proseFidelity": "passed",
+      "proseSha256": "2e0f28299fe64a462c13db585758cd5e878136939688337f955f412fee82d5aa",
+      "headings": 10,
+      "reviewNotes": [],
+      "legacyFormRemoved": false,
+      "legacyLoadMoreRemoved": false
+    }
+  ],
+  "unresolvedInternalLinks": []
+}

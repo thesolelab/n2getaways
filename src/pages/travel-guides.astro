@@ -1,0 +1,26 @@
+---
+import Base from "../layouts/Base.astro";
+import SourceCopy from "../components/SourceCopy.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import { getArticles, getSourcePage } from "../lib";
+const articles = await getArticles();
+const page = await getSourcePage("/travel-guides/");
+---
+
+<Base title={page.data.displayTitle} description={page.data.description}>
+  <section class="section page-intro">
+    <p class="eyebrow">The travel journal</p>
+    <h1>{page.data.displayTitle}</h1>
+    <p>{page.data.description}</p>
+    <p class="notice">
+      Original N2Getaways articles imported from WordPress. Text and URLs are
+      preserved; photography and current travel details remain under review.
+    </p>
+    <div class="article-grid">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+    <SourceCopy path="/travel-guides/" collapsible />
+  </section>
+</Base>

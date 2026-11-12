@@ -1,0 +1,28 @@
+---
+import Base from "../layouts/Base.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import { getArticles } from "../lib";
+const articles = (await getArticles()).filter((a) =>
+  ["Review", "Travel story"].includes(a.data.category),
+);
+---
+
+<Base
+  title="Travel stories & reviews"
+  description="Explore original N2Getaways restaurant and resort articles."
+>
+  <section class="section page-intro">
+    <p class="eyebrow">From the archive</p>
+    <h1>Travel stories & reviews.</h1>
+    <p class="notice">
+      The original Travel Stories page has no body text in the export. This
+      collection brings together existing restaurant and resort articles without
+      inventing new stories or experiences.
+    </p>
+    <div class="article-grid">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import { photos } from "../lib";
+interface Props {
+  destination: {
+    slug: string;
+    name: string;
+    region: string;
+    image?: keyof typeof photos;
+  };
+}
+const { destination: d } = Astro.props;
+---
+
+<a
+  class:list={["destination-tile", { "destination-text": !d.image }]}
+  href={`/destinations/${d.slug}/`}
+>
+  {d.image && (
+    <Image
+      src={photos[d.image]}
+      alt={
+        d.image === "asheville"
+          ? "Autumn street scene in Biltmore Village"
+          : d.image === "san-francisco"
+            ? "Street performance in San Francisco"
+            : `${d.name} sample destination photograph`
+      }
+      width={700}
+      widths={[400, 700]}
+      sizes="(max-width:700px) 100vw, 33vw"
+    />
+  )}
+  {!d.image && (
+    <span class="destination-mark" aria-hidden="true">
+      ✳
+    </span>
+  )}
+  <div>
+    <span class="eyebrow light">{d.region}</span>
+    <h3>{d.name}</h3>
+    {!d.image && <small>Explore the guides · Photography pending</small>}
+  </div>
+  <span class="tile-arrow">↗</span>
+</a>

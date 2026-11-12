@@ -30,3 +30,9 @@ The supplied export was inventoried (14 posts, 11 pages, 71 attachment records),
 ## Pilot photo restoration
 
 Both original pilot photos were received in an owner-uploaded ZIP and restored to article covers, cards and social metadata. No article wording or URL changed. Article image sizes are capped to avoid enlarging these 1024-pixel source files. Importer media mappings retain these photos on subsequent pilot reimports.
+
+## Complete text migration
+
+All 14 published posts and 11 original page paths are imported. `npm run validate` passes with zero Astro errors, warnings or hints and a 37-page static build. The importer compares normalized source prose before writing; `scripts/validate-migration.py` independently checks rendered prose against export-derived hashes for every original path, a single h1, unique IDs, same-page anchors and complete local link mapping. The check caught legacy indentation rendering as code, automatic punctuation changes and an old destination fragment target; these are corrected.
+
+Media remains a separate transfer task: two original photos restored, 18 missing WordPress article image filenames, two externally hosted references, and 18 lower-priority old page-layout filenames. Exact batches are available in the private preview at `/migration-review/media/`. Time-sensitive TSA reporting and the imported privacy policy have prominent review notes. Source personal experiences and claims were preserved rather than invented or reverified. No browser interaction, email delivery, or Lighthouse result is claimed. Source and review notes are in `docs/migration/`.

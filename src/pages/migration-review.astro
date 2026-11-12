@@ -1,27 +1,55 @@
 ---
 import Base from "../layouts/Base.astro";
 import ArticleCard from "../components/ArticleCard.astro";
+import manifest from "../../docs/migration/manifest.json";
 import { getArticles } from "../lib";
-const articles = (await getArticles()).filter((a) => a.data.migrationReview);
+const articles = await getArticles();
 ---
 
 <Base
   title="WordPress migration review"
-  description="Review the first two original N2Getaways articles in the redesigned publication."
+  description="Review the complete N2Getaways text migration, original URLs, and media checklist."
 >
   <section class="section page-intro">
     <p class="eyebrow">Your content, a new chapter</p>
-    <h1>From the N2Getaways archive.</h1>
-    <p>
-      These two articles come from your WordPress export. Their original URLs
-      and article text are preserved. The remaining content is inventoried for a
-      later migration batch.
+    <h1>The N2Getaways archive.</h1>
+    <p class="migration-counts">
+      All 14 published articles and 11 original page paths are now available in
+      the redesign. Article text and URLs are preserved. Original page copy is
+      available on each page; older listing grids are rebuilt using the Astro
+      collections.
     </p>
     <p class="notice">
-      Review copy. Original photos for both articles have been supplied and
-      restored. This is a content transfer, not an editorial fact-check. Links
-      to articles outside this batch still open the current website.
+      Private migration review. Two article photos are restored; the remaining
+      images await transfer. Travel recommendations, time-sensitive reporting,
+      and the imported privacy policy need review before launch.
     </p>
+    <div class="migration-links">
+      <a class="text-link" href="/migration-review/media/">
+        Missing photo checklist ↗
+      </a>
+      <a class="text-link" href="/destinations/">
+        Destination collections ↗
+      </a>
+      <a class="text-link" href="/samples/">
+        Separate template samples ↗
+      </a>
+    </div>
+    <h2>Original pages</h2>
+    <ul>
+      {manifest.imported
+        .filter((p) => p.type === "page")
+        .map((p) => (
+          <li>
+            <a class="text-link" href={p.path}>
+              {p.path === "/" ? "Homepage" : p.path} ↗
+            </a>
+          </li>
+        ))}
+    </ul>
+    <div class="section-heading destination-copy">
+      <h2>All imported articles.</h2>
+    </div>
     <div class="article-grid">
       {articles.map((article) => (
         <ArticleCard article={article} />

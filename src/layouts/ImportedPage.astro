@@ -1,0 +1,22 @@
+---
+import Base from "./Base.astro";
+import SourceCopy from "../components/SourceCopy.astro";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  page: CollectionEntry<"pages">;
+}
+const { page } = Astro.props;
+---
+
+<Base title={page.data.title} description={page.data.description}>
+  <section class="section narrow page-intro">
+    <p class="eyebrow">N2Getaways</p>
+    <h1>{page.data.displayTitle}</h1>
+    <p class="notice">
+      Imported from WordPress · Migration review.{" "}
+      {page.data.reviewNotes.join(" ") ||
+        "Original page text preserved; review before production launch."}
+    </p>
+    <SourceCopy path={page.data.permalink} />
+  </section>
+</Base>

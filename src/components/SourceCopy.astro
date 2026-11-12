@@ -1,0 +1,24 @@
+---
+import { render } from "astro:content";
+import { getSourcePage } from "../lib";
+interface Props {
+  path: string;
+  collapsible?: boolean;
+}
+const { path, collapsible = false } = Astro.props;
+const page = await getSourcePage(path);
+const { Content } = await render(page);
+---
+
+{collapsible ? (
+  <details class="source-copy">
+    <summary>Review original WordPress page copy</summary>
+    <div class="prose" data-migrated-body>
+      <Content />
+    </div>
+  </details>
+) : (
+  <div class="prose source-prose" data-migrated-body>
+    <Content />
+  </div>
+)}

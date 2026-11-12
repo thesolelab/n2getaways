@@ -1,0 +1,93 @@
+---
+import Base from "../../layouts/Base.astro";
+import media from "../../../docs/migration/missing-media.json";
+const priority = media.filter((m) => m.articlePhoto && !m.external);
+const secondary = media.filter((m) => !m.articlePhoto && !m.external);
+const external = media.filter((m) => m.external);
+const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
+  priority.slice(i * 5, (i + 1) * 5),
+);
+---
+
+<Base
+  title="Photo transfer checklist"
+  description="Exact WordPress photo filenames for small migration batches."
+>
+  <section class="section narrow page-intro">
+    <p class="eyebrow">Migration review</p>
+    <h1>Bring the photos along.</h1>
+    <p>
+      The two pilot photos are already restored. This checklist covers the
+      remaining {priority.length} article image files, followed by{" "}
+      {secondary.length} files referenced only by the old page layouts.
+    </p>
+    <p class="notice">
+      Download only the listed files from SiteGround's{" "}
+      <code>public_html/wp-content/uploads</code> folder. ZIP about five files
+      at a time and keep each ZIP below 32 MB. Leave the originals in place. If
+      a filename is unavailable, keep it on the checklist rather than
+      substituting an unrelated photo.
+    </p>
+    {batches.map((batch, index) => (
+      <section class="media-batch">
+        <h2>Article photos · Batch {index + 1}</h2>
+        <ul>
+          {batch.map((item) => (
+            <li>
+              <code>
+                {item.folder}/{item.filename}
+              </code>
+              <small>
+                {" "}
+                · Used by {item.usedBy.length} imported page
+                {item.usedBy.length === 1 ? "" : "s"}
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+    {external.length > 0 && (
+      <section class="media-batch">
+        <h2>Externally hosted article images</h2>
+        <p>
+          {external.length} image references point to an external image service
+          rather than WordPress uploads. They are excluded from the SiteGround
+          file batches. Original files or reviewed replacements will be needed.
+        </p>
+        <ul>
+          {external.map((item) => (
+            <li>
+              {item.usedBy.map((path) => (
+                <a class="text-link" href={path}>
+                  {path}
+                </a>
+              ))}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+    <details class="source-copy">
+      <summary>Lower-priority images from original page layouts</summary>
+      <p>
+        Some are old thumbnails or theme images. Review their relevance and
+        licensing before transferring them.
+      </p>
+      <ul>
+        {secondary.map((item) => (
+          <li>
+            <code>
+              {item.folder}/{item.filename}
+            </code>
+          </li>
+        ))}
+      </ul>
+    </details>
+    <p class="destination-copy">
+      <a class="text-link" href="/migration-review/">
+        Back to migration review ↗
+      </a>
+    </p>
+  </section>
+</Base>

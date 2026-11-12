@@ -1,0 +1,7 @@
+---
+import ImportedPage from "../layouts/ImportedPage.astro";
+import { getSourcePage } from "../lib";
+const page = await getSourcePage("/privacy-policy/");
+---
+
+<ImportedPage page={page} />

@@ -1,0 +1,31 @@
+---
+import Base from "../layouts/Base.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import DestinationTile from "../components/DestinationTile.astro";
+import { getArticles, sampleDestinations } from "../lib";
+const articles = (await getArticles(true)).filter((a) => a.data.placeholder);
+---
+
+<Base
+  title="Template samples"
+  description="Clearly labeled development examples, separate from the WordPress archive."
+>
+  <section class="section page-intro">
+    <p class="eyebrow">Development examples</p>
+    <h1>Template samples.</h1>
+    <p>
+      These placeholder guides demonstrate the templates. They are separate from
+      the imported N2Getaways archive.
+    </p>
+    <div class="destination-grid">
+      {sampleDestinations.map((destination) => (
+        <DestinationTile destination={destination} />
+      ))}
+    </div>
+    <div class="article-grid destination-copy">
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
+    </div>
+  </section>
+</Base>
