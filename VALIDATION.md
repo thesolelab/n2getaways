@@ -21,4 +21,4 @@ Normal local machines can use the README commands. CI validates on Node 24. Clou
 
 ## GitHub handoff
 
-The milestone is committed locally on `main`. Pushing to the user-selected repository `https://github.com/thesolelab/n2getaways` returned HTTP 403 (permission denied), including with the authenticated GitHub CLI credential helper. Repository metadata reports push permission, but actual Git transport denies the write. No remote branch or repository files were changed. Restore GitHub write access before retrying `git push -u origin main`.
+The initial milestone is committed and pushed to `main` in https://github.com/thesolelab/n2getaways. The initial HTTP 403 was resolved after the owner updated the GitHub app repository access. No deployment, WordPress migration, or DNS changes were performed.
