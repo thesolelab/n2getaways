@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { isProduction, isReviewPath } from "../config/site.mjs";
 interface Props {
   title: string;
   description: string;
@@ -12,6 +13,7 @@ const {
   image = "/social.jpg",
   article = false,
 } = Astro.props;
+const noindex = !isProduction || isReviewPath(Astro.url.pathname);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const social = new URL(image, Astro.site);
 ---
@@ -24,7 +26,10 @@ const social = new URL(image, Astro.site);
     <title>{title} | N2Getaways</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="robots"
+      content={noindex ? "noindex, nofollow" : "index, follow"}
+    />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -47,10 +52,12 @@ const social = new URL(image, Astro.site);
     <a class="skip" href="#main">
       Skip to content
     </a>
-    <div class="preview-note">
-      A new chapter for N2Getaways{" "}
-      <span>· Development preview — WordPress content under review</span>
-    </div>
+    {!isProduction && (
+      <div class="preview-note">
+        A new chapter for N2Getaways{" "}
+        <span>· Development preview — WordPress content under review</span>
+      </div>
+    )}
     <header class="header">
       <a class="wordmark" href="/" aria-label="N2Getaways home">
         N2<span>Getaways</span>
@@ -107,7 +114,9 @@ const social = new URL(image, Astro.site);
       </div>
       <div class="footer-bottom">
         <span>© {new Date().getFullYear()} N2Getaways</span>
-        <span>Private migration preview · Content awaiting review</span>
+        {!isProduction && (
+          <span>Private migration preview · Content awaiting review</span>
+        )}
       </div>
     </footer>
   </body>

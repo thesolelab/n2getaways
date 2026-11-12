@@ -66,3 +66,9 @@ Implemented a configurable Formspree endpoint using its official AJAX library, w
 ## Owner endpoint activation
 
 Configured the owner-supplied public Formspree endpoint `https://formspree.io/f/xaeonjpv`. The direct-mode release passes the complete 38-page build and preservation checks. Output inspection confirms the exact endpoint, Send inquiry label, honeypot, visitor email field and current privacy disclosure. No email submission was sent by the agent. An owner-submitted test is still required to confirm provider routing, any CAPTCHA challenge and actual delivery to `hello@n2getaways.com`.
+
+## Launch preparation — November 12, 2026
+
+Both preview and explicit production modes passed `npm run validate`: TypeScript/Astro checks, 38 generated HTML pages, local links/assets, SEO metadata, robots/header rules and sitemap scope. Production excludes review routes and hides migration notices; preview remains globally noindex. All 25 original routes remain. Source checks cover all 14 articles; production omits the original-copy disclosures on five adapted pages. All 18 batch-image checksums pass. The owner confirmed inquiry receipt.
+
+Production output was tested locally only. Preview output is restored before publishing. No production flag, DNS, nameserver, domain binding or WordPress change was made. Full SiteGround DNS inventory and separate cutover approval are still required; see docs/launch/CUTOVER.md.

@@ -1,0 +1,26 @@
+source_url,production_url,expected_status,action
+https://n2getaways.com/48-hours-in-san-francisco-the-perfect-quick-city-guide/,https://n2getaways.com/48-hours-in-san-francisco-the-perfect-quick-city-guide/,200,preserve original path
+https://n2getaways.com/travel-guides/,https://n2getaways.com/travel-guides/,200,preserve original path
+https://n2getaways.com/contact/,https://n2getaways.com/contact/,200,preserve original path
+https://n2getaways.com/about/,https://n2getaways.com/about/,200,preserve original path
+https://n2getaways.com/,https://n2getaways.com/,200,preserve original path
+https://n2getaways.com/best-lunch-spots-near-wailea-beach-resort-local-favorites-in-maui/,https://n2getaways.com/best-lunch-spots-near-wailea-beach-resort-local-favorites-in-maui/,200,preserve original path
+https://n2getaways.com/destinations/,https://n2getaways.com/destinations/,200,preserve original path
+https://n2getaways.com/destinations/san-francisco/,https://n2getaways.com/destinations/san-francisco/,200,preserve original path
+https://n2getaways.com/destinations/maui/,https://n2getaways.com/destinations/maui/,200,preserve original path
+https://n2getaways.com/destinations/costa-rica/,https://n2getaways.com/destinations/costa-rica/,200,preserve original path
+https://n2getaways.com/privacy-policy/,https://n2getaways.com/privacy-policy/,200,preserve original path
+https://n2getaways.com/destinations/waikiki/,https://n2getaways.com/destinations/waikiki/,200,preserve original path
+https://n2getaways.com/travel-stories/,https://n2getaways.com/travel-stories/,200,preserve original path
+https://n2getaways.com/48-hours-in-asheville/,https://n2getaways.com/48-hours-in-asheville/,200,preserve original path
+https://n2getaways.com/things-to-do-in-asheville/,https://n2getaways.com/things-to-do-in-asheville/,200,preserve original path
+https://n2getaways.com/santorini-fira-itinerary-3-to-7-days/,https://n2getaways.com/santorini-fira-itinerary-3-to-7-days/,200,preserve original path
+https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/,https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/,200,preserve original path
+https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/,https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/,200,preserve original path
+https://n2getaways.com/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/,https://n2getaways.com/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/,200,preserve original path
+https://n2getaways.com/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/,https://n2getaways.com/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/,200,preserve original path
+https://n2getaways.com/airports-without-tsa/,https://n2getaways.com/airports-without-tsa/,200,preserve original path
+https://n2getaways.com/how-to-get-through-tsa-faster/,https://n2getaways.com/how-to-get-through-tsa-faster/,200,preserve original path
+https://n2getaways.com/things-to-do-in-waikiki-first-time-visitors/,https://n2getaways.com/things-to-do-in-waikiki-first-time-visitors/,200,preserve original path
+https://n2getaways.com/best-views-in-san-francisco/,https://n2getaways.com/best-views-in-san-francisco/,200,preserve original path
+https://n2getaways.com/where-to-stay-in-san-francisco/,https://n2getaways.com/where-to-stay-in-san-francisco/,200,preserve original path

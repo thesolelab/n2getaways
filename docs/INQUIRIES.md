@@ -1,6 +1,6 @@
 # Inquiry delivery setup
 
-The static Astro form is prepared for Formspree. No Cloudflare Function, email API key, mailbox password, MX/DNS change or WordPress edit is needed. The owner supplied `https://formspree.io/f/xaeonjpv`, now configured for direct submission. The owner’s Formspree setup screen selected `hello@n2getaways.com` as recipient. Provider acceptance, CAPTCHA behavior and actual inbox delivery still need an owner-submitted end-to-end test. The direct email link remains available as a fallback.
+The static Astro form is prepared for Formspree. No Cloudflare Function, email API key, mailbox password, MX/DNS change or WordPress edit is needed. The owner supplied `https://formspree.io/f/xaeonjpv`, now configured for direct submission. The owner’s Formspree setup screen selected `hello@n2getaways.com` as recipient. The owner submitted a test and confirmed receipt on November 12, 2026. CAPTCHA behavior under other provider challenges has not been independently tested. The direct email link remains available as a fallback.
 
 ## Owner activation
 
@@ -25,7 +25,7 @@ The Vite alias selects the official library's ESM entry: version 1.1.5 advertise
 
 ## Validation performed
 
-Both unconfigured and configured builds were validated. The initial configured build used an unissued test ID only for local output inspection; the release now uses the owner-supplied real endpoint. No real or dummy submissions were made by the agent. Checks covered native action, honeypot, success/error elements, message limits and privacy target. A direct validation-helper check covered whitespace-only inputs, bounds and recovery. Source-content/image preservation checks and the 38-page build pass. Actual browser interaction, CAPTCHA behavior with the owner's settings, provider routing and inbox delivery remain to be tested after activation.
+Both unconfigured and configured builds were validated. The initial configured build used an unissued test ID only for local output inspection; the release now uses the owner-supplied real endpoint. No real or dummy submissions were made by the agent. Checks covered native action, honeypot, success/error elements, message limits and privacy target. A direct validation-helper check covered whitespace-only inputs, bounds and recovery. Source-content/image preservation checks and the 38-page build pass. The owner subsequently confirmed receipt of a deployed-form test. Provider challenge variants and Reply behavior were not independently verified.
 
 ## Official references
 

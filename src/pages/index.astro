@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import DestinationTile from "../components/DestinationTile.astro";
+import { isProduction } from "../config/site.mjs";
 import SourceCopy from "../components/SourceCopy.astro";
 import { Image } from "astro:assets";
 import { photos, destinations, getArticles } from "../lib";
@@ -113,7 +114,5 @@ const articles = await getArticles();
       <em>It’s worth it.</em>
     </div>
   </section>
-  <section class="section">
-    <SourceCopy path="/" collapsible />
-  </section>
+  {!isProduction && <section class="section"><SourceCopy path="/" collapsible /></section>}
 </Base>

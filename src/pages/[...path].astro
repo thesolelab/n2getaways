@@ -1,4 +1,5 @@
 ---
+import { isProduction } from "../config/site.mjs";
 import Base from "../layouts/Base.astro";
 import { Image } from "astro:assets";
 import { render } from "astro:content";
@@ -46,9 +47,11 @@ const { Content, headings } = await render(article);
       <p>{data.description}</p>
       <div class="card-meta">
         {data.placeholder
-          ? "Editorial placeholder"
-          : "Imported from WordPress · Review copy"}{" "}
-        · {data.readTime} min read
+          ? "Editorial placeholder · "
+          : !isProduction
+            ? "Imported from WordPress · Review copy · "
+            : ""}
+        {data.readTime} min read
       </div>
       {!data.placeholder && (
         <p class="archive-notice">
@@ -61,7 +64,7 @@ const { Content, headings } = await render(article);
               timeZone: "UTC",
             })}
           </time>{" "}
-          · Imported archive copy
+          {!isProduction && " · Imported archive copy"}
         </p>
       )}
     </header>
@@ -88,16 +91,31 @@ const { Content, headings } = await render(article);
         </nav>
       </aside>
       <div class="prose">
-        <p class="notice">
-          {data.placeholder
-            ? "Sample content — a template demonstration, not a published travel recommendation or account of personal experience."
-            : data.image
-              ? "Migration review — original WordPress article text and supplied photography. Travel details have not been reverified."
-              : "Migration review — original WordPress article text. Photography is pending transfer; travel details have not been reverified."}
-        </p>
-        {data.reviewNotes.map((note) => (
-          <p class="notice">{note}</p>
-        ))}
+        {!isProduction && (
+          <p class="notice">
+            {data.placeholder
+              ? "Sample content — a template demonstration, not a published travel recommendation or account of personal experience."
+              : data.image
+                ? "Migration review — original WordPress article text and supplied photography. Travel details have not been reverified."
+                : "Migration review — original WordPress article text. Photography is pending transfer; travel details have not been reverified."}
+          </p>
+        )}
+        {data.reviewNotes
+          .filter((note) => !isProduction || !note.startsWith("Pilot review"))
+          .map((note) => (
+            <p class="notice">
+              {isProduction && note.startsWith("Time-sensitive") ? (
+                <>
+                  Airport security conditions may have changed since this
+                  article was published. Check current{" "}
+                  <a href="https://www.tsa.gov/">TSA</a> and airport information
+                  before travel.
+                </>
+              ) : (
+                note
+              )}
+            </p>
+          ))}
         <div data-migrated-body>
           <Content />
         </div>

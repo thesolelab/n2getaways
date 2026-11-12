@@ -1,4 +1,5 @@
 ---
+import { isProduction } from "../config/site.mjs";
 import Base from "../layouts/Base.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import { getArticles } from "../lib";
@@ -14,11 +15,16 @@ const articles = (await getArticles()).filter((a) =>
   <section class="section page-intro">
     <p class="eyebrow">From the archive</p>
     <h1>Travel stories & reviews.</h1>
-    <p class="notice">
-      The original Travel Stories page has no body text in the export. This
-      collection brings together existing restaurant and resort articles without
-      inventing new stories or experiences.
-    </p>
+    {!isProduction && (
+      <p class="notice">
+        The original Travel Stories page has no body text in the export. This
+        collection brings together existing restaurant and resort articles
+        without inventing new stories or experiences.
+      </p>
+    )}
+    {isProduction && (
+      <p>Restaurant and resort articles from the N2Getaways archive.</p>
+    )}
     <div class="article-grid">
       {articles.map((article) => (
         <ArticleCard article={article} />

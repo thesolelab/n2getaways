@@ -1,0 +1,144 @@
+{
+  "observedAt": "2026-11-12T18:13:46.696293+00:00",
+  "source": "Cloudflare public DNS-over-HTTPS; read-only, not a complete zone export",
+  "queries": [
+    {
+      "name": "n2getaways.com",
+      "type": "A",
+      "status": 0,
+      "answers": [
+        {
+          "name": "n2getaways.com",
+          "type": 1,
+          "TTL": 86400,
+          "data": "35.215.126.21"
+        }
+      ]
+    },
+    {
+      "name": "n2getaways.com",
+      "type": "AAAA",
+      "status": 0,
+      "answers": []
+    },
+    {
+      "name": "n2getaways.com",
+      "type": "NS",
+      "status": 0,
+      "answers": [
+        {
+          "name": "n2getaways.com",
+          "type": 2,
+          "TTL": 86400,
+          "data": "ns2.siteground.net."
+        },
+        {
+          "name": "n2getaways.com",
+          "type": 2,
+          "TTL": 86400,
+          "data": "ns1.siteground.net."
+        }
+      ]
+    },
+    {
+      "name": "n2getaways.com",
+      "type": "MX",
+      "status": 0,
+      "answers": [
+        {
+          "name": "n2getaways.com",
+          "type": 15,
+          "TTL": 86400,
+          "data": "20 mx20.antispam.mailspamprotection.com."
+        },
+        {
+          "name": "n2getaways.com",
+          "type": 15,
+          "TTL": 86400,
+          "data": "30 mx30.antispam.mailspamprotection.com."
+        },
+        {
+          "name": "n2getaways.com",
+          "type": 15,
+          "TTL": 86400,
+          "data": "10 mx10.antispam.mailspamprotection.com."
+        }
+      ]
+    },
+    {
+      "name": "n2getaways.com",
+      "type": "TXT",
+      "status": 0,
+      "answers": [
+        {
+          "name": "n2getaways.com",
+          "type": 16,
+          "TTL": 86400,
+          "data": "\"google-site-verification=8mzW2b0nycfLm701l-xIpntijSHuN0xuH4ojzR0RyRQ\""
+        },
+        {
+          "name": "n2getaways.com",
+          "type": 16,
+          "TTL": 86400,
+          "data": "\"pinterest-site-verification=5a1b7c6ead14d5f0ea619b55a24a7cd2\""
+        },
+        {
+          "name": "n2getaways.com",
+          "type": 16,
+          "TTL": 86400,
+          "data": "\"v=spf1 +a +mx include:n2getaways.com.spf.auto.dnssmarthost.net ~all\""
+        }
+      ]
+    },
+    {
+      "name": "n2getaways.com",
+      "type": "CAA",
+      "status": 0,
+      "answers": []
+    },
+    {
+      "name": "n2getaways.com",
+      "type": "DS",
+      "status": 0,
+      "answers": []
+    },
+    {
+      "name": "www.n2getaways.com",
+      "type": "CNAME",
+      "status": 0,
+      "answers": []
+    },
+    {
+      "name": "mail.n2getaways.com",
+      "type": "A",
+      "status": 0,
+      "answers": [
+        {
+          "name": "mail.n2getaways.com",
+          "type": 1,
+          "TTL": 86400,
+          "data": "35.215.126.21"
+        }
+      ]
+    },
+    {
+      "name": "mail.n2getaways.com",
+      "type": "CNAME",
+      "status": 0,
+      "answers": []
+    },
+    {
+      "name": "_dmarc.n2getaways.com",
+      "type": "TXT",
+      "status": 0,
+      "answers": [
+        {
+          "name": "_dmarc.n2getaways.com",
+          "type": 16,
+          "TTL": 86400,
+          "data": "\"v=DMARC1; p=none; aspf=r; adkim=r;\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 ---
+import { isProduction } from "../config/site.mjs";
 import Base from "../layouts/Base.astro";
 import SourceCopy from "../components/SourceCopy.astro";
 import ArticleCard from "../components/ArticleCard.astro";
@@ -12,10 +13,12 @@ const page = await getSourcePage("/travel-guides/");
     <p class="eyebrow">The travel journal</p>
     <h1>{page.data.displayTitle}</h1>
     <p>{page.data.description}</p>
-    <p class="notice">
-      Original N2Getaways articles imported from WordPress. Text and URLs are
-      preserved; photography and current travel details remain under review.
-    </p>
+    {!isProduction && (
+      <p class="notice">
+        Original N2Getaways articles imported from WordPress. Text and URLs are
+        preserved; photography and current travel details remain under review.
+      </p>
+    )}
     <div class="article-grid">
       {articles.map((article) => (
         <ArticleCard article={article} />

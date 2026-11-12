@@ -1,4 +1,5 @@
 ---
+import { isProduction } from "../config/site.mjs";
 import { render } from "astro:content";
 import { getSourcePage } from "../lib";
 interface Props {
@@ -11,12 +12,14 @@ const { Content } = await render(page);
 ---
 
 {collapsible ? (
-  <details class="source-copy">
-    <summary>Review original WordPress page copy</summary>
-    <div class="prose" data-migrated-body>
-      <Content />
-    </div>
-  </details>
+  !isProduction && (
+    <details class="source-copy">
+      <summary>Review original WordPress page copy</summary>
+      <div class="prose" data-migrated-body>
+        <Content />
+      </div>
+    </details>
+  )
 ) : (
   <div class="prose source-prose" data-migrated-body>
     <Content />

@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:4321. For a production build:
+Open http://localhost:4321. For a local static preview build:
 
 ```sh
 npm run validate
@@ -25,7 +25,7 @@ Open http://localhost:4321 (or the URL Astro prints). In restricted environments
 - Responsive editorial homepage, accessible navigation with native mobile disclosure, skip link, visible keyboard focus, and reduced-motion support.
 - Six archive destination collections, including the four original destination-page paths; development examples are separated at `/samples/`.
 - Markdown article collection, reusable article view, table of contents and guide index.
-- Original About, Privacy and Contact copy, plus a custom itinerary inquiry form. Formspree direct submission is configured for the owner-supplied endpoint with validation, a spam honeypot and feedback states. End-to-end inbox delivery still needs an owner-submitted test; a direct email link remains available. See `docs/INQUIRIES.md`.
+- Original About, Privacy and Contact copy, plus a custom itinerary inquiry form. Formspree direct submission is configured for the owner-supplied endpoint with validation, a spam honeypot and feedback states. The owner confirmed receipt of a test submission; a direct email link remains available. See `docs/INQUIRIES.md`.
 - Canonical URLs, social metadata, WebSite/Article JSON-LD, generated XML sitemap, local optimized responsive images.
 - TypeScript, static Cloudflare Pages configuration, GitHub validation workflow, and deliberately disabled scheduling example.
 
@@ -41,7 +41,7 @@ GitHub-linked review site: https://n2getaways-preview.pages.dev. This is separat
 
 `wrangler.toml` records the output directory. Do not attach the production domain or change DNS during this milestone. The generated sitemap is intentionally non-indexable during development.
 
-Before a separately authorized production launch, remove the noindex meta in Base.astro, X-Robots-Tag in public/_headers and Disallow in public/robots.txt; add the production Sitemap directive. Verify all content, imagery context, contact delivery, privacy policy, affiliate disclosures (if applicable), accessibility, performance and the URL migration map first.
+Build mode defaults to `preview`, keeping all routes blocked from indexing. Production preparation is documented in [the cutover plan](docs/launch/CUTOVER.md), with a 25-route URL map and read-only DNS snapshot. Only after separately authorized cutover, set `SITE_MODE=production` and `SITE_URL=https://n2getaways.com` for the main production build. Branch previews must retain preview mode. Generated robots, headers, metadata and sitemap follow this mode automatically; no manual SEO file removal is needed. Production hides review notices and excludes internal review routes from the sitemap. DNS and production mode remain unchanged.
 
 ## Future publishing (not enabled)
 
@@ -53,7 +53,7 @@ Do not guess WordPress slugs. Obtain a full URL/content export and inventory, re
 
 ## Images and fonts
 
-Development photographs downloaded from Unsplash under its standard license (https://unsplash.com/license). See ASSETS.md for exact sources. Astro generates responsive WebP variants during build. Fonts load from Google Fonts with system fallbacks and display=swap; self-hosting is a possible pre-launch improvement. No new affiliate links, testimonials, or partnerships were invented. The imported privacy policy contains unverified source claims about affiliates and analytics, prominently flagged for review.
+Development photographs downloaded from Unsplash under its standard license (https://unsplash.com/license). See ASSETS.md for exact sources. Astro generates responsive WebP variants during build. Fonts load from Google Fonts with system fallbacks and display=swap; self-hosting is a possible pre-launch improvement. No new affiliate links, testimonials, or partnerships were invented. The current privacy page describes implemented services; the original policy is retained only in a preview disclosure for comparison.
 
 ## Hosted design review
 

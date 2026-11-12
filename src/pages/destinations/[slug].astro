@@ -1,4 +1,5 @@
 ---
+import { isProduction } from "../../config/site.mjs";
 import Base from "../../layouts/Base.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
 import SourceCopy from "../../components/SourceCopy.astro";
@@ -69,11 +70,13 @@ const imageKey = d.image as keyof typeof photos | undefined;
     </p>
   )}
   <section class="section">
-    <p class="notice">
-      {sample
-        ? "Placeholder collection. These sample guides are separate from the imported WordPress archive."
-        : "Migration review. Original articles are available below; some photography and travel details still need review."}
-    </p>
+    {!isProduction && (
+      <p class="notice">
+        {sample
+          ? "Placeholder collection. These sample guides are separate from the imported WordPress archive."
+          : "Migration review. Original articles are available below; some photography and travel details still need review."}
+      </p>
+    )}
     <div class="section-heading">
       <h2>Explore {d.name}.</h2>
     </div>

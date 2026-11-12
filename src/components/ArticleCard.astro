@@ -1,4 +1,5 @@
 ---
+import { isProduction } from "../config/site.mjs";
 import { Image } from "astro:assets";
 import { photos } from "../lib";
 import type { CollectionEntry } from "astro:content";
@@ -31,8 +32,12 @@ const { data } = Astro.props.article;
     <div class="card-meta">
       {data.destination}{" "}
       <span>
-        · {data.readTime} min read ·{" "}
-        {data.placeholder ? "Sample" : "Migration review"}
+        · {data.readTime} min read{" "}
+        {data.placeholder
+          ? "· Sample"
+          : !isProduction
+            ? "· Migration review"
+            : ""}
       </span>
     </div>
     <h3>{data.title}</h3>

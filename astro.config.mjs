@@ -2,15 +2,17 @@ import { defineConfig } from "astro/config";
 import { fileURLToPath } from "node:url";
 import sitemap from "@astrojs/sitemap";
 import { satteri } from "@astrojs/markdown-satteri";
+import { siteOrigin, isProduction, isReviewPath } from "./src/config/site.mjs";
 export default defineConfig({
-  site:
-    process.env.SITE_URL ||
-    process.env.CF_PAGES_URL ||
-    "https://n2getaways.com",
+  site: siteOrigin,
   trailingSlash: "always",
   integrations: [
     sitemap({
-      filter: (page) => !new URL(page).pathname.match(/\/404(?:\.html|\/)?$/),
+      filter: (page) =>
+        !new URL(page).pathname.match(
+          /\/(?:404(?:\.html|\/)?|_headers|_redirects|robots\.txt)$/,
+        ) &&
+        (!isProduction || !isReviewPath(new URL(page).pathname)),
     }),
   ],
   output: "static",
