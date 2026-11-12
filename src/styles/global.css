@@ -1198,3 +1198,14 @@ textarea {
 .cluster-grid--feature .article-card>a>:not(.card-photo) { grid-column:2; }
 @media(max-width:650px) { .cluster-grid { grid-template-columns:1fr; gap:32px; } .cluster-grid--feature .article-card>a { display:block; } .cluster-grid--feature .article-card>a>.card-photo { height:auto; min-height:0; aspect-ratio:16/10; } }
 .cluster-group>p, .cluster-intro { max-width:750px; }
+
+/* Bounded destination opener: preserve the complete photograph instead of stretching a 900px image across an ultrawide viewport. */
+.destination-hero { display:grid; grid-template-columns:minmax(0,0.9fr) minmax(0,1.4fr); align-items:stretch; width:calc(100% - clamp(32px,8vw,112px)); max-width:1328px; height:auto; min-height:0; margin:32px auto 0; background:var(--teal); color:var(--ivory); overflow:hidden; }
+.destination-hero::after { content:none; }
+.destination-hero>img { grid-column:2; grid-row:1; width:100%; height:auto; align-self:center; object-fit:contain; }
+.destination-hero>div { position:static; inset:auto; grid-column:1; grid-row:1; min-width:0; padding:clamp(28px,4vw,56px); display:flex; flex-direction:column; justify-content:center; }
+.destination-hero h1 { font-size:clamp(40px,4.5vw,64px); line-height:1.08; overflow-wrap:normal; margin:14px 0 20px; }
+.destination-hero p { font-size:0.95rem; line-height:1.7; margin:0; max-width:42ch; }
+.destination-hero .eyebrow { font-size:0.65rem; letter-spacing:0.14em; color:var(--sand); }
+.destination-hero.destination-text { grid-template-columns:1fr; }
+@media(max-width:800px) { .destination-hero { grid-template-columns:1fr; width:calc(100% - 32px); margin-top:16px; } .destination-hero>div { grid-column:1; grid-row:1; padding:32px 24px; } .destination-hero>img { grid-column:1; grid-row:2; } .destination-hero h1 { font-size:clamp(40px,8vw,56px); } }

@@ -99,7 +99,15 @@ const ungrouped = articles.filter((a) => !a.data.clusterRole);
       <Image
         src={photos[imageKey]}
         alt={cluster?.imageAlt || `${d.name} sample photograph`}
-        width={Math.min(1800, photos[imageKey].width)}
+        width={Math.min(1000, photos[imageKey].width)}
+        widths={[
+          ...new Set(
+            [400, 700, Math.min(1000, photos[imageKey].width)].filter(
+              (w) => w <= photos[imageKey].width,
+            ),
+          ),
+        ]}
+        sizes="(max-width: 800px) calc(100vw - 32px), (max-width: 1440px) 60vw, 810px"
         loading="eager"
       />
     )}
