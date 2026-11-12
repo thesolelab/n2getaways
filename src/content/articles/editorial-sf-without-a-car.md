@@ -11,12 +11,12 @@ image: sf-painted-ladies
 imageDisplay: full
 imageAlt: Colorful Painted Ladies houses with the San Francisco skyline and moon beyond
 readTime: 6
-publishDate: 2026-11-12
+publishDate: 2026-11-12T23:49:50.654977Z
 permalink: /getting-around-san-francisco-without-a-car/
 editorialTopicId: sf-without-a-car
 targetKeyword: getting around San Francisco without a car
 destination: San Francisco
-draft: true
+draft: false
 placeholder: false
 migrationReview: false
 reviewNotes: []
@@ -47,7 +47,7 @@ BART currently describes contactless bank-card and supported mobile-wallet payme
 
 Payment advice is worth checking close to departure. SFMTA's [MuniMobile update](https://www.sfmta.com/getting-around/muni/fares/munimobile) says the app stopped selling single-ride tickets on September 1, 2026. The page describes remaining products and a gradual transition away from the standalone app. An older guide telling visitors to buy every fare in MuniMobile can therefore lead to confusion.
 
-Check the current agency instructions for the actual fare being purchased. A payment method, a stored balance, and an unlimited-ride pass are different things; choosing one does not establish that every journey is covered. This draft deliberately avoids listing fare amounts that could go stale before the trip.
+Check the current agency instructions for the actual fare being purchased. A payment method, a stored balance, and an unlimited-ride pass are different things; choosing one does not establish that every journey is covered. This guide deliberately avoids listing fare amounts that could go stale before the trip.
 
 SFMTA's [Visitor Passport information](https://www.sfmta.com/fares/7-day-visitor-passport) describes one-, three-, and seven-day products covering Muni, including cable cars. It also states that the passports do not cover BART or airport transportation to and from SFO. Compare the pass with the rides actually planned, keeping the airport budget separate. Check current validity, purchase options, and prices before paying.
 
