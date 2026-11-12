@@ -25,7 +25,7 @@ Open http://localhost:4321 (or the URL Astro prints). In restricted environments
 - Responsive editorial homepage, accessible navigation with native mobile disclosure, skip link, visible keyboard focus, and reduced-motion support.
 - Six archive destination collections, including the four original destination-page paths; development examples are separated at `/samples/`.
 - Markdown article collection, reusable article view, table of contents and guide index.
-- Original About, Privacy and Contact copy, plus a custom itinerary inquiry form. Form opens a draft to `hello@n2getaways.com` in the visitor's email app; no backend or delivery provider is connected.
+- Original About, Privacy and Contact copy, plus a custom itinerary inquiry form. Formspree direct submission is implemented with validation, spam honeypot and feedback states; activation awaits the owner's verified form endpoint. Until configured it retains the clearly labeled email-app fallback. See `docs/INQUIRIES.md`.
 - Canonical URLs, social metadata, WebSite/Article JSON-LD, generated XML sitemap, local optimized responsive images.
 - TypeScript, static Cloudflare Pages configuration, GitHub validation workflow, and deliberately disabled scheduling example.
 

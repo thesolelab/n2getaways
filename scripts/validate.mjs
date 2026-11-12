@@ -71,11 +71,25 @@ for (const item of pilot.imported) {
     throw new Error(`Broken migration table of contents: ${item.path}`);
 }
 const contact = readFileSync(join(root, "contact/index.html"), "utf8");
+const direct = Boolean(
+  process.env.PUBLIC_FORMSPREE_FORM_ID ||
+  JSON.parse(readFileSync("src/config/inquiry.json", "utf8")).formspreeFormId,
+);
 if (
   !contact.includes("mailto:hello@n2getaways.com") ||
-  !contact.includes("Open inquiry in email app")
+  !contact.includes(direct ? "Send inquiry" : "Open inquiry in email app")
 )
-  throw new Error("Missing inquiry recipient or email-app disclosure");
+  throw new Error("Missing inquiry recipient or correct delivery-mode label");
+if (
+  direct &&
+  (!contact.includes("https://formspree.io/f/") ||
+    !contact.includes('name="_gotcha"') ||
+    !contact.includes("data-fs-success") ||
+    !contact.includes("data-fs-error"))
+)
+  throw new Error(
+    "Direct inquiry form is missing its endpoint, spam field or feedback states",
+  );
 console.log(
   "PASS: migration paths, labels, heading structure, table of contents, and inquiry recipient.",
 );

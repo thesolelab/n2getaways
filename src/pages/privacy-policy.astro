@@ -1,7 +1,43 @@
 ---
 import ImportedPage from "../layouts/ImportedPage.astro";
 import { getSourcePage } from "../lib";
+import { inquiryEndpoint, inquiryRecipient } from "../config/inquiry";
 const page = await getSourcePage("/privacy-policy/");
 ---
 
-<ImportedPage page={page} />
+<ImportedPage page={page}>
+  <section slot="before-copy" id="inquiry-privacy" class="inquiry-policy">
+    <h2>Inquiries on this website</h2>
+    {inquiryEndpoint ? (
+      <>
+        <p>
+          When you submit an itinerary inquiry, your name, email address,
+          destination and message are sent to Formspree for processing and
+          delivery to {inquiryRecipient}. Formspree may store submissions and
+          process technical information to operate the service and filter spam.
+        </p>
+        <p>
+          We use the information you provide to respond to your inquiry. Please
+          keep payment details, passport numbers and other sensitive information
+          out of your message. Contact{" "}
+          <a href={`mailto:${inquiryRecipient}`}>{inquiryRecipient}</a> with
+          questions about your inquiry data. Read{" "}
+          <a href="https://formspree.io/legal/privacy-policy/">
+            Formspree’s privacy policy
+          </a>{" "}
+          for its processing and retention practices.
+        </p>
+      </>
+    ) : (
+      <p>
+        Online form delivery is not yet active. The contact form and email link
+        open your email app, and your message is handled by your chosen email
+        provider. No inquiry is sent to Formspree in this mode.
+      </p>
+    )}
+    <p class="notice">
+      The imported WordPress policy below remains under review and may describe
+      integrations that are not enabled on this preview.
+    </p>
+  </section>
+</ImportedPage>

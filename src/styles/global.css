@@ -1097,3 +1097,72 @@ textarea {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.inquiry-trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.inquiry-privacy {
+  font-size: 12px;
+  color: #626962;
+  line-height: 1.7;
+}
+.inquiry-privacy a,
+.form-error a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#inquiry [data-fs-error],
+#inquiry [data-fs-success] {
+  display: none;
+}
+#inquiry [data-fs-active] {
+  display: block;
+}
+#inquiry .field-error {
+  font-size: 12px;
+  color: #8d3d2f;
+}
+#inquiry [aria-invalid="true"] {
+  border-color: #8d3d2f;
+}
+.form-feedback {
+  padding: 18px;
+  margin-top: 22px;
+  font-size: 14px;
+}
+.form-success {
+  background: #e7eee1;
+  border-left: 3px solid var(--teal);
+}
+.form-error {
+  background: #f4e6df;
+  border-left: 3px solid #8d3d2f;
+}
+#inquiry button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.provider-fallback {
+  background: none;
+  border: 0;
+  color: var(--teal);
+  padding: 14px 0;
+  cursor: pointer;
+}
+.provider-fallback[hidden] {
+  display: none !important;
+}
+.inquiry-policy {
+  margin: 30px 0 45px;
+}
+.inquiry-policy h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.inquiry-policy a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

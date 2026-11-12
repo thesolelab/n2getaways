@@ -17,6 +17,7 @@ const { page } = Astro.props;
       {page.data.reviewNotes.join(" ") ||
         "Original page text preserved; review before production launch."}
     </p>
+    <slot name="before-copy" />
     <SourceCopy path={page.data.permalink} />
   </section>
 </Base>
