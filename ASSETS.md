@@ -34,3 +34,7 @@ All 18 requested files were received in the owner's four ZIPs. They are stored u
 ## Editorial cover selected by the owner
 
 `src/assets/editorial/sf-painted-ladies.jpg` is the unchanged `joshua-sortino-HadloobmnQs-unsplash.jpg` supplied in `SF Image.zip` on November 12, 2026. Photo: Joshua Sortino / Unsplash; source https://unsplash.com/photos/HadloobmnQs, license https://unsplash.com/license. It shows the Painted Ladies with the San Francisco skyline and moon. It is destination imagery, not evidence of an author visit. The original SHA-256 receipt is recorded in `editorial/research/sf-without-a-car.json`. Astro generates optimized responsive display variants.
+
+## Displayed credits
+
+`src/config/photo-credits.json` records the existing known source/credit/license links for Maui, the owner-selected Painted Ladies cover, and the three development sample images. `PhotoCredit.astro` renders these consistently beneath destination or article images. Sample photographs without a recorded photographer name are credited to Unsplash only; unknown individual authors of supplied archive images are not invented. Source provenance above remains unchanged.

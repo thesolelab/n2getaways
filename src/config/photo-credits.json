@@ -1,0 +1,27 @@
+{
+  "maui-coast": {
+    "name": "Ganapathy Kumar / Unsplash",
+    "source": "https://unsplash.com/photos/tropical-beach-at-sunset-in-maui-7782WXBriyM",
+    "license": "https://unsplash.com/license"
+  },
+  "sf-painted-ladies": {
+    "name": "Joshua Sortino / Unsplash",
+    "source": "https://unsplash.com/photos/HadloobmnQs",
+    "license": "https://unsplash.com/license"
+  },
+  "italy": {
+    "name": "Unsplash",
+    "source": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963",
+    "license": "https://unsplash.com/license"
+  },
+  "japan": {
+    "name": "Unsplash",
+    "source": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+    "license": "https://unsplash.com/license"
+  },
+  "portugal": {
+    "name": "Unsplash",
+    "source": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b",
+    "license": "https://unsplash.com/license"
+  }
+}

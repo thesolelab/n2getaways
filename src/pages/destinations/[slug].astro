@@ -2,6 +2,7 @@
 import { isProduction } from "../../config/site.mjs";
 import clusters from "../../config/clusters.json";
 import { getImage } from "astro:assets";
+import PhotoCredit from "../../components/PhotoCredit.astro";
 import Base from "../../layouts/Base.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
 import SourceCopy from "../../components/SourceCopy.astro";
@@ -122,19 +123,7 @@ const ungrouped = articles.filter((a) => !a.data.clusterRole);
       <p>{d.line}</p>
     </div>
   </section>
-  {d.slug === "maui" && (
-    <p class="destination-photo-credit">
-      Destination photograph:{" "}
-      <a
-        href="https://unsplash.com/photos/tropical-beach-at-sunset-in-maui-7782WXBriyM"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Ganapathy Kumar / Unsplash
-      </a>{" "}
-      · <a href="https://unsplash.com/license">Unsplash License</a>
-    </p>
-  )}
+  <PhotoCredit imageKey={imageKey} placement="destination" />
   <section class="section destination-hub">
     {!isProduction && (
       <p class="notice">
