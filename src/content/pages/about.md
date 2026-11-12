@@ -1,10 +1,12 @@
 ---
-title: "About N2Getaways"
-description: "N2Getaways was created to help travelers find simple, useful inspiration for quick trips, weekend escapes, and memorable destination ideas without digging through overwhelming…"
-permalink: "/about/"
-sourceUrl: "https://n2getaways.com/about/"
+title: About N2Getaways
+description: Learn about N2Getaways, a travel publication sharing destination
+  guides, weekend itineraries, and trip-planning ideas for making the most of a
+  getaway.
+permalink: /about/
+sourceUrl: https://n2getaways.com/about/
 migrationReview: true
-displayTitle: "About N2Getaways"
+displayTitle: About N2Getaways
 reviewNotes: []
 ---
 

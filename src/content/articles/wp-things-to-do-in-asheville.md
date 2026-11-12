@@ -1,18 +1,22 @@
 ---
-title: "Best Things to Do in Asheville (Top Attractions + Local Spots)"
-description: "Asheville is one of those cities that balances nature, food, and creativity without feeling overwhelming."
-permalink: "/things-to-do-in-asheville/"
-sourceUrl: "https://n2getaways.com/things-to-do-in-asheville/"
+title: Best Things to Do in Asheville (Top Attractions + Local Spots)
+description: Explore the N2Getaways guide to things to do in Asheville, then
+  connect those ideas with the 48-hour itinerary to plan a North Carolina
+  weekend.
+permalink: /things-to-do-in-asheville/
+sourceUrl: https://n2getaways.com/things-to-do-in-asheville/
 migrationReview: true
-destination: "Asheville"
-category: "Travel guide"
-imageAlt: "Sunlight breaking through clouds above layers of forested mountain ridges"
+destination: Asheville
+category: Travel guide
+imageAlt: Sunlight breaking through clouds above layers of forested mountain ridges
 readTime: 5
 placeholder: false
 draft: false
-publishDate: "2026-04-14T14:39:32Z"
+publishDate: 2026-04-14T14:39:32Z
 reviewNotes: []
-image: "blue-ridge"
+image: blue-ridge
+seoTitle: "Things to Do in Asheville: Trip Planning Ideas"
+clusterRole: experiences
 ---
 
 <p>Asheville is one of those cities that balances nature, food, and creativity without feeling overwhelming.</p>

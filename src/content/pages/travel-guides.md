@@ -1,10 +1,12 @@
 ---
-title: "Travel Guides & Itineraries"
-description: "Short, easy-to-follow travel guides to help you plan your next trip faster."
-permalink: "/travel-guides/"
-sourceUrl: "https://n2getaways.com/travel-guides/"
+title: Travel Guides & Itineraries
+description: Browse N2Getaways travel guides and itineraries for San Francisco,
+  Maui, Waikiki, Costa Rica, Asheville, and Santorini to help plan your next
+  trip.
+permalink: /travel-guides/
+sourceUrl: https://n2getaways.com/travel-guides/
 migrationReview: true
-displayTitle: "Plan Your Next Getaway"
+displayTitle: Plan Your Next Getaway
 reviewNotes: []
 ---
 

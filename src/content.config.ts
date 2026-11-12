@@ -14,11 +14,15 @@ const articles = defineCollection({
     targetKeyword: z.string().optional(),
     description: z.string(),
     destination: z.string(),
+    clusterRole: z
+      .enum(["planning", "itineraries", "food", "stays", "experiences"])
+      .optional(),
     category: z.enum(["Travel guide", "Itinerary", "Travel story", "Review"]),
     image: z
       .string()
       .regex(/^[a-z0-9-]+$/)
       .optional(),
+    imageDisplay: z.enum(["cover", "full"]).default("cover"),
     imageAlt: z.string(),
     readTime: z.number(),
     placeholder: z.boolean(),
@@ -27,6 +31,7 @@ const articles = defineCollection({
     reviewNotes: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     permalink: z.string().regex(/^\/[a-z0-9/-]+\/$/),
   }),
 });

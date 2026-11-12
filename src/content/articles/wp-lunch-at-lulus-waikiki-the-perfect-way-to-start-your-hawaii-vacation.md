@@ -1,18 +1,22 @@
 ---
 title: "Lunch at Lulu’s Waikiki: The Perfect Way to Start Your Hawaii Vacation"
-description: "There’s something about stepping off the plane in Hawaii, dropping your bags at the hotel, and heading straight to the beach."
-permalink: "/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/"
-sourceUrl: "https://n2getaways.com/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/"
+description: Read the N2Getaways lunch article about Lulu’s Waikiki, then
+  explore related breakfast and activity guides to bring your Waikiki travel
+  plans together.
+permalink: /lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/
+sourceUrl: https://n2getaways.com/lunch-at-lulus-waikiki-the-perfect-way-to-start-your-hawaii-vacation/
 migrationReview: true
-destination: "Waikiki"
-category: "Review"
-imageAlt: "A glass on a restaurant ledge overlooking palms and the Waikiki shoreline"
+destination: Waikiki
+category: Review
+imageAlt: A glass on a restaurant ledge overlooking palms and the Waikiki shoreline
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-03-18T03:35:59Z"
+publishDate: 2026-03-18T03:35:59Z
 reviewNotes: []
-image: "lulus-view"
+image: lulus-view
+seoTitle: "Lulu’s Waikiki Lunch: Food & Beach Views"
+clusterRole: food
 ---
 
 <p>There’s something about stepping off the plane in Hawaii, dropping your bags at the hotel, and heading straight to the beach.</p>

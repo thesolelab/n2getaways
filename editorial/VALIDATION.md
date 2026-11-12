@@ -12,9 +12,15 @@ Initial end-to-end test: [draft PR #1](https://github.com/thesolelab/n2getaways/
 - Normal article route is absent from the branch build; live article and live editorial-preview URLs both returned 404. Production rehearsal generated 38 pages, compared with 39 in the draft branch preview. Draft not present in production sitemap or homepage.
 - Running the selector again from clean main returned no eligible unreserved topic: the existing PR reserves the approved topic even though main's queue remains approved until that PR is merged. No duplicate draft created.
 - Publication sync on main returned no newly published topics and left the queue unchanged. Actual publication/merge was intentionally not tested because the owner has not approved the article for release.
-- Owner subsequently selected a different cityscape-at-dusk photo inline. The original downloadable image file is pending; PR research notes require replacing the provisional cover before approval. This is the only pending asset setup item.
+- Owner supplied SF Image.zip with the Painted Ladies photograph. It is installed with its original-byte receipt, credit and descriptive alt text. The cover now uses full image proportions so the houses remain visible; cards position this image toward the bottom.
 - Patched YAML 2.9.1 is the only added development dependency. npm audit returned zero vulnerabilities.
 
 No production article, email setting, DNS record, schedule, auto-merge or paid service was changed by this test. New workflow tooling on main deploys normally through the existing Pages project; the test article remains solely in its unmerged branch.
 
 Preview deployments are public and excluded from indexing, not access-controlled. The test covers automatic checks and HTTP output, not a fresh visual/mobile browser inspection or independent transit operations audit.
+
+## Metadata and destination cluster extension
+
+Ten Node tests now pass, including publisher/page/image/article relationships, draft-date exclusions and script-safe JSON-LD serialization. Preview validation covers 39 HTML pages, full metadata consistency, six destination hubs and 12 published supporting-article backlinks. Twenty additional supporting topics are proposed in the queue, not approved or published. Production validation checks the same cluster/metadata behavior with all draft routes absent. All imported article/page prose and original URLs remain intact; original publication dates are retained.
+
+The draft PR includes enhanced title/description metadata for the imported archive, consistent Open Graph and X/Twitter metadata, optimized social images, visible breadcrumbs and matching structured data, truthful editorial byline/source citations, and related reading. No synthetic update dates, personal experiences, rankings promises or special AI crawler policies are introduced. Full-image cover display is enabled for the supplied Painted Ladies photograph.

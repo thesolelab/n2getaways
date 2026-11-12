@@ -1,18 +1,22 @@
 ---
-title: "Best Views in San Francisco (Most Scenic Spots)"
-description: "San Francisco is one of the most photogenic cities in the U.S., with iconic landmarks, rolling hills, and views that change around every corner."
-permalink: "/best-views-in-san-francisco/"
-sourceUrl: "https://n2getaways.com/best-views-in-san-francisco/"
+title: Best Views in San Francisco (Most Scenic Spots)
+description: Explore scenic San Francisco viewpoints, waterfront photo stops,
+  and cable car perspectives, with links to the weekend itinerary for planning a
+  city break.
+permalink: /best-views-in-san-francisco/
+sourceUrl: https://n2getaways.com/best-views-in-san-francisco/
 migrationReview: true
-destination: "San Francisco"
-category: "Travel guide"
-imageAlt: "Tree-lined waterfront promenade with a Ferris wheel in San Francisco"
+destination: San Francisco
+category: Travel guide
+imageAlt: Tree-lined waterfront promenade with a Ferris wheel in San Francisco
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-03-31T15:40:20Z"
+publishDate: 2026-03-31T15:40:20Z
 reviewNotes: []
-image: "sf-waterfront"
+image: sf-waterfront
+seoTitle: "Best Views in San Francisco: Scenic Spots"
+clusterRole: experiences
 ---
 
 <p>San Francisco is one of the most photogenic cities in the U.S., with iconic landmarks, rolling hills, and views that change around every corner.</p>

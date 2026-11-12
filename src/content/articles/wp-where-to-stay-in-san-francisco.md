@@ -1,18 +1,22 @@
 ---
-title: "Where to Stay in San Francisco (Best Area for First-Time Visitors)"
-description: "Choosing where to stay in San Francisco can make or break your trip."
-permalink: "/where-to-stay-in-san-francisco/"
-sourceUrl: "https://n2getaways.com/where-to-stay-in-san-francisco/"
+title: Where to Stay in San Francisco (Best Area for First-Time Visitors)
+description: Explore where to stay in San Francisco for a first visit, with a
+  closer look at Union Square, nearby sights, and the location choices discussed
+  in this guide.
+permalink: /where-to-stay-in-san-francisco/
+sourceUrl: https://n2getaways.com/where-to-stay-in-san-francisco/
 migrationReview: true
-destination: "San Francisco"
-category: "Travel guide"
-imageAlt: "Golden Gate Bridge spanning blue water beneath a clear sky"
+destination: San Francisco
+category: Travel guide
+imageAlt: Golden Gate Bridge spanning blue water beneath a clear sky
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-04-01T17:04:14Z"
+publishDate: 2026-04-01T17:04:14Z
 reviewNotes: []
-image: "golden-gate"
+image: golden-gate
+seoTitle: "Where to Stay in San Francisco: First-Visit Guide"
+clusterRole: stays
 ---
 
 <p>Choosing where to stay in San Francisco can make or break your trip.</p>

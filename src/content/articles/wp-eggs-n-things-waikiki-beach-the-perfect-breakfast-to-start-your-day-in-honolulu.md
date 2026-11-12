@@ -1,18 +1,22 @@
 ---
-title: "Eggs ’n Things Waikiki Beach: The Perfect Breakfast to Start Your Day in Honolulu"
-description: "If you're spending time in Waikiki, there’s a good chance you’ve heard of Eggs 'n Things."
-permalink: "/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/"
-sourceUrl: "https://n2getaways.com/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/"
+title: "Eggs ’n Things Waikiki Beach: The Perfect Breakfast to Start Your Day in
+  Honolulu"
+description: Read the N2Getaways Eggs ’n Things Waikiki Beach breakfast article,
+  with food notes and related Waikiki guides to help plan a Honolulu getaway.
+permalink: /eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/
+sourceUrl: https://n2getaways.com/eggs-n-things-waikiki-beach-the-perfect-breakfast-to-start-your-day-in-honolulu/
 migrationReview: true
-destination: "Waikiki"
-category: "Review"
-imageAlt: "Pancakes topped with bananas, berries and a purple scoop"
+destination: Waikiki
+category: Review
+imageAlt: Pancakes topped with bananas, berries and a purple scoop
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-03-24T00:57:59Z"
+publishDate: 2026-03-24T00:57:59Z
 reviewNotes: []
-image: "waikiki-pancakes"
+image: waikiki-pancakes
+seoTitle: "Eggs ’n Things Waikiki Beach: Breakfast Review"
+clusterRole: food
 ---
 
 ## A Breakfast Option That's Worth the Wait

@@ -1,18 +1,22 @@
 ---
 title: "The Ultimate Santorini Itinerary: 3 to 7 Days in Fira"
-description: "Planning a trip to Santorini shouldn't mean fighting overwhelming crowds or overpaying for a place to sleep. While Oia captures the social media headlines, staying there can…"
-permalink: "/santorini-fira-itinerary-3-to-7-days/"
-sourceUrl: "https://n2getaways.com/santorini-fira-itinerary-3-to-7-days/"
+description: Explore a Fira-based Santorini itinerary for three to seven days,
+  with ideas for shaping a shorter or longer visit and links to the destination
+  collection.
+permalink: /santorini-fira-itinerary-3-to-7-days/
+sourceUrl: https://n2getaways.com/santorini-fira-itinerary-3-to-7-days/
 migrationReview: true
-destination: "Santorini"
-category: "Itinerary"
-imageAlt: "Sunset over the sea beside a white church and two glasses on a terrace"
+destination: Santorini
+category: Itinerary
+imageAlt: Sunset over the sea beside a white church and two glasses on a terrace
 readTime: 4
 placeholder: false
 draft: false
-publishDate: "2026-06-15T20:16:11Z"
+publishDate: 2026-06-15T20:16:11Z
 reviewNotes: []
-image: "santorini-sunset"
+image: santorini-sunset
+seoTitle: "Fira, Santorini Itinerary: Three to Seven Days"
+clusterRole: itineraries
 ---
 
 ## The Smart Santorini Itinerary: 3 to 7 Days from the Island's Best Base

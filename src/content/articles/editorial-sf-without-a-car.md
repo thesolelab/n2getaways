@@ -8,6 +8,7 @@ excerpt: A practical first-visit guide to choosing Muni, BART and cable cars,
   with official sources and a clear airport-to-hotel planning approach.
 category: Travel guide
 image: sf-painted-ladies
+imageDisplay: full
 imageAlt: Colorful Painted Ladies houses with the San Francisco skyline and moon beyond
 readTime: 6
 publishDate: 2026-11-12
@@ -19,6 +20,7 @@ draft: true
 placeholder: false
 migrationReview: false
 reviewNotes: []
+clusterRole: planning
 ---
 
 Getting around San Francisco without a car starts with a simple decision: match the transport to the part of the trip. Use the city network for local journeys, check regional rail for the airport, and leave room to explore a neighborhood on foot. San Francisco Travel's [transportation overview](https://www.sftravel.com/info/transportation-basics-how-to-get-around-san-francisco) describes the main options, including Muni, BART, walking, and ride services.

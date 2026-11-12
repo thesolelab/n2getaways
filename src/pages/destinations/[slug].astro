@@ -1,5 +1,7 @@
 ---
 import { isProduction } from "../../config/site.mjs";
+import clusters from "../../config/clusters.json";
+import { getImage } from "astro:assets";
 import Base from "../../layouts/Base.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
 import SourceCopy from "../../components/SourceCopy.astro";
@@ -29,18 +31,74 @@ const articles = (await getArticles(sample)).filter(
   (a) => a.data.destination === d.name,
 );
 const imageKey = d.image as keyof typeof photos | undefined;
+const cluster = clusters[d.slug as keyof typeof clusters];
+const social = imageKey
+  ? await getImage({
+      src: photos[imageKey],
+      width: 1200,
+      height: 630,
+      fit: "cover",
+      format: "jpg",
+    })
+  : undefined;
+const roles = [
+  {
+    id: "planning",
+    name: "Plan your trip",
+    description: "Practical guides to help make the main decisions.",
+  },
+  {
+    id: "itineraries",
+    name: "Itineraries",
+    description: "Start with a trip outline, then adapt it to your interests.",
+  },
+  {
+    id: "food",
+    name: "Food & dining",
+    description: "Food articles to explore alongside your travel plans.",
+  },
+  {
+    id: "stays",
+    name: "Where to stay",
+    description: "Accommodation and location coverage from the archive.",
+  },
+  {
+    id: "experiences",
+    name: "Things to do",
+    description: "Activities and sightseeing ideas to consider for your trip.",
+  },
+];
+const groups = roles
+  .map((r) => ({
+    ...r,
+    articles: articles.filter((a) => a.data.clusterRole === r.id),
+  }))
+  .filter((r) => r.articles.length);
+const ungrouped = articles.filter((a) => !a.data.clusterRole);
 ---
 
 <Base
-  title={page?.data.title || `${d.name} travel guides`}
-  description={page?.data.description || d.line}
-  image={imageKey ? photos[imageKey].src : undefined}
+  title={cluster?.title || page?.data.title || `${d.name} travel guides`}
+  description={cluster?.description || page?.data.description || d.line}
+  image={social?.src}
+  imageAlt={cluster?.imageAlt || `${d.name} sample destination photograph`}
+  imageWidth={social ? 1200 : undefined}
+  imageHeight={social ? 630 : undefined}
+  collectionItems={articles.map((article) => ({
+    name: article.data.title,
+    path: article.data.permalink,
+  }))}
+  breadcrumbs={[
+    { name: "Home", path: "/" },
+    { name: "Destinations", path: "/destinations/" },
+    { name: d.name, path: Astro.url.pathname },
+  ]}
 >
   <section class:list={["destination-hero", { "destination-text": !imageKey }]}>
     {imageKey && (
       <Image
         src={photos[imageKey]}
-        alt={`${d.name} ${sample ? "sample photograph" : "article photograph"}`}
+        alt={cluster?.imageAlt || `${d.name} sample photograph`}
         width={Math.min(1800, photos[imageKey].width)}
         loading="eager"
       />
@@ -77,14 +135,41 @@ const imageKey = d.image as keyof typeof photos | undefined;
           : "Migration review. Original articles are available below; some photography and travel details still need review."}
       </p>
     )}
+    {cluster && (
+      <div class="cluster-intro">
+        <p class="eyebrow">{cluster.focus}</p>
+        <h2>Start planning {d.name}</h2>
+        <p>{cluster.intro}</p>
+      </div>
+    )}
+    {groups.length > 0 && (
+      <nav class="cluster-nav" aria-label={`${d.name} guide topics`}>
+        {groups.map((g) => (
+          <a href={`#${g.id}`}>{g.name}</a>
+        ))}
+      </nav>
+    )}
     <div class="section-heading">
       <h2>Explore {d.name}.</h2>
     </div>
-    <div class="article-grid">
-      {articles.map((article) => (
-        <ArticleCard article={article} />
-      ))}
-    </div>
+    {groups.map((group) => (
+      <section class="cluster-group" id={group.id}>
+        <h3>{group.name}</h3>
+        <p>{group.description}</p>
+        <div class="article-grid">
+          {group.articles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      </section>
+    ))}
+    {ungrouped.length > 0 && (
+      <div class="article-grid">
+        {ungrouped.map((article) => (
+          <ArticleCard article={article} />
+        ))}
+      </div>
+    )}
     {page && (
       <section class="destination-copy">
         <p class="eyebrow">Original destination guide</p>

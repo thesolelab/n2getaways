@@ -1166,3 +1166,16 @@ textarea {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Full photographs retain their composition at desktop and mobile widths. */
+.article-cover.article-cover-full { height: auto; object-fit: contain; }
+.breadcrumbs { display:flex; flex-wrap:wrap; gap:0.6rem; max-width:1120px; margin:2rem auto 0; padding:0 6%; font-size:0.8rem; color:var(--teal); }
+.breadcrumbs a, .article-byline a, .related-reading a { text-decoration:underline; text-underline-offset:0.2em; }
+.article-byline { font-size:0.85rem; }
+.related-reading { border-top:1px solid var(--sand); max-width:1120px; margin:0 auto 3rem; }
+.related-reading h2 { font-size:clamp(1.5rem,3vw,2.1rem); }
+.related-reading li { margin:0.65rem 0; }
+.cluster-nav { display:flex; flex-wrap:wrap; gap:0.7rem; margin:1.5rem 0 2.5rem; }
+.cluster-nav a { border:1px solid var(--sand); padding:0.6rem 0.9rem; border-radius:2rem; font-size:0.85rem; }
+.cluster-group { margin:3rem 0; scroll-margin-top:2rem; }
+.cluster-group>p, .cluster-intro { max-width:750px; }

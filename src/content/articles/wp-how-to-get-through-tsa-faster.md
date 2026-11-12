@@ -1,18 +1,23 @@
 ---
-title: "How to Get Through TSA Faster Right Now (Avoid Airport Delays in 2026)"
-description: "Traveling right now isn’t business as usual."
-permalink: "/how-to-get-through-tsa-faster/"
-sourceUrl: "https://n2getaways.com/how-to-get-through-tsa-faster/"
+title: How to Get Through TSA Faster Right Now (Avoid Airport Delays in 2026)
+description: Explore the N2Getaways airport security planning article, then
+  check current TSA and airport information before relying on screening details
+  for a trip.
+permalink: /how-to-get-through-tsa-faster/
+sourceUrl: https://n2getaways.com/how-to-get-through-tsa-faster/
 migrationReview: true
-destination: "Travel tips"
-category: "Travel guide"
-imageAlt: "Illustrative phone display showing airport security wait times beside luggage"
+destination: Travel tips
+category: Travel guide
+imageAlt: Illustrative phone display showing airport security wait times beside luggage
 readTime: 4
 placeholder: false
 draft: false
-publishDate: "2026-03-26T15:20:09Z"
-reviewNotes: ["Time-sensitive airport-security reporting: verify dates, shutdown claims and current official guidance before publication."]
-image: "airport-wait-times"
+publishDate: 2026-03-26T15:20:09Z
+reviewNotes:
+  - "Time-sensitive airport-security reporting: verify dates, shutdown claims
+    and current official guidance before publication."
+image: airport-wait-times
+seoTitle: "How to Get Through TSA Faster: Planning Tips"
 ---
 
 <p>Traveling right now isn’t business as usual.</p>

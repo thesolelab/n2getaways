@@ -10,8 +10,8 @@ const articles = await getArticles();
 ---
 
 <Base
-  title="Travel a little deeper"
-  description="Discover destination inspiration, thoughtful travel guides, and ideas for your next getaway."
+  title="Travel Guides, Weekend Getaways & Itineraries"
+  description="Plan your next getaway with destination guides, weekend itineraries, food articles, and travel planning resources from the N2Getaways publication."
 >
   <section class="hero">
     <Image
@@ -114,5 +114,9 @@ const articles = await getArticles();
       <em>It’s worth it.</em>
     </div>
   </section>
-  {!isProduction && <section class="section"><SourceCopy path="/" collapsible /></section>}
+  {!isProduction && (
+    <section class="section">
+      <SourceCopy path="/" collapsible />
+    </section>
+  )}
 </Base>
