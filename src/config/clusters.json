@@ -1,0 +1,50 @@
+{
+  "san-francisco": {
+    "name": "San Francisco",
+    "title": "San Francisco Travel Guide: Itineraries & Planning",
+    "description": "Plan a San Francisco getaway with weekend itineraries, places to stay, scenic viewpoints, and practical guides organized around your trip.",
+    "intro": "Build your San Francisco plans around a place to stay, a workable itinerary, and a few sights worth making time for. Start with the weekend guide, compare the lodging and viewpoint articles, then use the related reading in each guide to keep planning.",
+    "focus": "City breaks and first-visit planning",
+    "imageAlt": "Golden Gate Bridge spanning blue water beneath a clear sky"
+  },
+  "maui": {
+    "name": "Maui",
+    "title": "Maui Travel Guide: Food & Trip Planning",
+    "description": "Explore Maui travel planning with the N2Getaways Wailea food guide, destination resources, and related reading for your next island getaway.",
+    "intro": "Start with the Wailea-area lunch guide in the Maui archive. This collection brings island planning and food coverage together as new guides are reviewed and published. Check each article\u2019s date and linked sources before relying on changing travel details.",
+    "focus": "Maui planning, with Wailea food coverage",
+    "imageAlt": "Palm trees beside a Maui beach at sunset"
+  },
+  "waikiki": {
+    "name": "Waikiki",
+    "title": "Waikiki Travel Guide: Things to Do & Food",
+    "description": "Explore Waikiki through first-visit ideas, breakfast and lunch articles, and destination guides that help bring a Honolulu getaway together.",
+    "intro": "Choose a few activities from the first-visit guide, then explore the breakfast and lunch articles to shape the day around them. This Waikiki collection connects things to do with food coverage; it does not require a packed schedule to be useful.",
+    "focus": "Waikiki activities and dining",
+    "imageAlt": "View across the Diamond Head crater and surrounding Honolulu hills"
+  },
+  "costa-rica": {
+    "name": "Costa Rica",
+    "title": "Costa Rica Travel Guide: Arenal & La Fortuna",
+    "description": "Explore Costa Rica coverage focused on Arenal and La Fortuna, including The Springs Resort articles and related resources for planning a trip.",
+    "intro": "The Costa Rica archive currently centers on The Springs Resort in the Arenal and La Fortuna area. Start with the resort overview, then read the activities guide for more detail. Future planning coverage will build on that regional focus rather than suggest this is already a complete country guide.",
+    "focus": "Arenal and La Fortuna",
+    "imageAlt": "Arenal Volcano beyond tropical gardens and resort lounge chairs"
+  },
+  "asheville": {
+    "name": "Asheville",
+    "title": "Asheville Travel Guide: Weekend Itineraries & Ideas",
+    "description": "Plan an Asheville weekend with a 48-hour itinerary, things to do, and related destination guides organized to help shape your North Carolina trip.",
+    "intro": "Use the 48-hour itinerary as a starting point, then explore the things-to-do guide to choose what fits your trip. Keep the plan flexible and check the current operator and access information linked in each article before setting out.",
+    "focus": "Asheville weekends and activities",
+    "imageAlt": "Boston Way street sign and autumn trees in Biltmore Village"
+  },
+  "santorini": {
+    "name": "Santorini",
+    "title": "Santorini Travel Guide: Fira Itineraries & Planning",
+    "description": "Start planning Santorini with the N2Getaways Fira itinerary, ideas for choosing a trip length, and related island travel guides as they are published.",
+    "intro": "Start with the Fira itinerary to compare the shape of a shorter or longer Santorini trip. The collection currently has one detailed itinerary; new transport, lodging, and trip-planning guides will appear here only after editorial approval.",
+    "focus": "Fira-based Santorini planning",
+    "imageAlt": "Sunset over the sea beside a white church and two glasses on a terrace"
+  }
+}

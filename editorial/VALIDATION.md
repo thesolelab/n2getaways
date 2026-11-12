@@ -12,9 +12,25 @@ Initial end-to-end test: [draft PR #1](https://github.com/thesolelab/n2getaways/
 - Normal article route is absent from the branch build; live article and live editorial-preview URLs both returned 404. Production rehearsal generated 38 pages, compared with 39 in the draft branch preview. Draft not present in production sitemap or homepage.
 - Running the selector again from clean main returned no eligible unreserved topic: the existing PR reserves the approved topic even though main's queue remains approved until that PR is merged. No duplicate draft created.
 - Publication sync on main returned no newly published topics and left the queue unchanged. Actual publication/merge was intentionally not tested because the owner has not approved the article for release.
-- Owner subsequently selected a different cityscape-at-dusk photo inline. The original downloadable image file is pending; PR research notes require replacing the provisional cover before approval. This is the only pending asset setup item.
+- Owner supplied SF Image.zip with the Painted Ladies photograph. It is installed with its original-byte receipt, credit and descriptive alt text. The cover now uses full image proportions so the houses remain visible; cards position this image toward the bottom.
 - Patched YAML 2.9.1 is the only added development dependency. npm audit returned zero vulnerabilities.
 
 No production article, email setting, DNS record, schedule, auto-merge or paid service was changed by this test. New workflow tooling on main deploys normally through the existing Pages project; the test article remains solely in its unmerged branch.
 
-Preview deployments are public and excluded from indexing, not access-controlled. The test covers automatic checks and HTTP output, not a fresh visual/mobile browser inspection or independent transit operations audit.
+Preview deployments are public and excluded from indexing, not access-controlled. The initial test covered automatic checks and HTTP output; independent transit operations verification remains an editorial responsibility.
+
+## Metadata and destination cluster extension
+
+Ten Node tests now pass, including publisher/page/image/article relationships, draft-date exclusions and script-safe JSON-LD serialization. Preview validation covers 39 HTML pages, full metadata consistency, six destination hubs and 12 published supporting-article backlinks. Twenty additional supporting topics are proposed in the queue, not approved or published. Production validation checks the same cluster/metadata behavior with all draft routes absent. All imported article/page prose and original URLs remain intact; original publication dates are retained.
+
+The draft PR includes enhanced title/description metadata for the imported archive, consistent Open Graph and X/Twitter metadata, optimized social images, visible breadcrumbs and matching structured data, truthful editorial byline/source citations, and related reading. No synthetic update dates, personal experiences, rankings promises or special AI crawler policies are introduced. Full-image cover display is enabled for the supplied Painted Ladies photograph.
+
+Final cover layout check: local Chromium at 1440px desktop and 390px mobile confirmed full image proportions (`object-fit: contain`, automatic height), no horizontal overflow, and visible Painted Ladies houses in screenshots. Font fallbacks were used for this local composition check. The updated Cloudflare branch preview was verified to contain the full-cover class, BlogPosting/BreadcrumbList data and noindex protections. GitHub validation and Cloudflare Pages checks passed for the source change.
+
+## Related reading and cluster usability correction
+
+Reproduced the related-reading collapse at 2560px and 3440px: viewport-derived `.section` gutters consumed the width of the capped container, leaving a 40px list box. Removed that inherited class and gave the section bounded internal padding. Chromium confirms a 350px list at 390px and a 1008px list at 1440/2560/3440, with no horizontal overflow.
+
+Destination topic groups now share one responsive grid, with compact category headers/counts and consistently sized article images. Removed the repeated Explore heading and generic category descriptions. A single-guide destination uses a horizontal featured card on desktop and a stacked card on mobile. Checked all six destination hubs at 390, 1440 and 3440px: no overflow or collapsed columns. San Francisco's three groups occupy one desktop row. Inspected screenshots of the corrected related-reading section and San Francisco hub. Full preview validation passes (39 HTML pages, original content/URLs, metadata and six-hub linking checks).
+
+Destination banner correction: the San Francisco source photo is 900×600 and was stretched/cropped across the full viewport. The opener now has a bounded 1328px split layout, readable text on teal, and a complete uncropped image; mobile stacks text and image. Responsive source variants respect original dimensions. Chromium checked all six destinations at 390/1440/3440px: original image aspect ratios retained, no text/image overlap or horizontal overflow. San Francisco image displays about 799×533 at desktop and 808×539 at ultrawide instead of stretching across the full screen. Full Astro validation passes after the banner change.

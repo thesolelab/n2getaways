@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0",
     "check": "astro check",
-    "validate": "npm run editorial:check && npm run check && npm run build && node scripts/validate.mjs && python3 scripts/validate-migration.py && node scripts/editorial/check-output.mjs",
+    "validate": "npm run editorial:check && npm run check && npm run build && node scripts/validate.mjs && python3 scripts/validate-migration.py && node scripts/editorial/check-output.mjs && node scripts/editorial/check-seo.mjs && node scripts/editorial/check-clusters.mjs",
     "editorial:next": "node scripts/editorial/cli.mjs next",
     "editorial:stage": "node scripts/editorial/cli.mjs stage",
     "editorial:submit": "node scripts/editorial/cli.mjs submit",

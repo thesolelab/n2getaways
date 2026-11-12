@@ -1,18 +1,22 @@
 ---
-title: "Best Things to Do in Waikiki for First-Time Visitors"
-description: "Waikiki is one of the most iconic destinations in Hawaii, known for its beaches, ocean views, and easy access to some of Oahu’s top experiences."
-permalink: "/things-to-do-in-waikiki-first-time-visitors/"
-sourceUrl: "https://n2getaways.com/things-to-do-in-waikiki-first-time-visitors/"
+title: Best Things to Do in Waikiki for First-Time Visitors
+description: Explore things to do in Waikiki for a first visit, from sightseeing
+  ideas to related food articles, with links to help organize a Honolulu
+  getaway.
+permalink: /things-to-do-in-waikiki-first-time-visitors/
+sourceUrl: https://n2getaways.com/things-to-do-in-waikiki-first-time-visitors/
 migrationReview: true
-destination: "Waikiki"
-category: "Travel guide"
-imageAlt: "View across the Diamond Head crater and surrounding Honolulu hills"
+destination: Waikiki
+category: Travel guide
+imageAlt: View across the Diamond Head crater and surrounding Honolulu hills
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-03-27T20:32:24Z"
+publishDate: 2026-03-27T20:32:24Z
 reviewNotes: []
-image: "diamond-head"
+image: diamond-head
+seoTitle: Things to Do in Waikiki for First-Time Visitors
+clusterRole: experiences
 ---
 
 <p>Waikiki is one of the most iconic destinations in Hawaii, known for its beaches, ocean views, and easy access to some of Oahu’s top experiences.</p>

@@ -5,11 +5,14 @@
     "destination": "San Francisco",
     "targetKeyword": "getting around San Francisco without a car",
     "priority": 1,
-    "status": "approved",
+    "status": "drafted",
     "notBefore": "2026-11-12",
-    "image": "golden-gate",
-    "imageAlt": "Golden Gate Bridge in San Francisco",
-    "editorialNotes": "Initial manually requested workflow test. Distinguish Muni, BART and cable cars. Use current official sources. Do not invent fares, schedules, accessibility details or first-hand experience. Do not duplicate the existing 48-hour itinerary. The cover is destination context, not a transit photograph."
+    "image": "sf-painted-ladies",
+    "imageAlt": "Colorful Painted Ladies houses with the San Francisco skyline and moon beyond",
+    "editorialNotes": "Initial manually requested workflow test. Distinguish Muni, BART and cable cars. Use current official sources. Do not invent fares, schedules, accessibility details or first-hand experience. Do not duplicate the existing 48-hour itinerary. The owner-selected Painted Ladies cover is destination context, not a transit photograph.",
+    "branch": "editorial/topic-sf-without-a-car",
+    "permalink": "/getting-around-san-francisco-without-a-car/",
+    "clusterRole": "planning"
   },
   {
     "id": "maui-trip-planning",
@@ -18,6 +21,197 @@
     "targetKeyword": "Maui trip planning reservations",
     "priority": 2,
     "status": "proposed",
-    "editorialNotes": "Owner must approve before selection; verify current local guidance and park reservation requirements."
+    "editorialNotes": "Owner must approve before selection; verify current local guidance and park reservation requirements.",
+    "clusterRole": "planning"
+  },
+  {
+    "id": "sf-first-trip-budget",
+    "title": "San Francisco Trip Budget: What to Plan For",
+    "destination": "San Francisco",
+    "targetKeyword": "San Francisco trip budget",
+    "clusterRole": "planning",
+    "priority": 3,
+    "status": "proposed",
+    "editorialNotes": "Separate transport, accommodation and attraction budgeting. Research current official prices; avoid unsupported daily-cost claims."
+  },
+  {
+    "id": "sf-neighborhoods-first-visit",
+    "title": "San Francisco Neighborhoods for a First Visit: How to Choose",
+    "destination": "San Francisco",
+    "targetKeyword": "San Francisco neighborhoods for first time visitors",
+    "clusterRole": "planning",
+    "priority": 4,
+    "status": "proposed",
+    "editorialNotes": "Compare trip priorities and locations using primary neighborhood and transit sources. Complement the existing lodging guide; no fabricated stays."
+  },
+  {
+    "id": "sf-cable-cars-planning",
+    "title": "Planning a San Francisco Cable Car Ride: Routes and Tickets",
+    "destination": "San Francisco",
+    "targetKeyword": "San Francisco cable car guide",
+    "clusterRole": "experiences",
+    "priority": 5,
+    "status": "proposed",
+    "editorialNotes": "Detailed attraction-specific intent; link to car-free transport guide, avoid duplicating its system overview. Verify operator payment, boarding and accessibility details."
+  },
+  {
+    "id": "maui-first-visit-itinerary",
+    "title": "A First Maui Itinerary: How to Plan Five Days",
+    "destination": "Maui",
+    "targetKeyword": "Maui 5 day itinerary",
+    "clusterRole": "itineraries",
+    "priority": 6,
+    "status": "proposed",
+    "editorialNotes": "Create a geographically workable plan from official sources; verify reservations and local travel guidance. No claimed road testing."
+  },
+  {
+    "id": "maui-where-to-stay",
+    "title": "Where to Stay on Maui: Choosing an Area for Your Trip",
+    "destination": "Maui",
+    "targetKeyword": "where to stay on Maui",
+    "clusterRole": "stays",
+    "priority": 7,
+    "status": "proposed",
+    "editorialNotes": "Area-level decision guide with clearly sourced transport/geography; no invented hotel visits or affiliate relationships."
+  },
+  {
+    "id": "maui-airport-transport",
+    "title": "Getting Around Maui: Airport Transfers and Car-Free Options",
+    "destination": "Maui",
+    "targetKeyword": "getting around Maui",
+    "clusterRole": "planning",
+    "priority": 8,
+    "status": "proposed",
+    "editorialNotes": "Verify current airport and county transport options and limitations. Avoid implying public transit reaches every attraction."
+  },
+  {
+    "id": "maui-beach-planning",
+    "title": "Planning Maui Beach Days: Access and Responsible Visiting",
+    "destination": "Maui",
+    "targetKeyword": "Maui beach planning",
+    "clusterRole": "experiences",
+    "priority": 9,
+    "status": "proposed",
+    "editorialNotes": "Use official current access/safety resources. No swimming-safety guarantees, invented conditions or claims of local authority."
+  },
+  {
+    "id": "waikiki-weekend-itinerary",
+    "title": "Two Days in Waikiki: A Flexible First-Visit Itinerary",
+    "destination": "Waikiki",
+    "targetKeyword": "Waikiki 2 day itinerary",
+    "clusterRole": "itineraries",
+    "priority": 10,
+    "status": "proposed",
+    "editorialNotes": "Complement the existing activities article; link breakfast/lunch stories in context. Verify timing and reservations."
+  },
+  {
+    "id": "waikiki-where-to-stay",
+    "title": "Where to Stay in Waikiki: Choosing Your Location",
+    "destination": "Waikiki",
+    "targetKeyword": "where to stay in Waikiki",
+    "clusterRole": "stays",
+    "priority": 11,
+    "status": "proposed",
+    "editorialNotes": "Compare location tradeoffs using current official maps and operator information; no fabricated hotel stays."
+  },
+  {
+    "id": "waikiki-without-car",
+    "title": "Waikiki Without a Car: Airport and Local Transport Planning",
+    "destination": "Waikiki",
+    "targetKeyword": "Waikiki without a car",
+    "clusterRole": "planning",
+    "priority": 12,
+    "status": "proposed",
+    "editorialNotes": "Check TheBus, airport and official transit resources; scope to Waikiki rather than claiming all Oahu works without a car."
+  },
+  {
+    "id": "la-fortuna-itinerary",
+    "title": "Three Days in La Fortuna: Arenal Trip Planning",
+    "destination": "Costa Rica",
+    "targetKeyword": "La Fortuna 3 day itinerary",
+    "clusterRole": "itineraries",
+    "priority": 13,
+    "status": "proposed",
+    "editorialNotes": "Extend the existing Arenal resort coverage into an area itinerary. Verify park access and attraction availability; no invented firsthand experience."
+  },
+  {
+    "id": "la-fortuna-transport",
+    "title": "Getting to La Fortuna: Airport and Transfer Planning",
+    "destination": "Costa Rica",
+    "targetKeyword": "getting to La Fortuna",
+    "clusterRole": "planning",
+    "priority": 14,
+    "status": "proposed",
+    "editorialNotes": "Use official airport/transport operator sources; compare planning choices without guaranteed transfer times."
+  },
+  {
+    "id": "arenal-park-planning",
+    "title": "Arenal Volcano National Park: Planning a Visit",
+    "destination": "Costa Rica",
+    "targetKeyword": "Arenal Volcano National Park guide",
+    "clusterRole": "experiences",
+    "priority": 15,
+    "status": "proposed",
+    "editorialNotes": "Use SINAC rules, tickets and access information; verify current trail closures and accessibility. Avoid activity safety guarantees."
+  },
+  {
+    "id": "asheville-where-to-stay",
+    "title": "Where to Stay in Asheville: Choosing a Weekend Base",
+    "destination": "Asheville",
+    "targetKeyword": "where to stay in Asheville",
+    "clusterRole": "stays",
+    "priority": 16,
+    "status": "proposed",
+    "editorialNotes": "Area-level guide, not invented property reviews; link the weekend itinerary and attractions archive."
+  },
+  {
+    "id": "asheville-food-planning",
+    "title": "Planning Where to Eat in Asheville: Neighborhoods and Reservations",
+    "destination": "Asheville",
+    "targetKeyword": "Asheville food planning",
+    "clusterRole": "food",
+    "priority": 17,
+    "status": "proposed",
+    "editorialNotes": "Research current official tourism and venue sources, verify operating status, avoid personal endorsements and invented meals."
+  },
+  {
+    "id": "asheville-scenic-drives",
+    "title": "Scenic Drives Near Asheville: Access and Trip Planning",
+    "destination": "Asheville",
+    "targetKeyword": "scenic drives near Asheville",
+    "clusterRole": "experiences",
+    "priority": 18,
+    "status": "proposed",
+    "editorialNotes": "Verify current NPS and road authority closures/recovery conditions. Do not promise open routes or precise travel times."
+  },
+  {
+    "id": "santorini-where-to-stay",
+    "title": "Fira or Oia: Choosing Where to Stay on Santorini",
+    "destination": "Santorini",
+    "targetKeyword": "Fira or Oia where to stay",
+    "clusterRole": "stays",
+    "priority": 19,
+    "status": "proposed",
+    "editorialNotes": "Compare location and transport tradeoffs with official sources; complement Fira itinerary rather than fabricate stays."
+  },
+  {
+    "id": "santorini-transport",
+    "title": "Getting Around Santorini: Buses, Transfers and Planning",
+    "destination": "Santorini",
+    "targetKeyword": "getting around Santorini",
+    "clusterRole": "planning",
+    "priority": 20,
+    "status": "proposed",
+    "editorialNotes": "Use official KTEL/airport/port/operator sources, verify seasonal timetables and fares, avoid assumed bus coverage."
+  },
+  {
+    "id": "santorini-season-planning",
+    "title": "When to Visit Santorini: Planning Around the Season",
+    "destination": "Santorini",
+    "targetKeyword": "when to visit Santorini",
+    "clusterRole": "planning",
+    "priority": 21,
+    "status": "proposed",
+    "editorialNotes": "Research seasonality and service availability from primary sources; no guaranteed weather or crowd predictions."
   }
 ]

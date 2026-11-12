@@ -1,21 +1,69 @@
 ---
 import "../styles/global.css";
+import { getImage } from "astro:assets";
+import defaultPhoto from "../assets/asheville.jpg";
+import {
+  structuredGraph,
+  jsonLD,
+  type ArticleMetadata,
+  type Breadcrumb,
+} from "../seo";
 import { isProduction, isReviewPath } from "../config/site.mjs";
 interface Props {
   title: string;
   description: string;
   image?: string;
   article?: boolean;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  articleMetadata?: ArticleMetadata;
+  breadcrumbs?: Breadcrumb[];
+  collectionItems?: Breadcrumb[];
 }
 const {
   title,
   description,
-  image = "/social.jpg",
+  image,
+  imageAlt = "Autumn street scene in Biltmore Village, Asheville",
+  imageWidth,
+  imageHeight,
+  articleMetadata,
+  breadcrumbs = [],
+  collectionItems = [],
   article = false,
 } = Astro.props;
 const noindex = !isProduction || isReviewPath(Astro.url.pathname);
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const social = new URL(image, Astro.site);
+const fallback = !image
+  ? await getImage({
+      src: defaultPhoto,
+      width: 1200,
+      height: 630,
+      fit: "cover",
+      format: "jpg",
+    })
+  : undefined;
+const social = new URL(image ?? fallback!.src, Astro.site);
+const socialAlt =
+  imageAlt || "Autumn street scene in Biltmore Village, Asheville";
+const socialWidth = imageWidth ?? (fallback ? 1200 : undefined);
+const socialHeight = imageHeight ?? (fallback ? 630 : undefined);
+const graph = structuredGraph({
+  origin: Astro.site!.href,
+  path: Astro.url.pathname,
+  title,
+  description,
+  image: {
+    src: social.href,
+    alt: socialAlt,
+    width: socialWidth,
+    height: socialHeight,
+  },
+  article: articleMetadata,
+  breadcrumbs,
+  collectionItems,
+});
 ---
 
 <!doctype html>
@@ -35,18 +83,42 @@ const social = new URL(image, Astro.site);
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content={article ? "article" : "website"} />
     <meta property="og:image" content={social} />
+    <meta property="og:site_name" content="N2Getaways" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:alt" content={socialAlt} />
+    {socialWidth && (
+      <meta property="og:image:width" content={String(socialWidth)} />
+    )}
+    {socialHeight && (
+      <meta property="og:image:height" content={String(socialHeight)} />
+    )}
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={social} />
+    <meta name="twitter:image:alt" content={socialAlt} />
+    {articleMetadata &&
+      !articleMetadata.draft &&
+      !articleMetadata.placeholder && (
+        <meta
+          property="article:published_time"
+          content={articleMetadata.publishDate?.toISOString()}
+        />
+      )}
+    {articleMetadata?.updatedDate &&
+      !articleMetadata.draft &&
+      !articleMetadata.placeholder && (
+        <meta
+          property="article:modified_time"
+          content={articleMetadata.updatedDate.toISOString()}
+        />
+      )}
+    {articleMetadata && (
+      <meta property="article:section" content={articleMetadata.category} />
+    )}
     <meta name="theme-color" content="#1D383B" />
     <link rel="icon" href="/favicon.svg" />
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "N2Getaways",
-        url: Astro.site,
-      })}
-    />
+    <script type="application/ld+json" set:html={jsonLD(graph)} />
   </head>
   <body>
     <a class="skip" href="#main">

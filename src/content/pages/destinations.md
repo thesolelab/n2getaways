@@ -1,10 +1,12 @@
 ---
-title: "Destinations"
-description: "Simple travel guides, destination highlights, and local food spots to help you plan memorable trips — whether you'retraveling for a weekend or a full vacation."
-permalink: "/destinations/"
-sourceUrl: "https://n2getaways.com/destinations/"
+title: Destinations
+description: Explore N2Getaways destination guides for San Francisco, Maui,
+  Waikiki, Costa Rica, Asheville, and Santorini, with links to published
+  itineraries and articles.
+permalink: /destinations/
+sourceUrl: https://n2getaways.com/destinations/
 migrationReview: true
-displayTitle: "Discover Your Next Getaway"
+displayTitle: Discover Your Next Getaway
 reviewNotes: []
 ---
 

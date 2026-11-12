@@ -1,11 +1,10 @@
 /** No inference API, billing integration, or automatic publishing. */
 import { execFileSync } from "node:child_process";
-import { mkdirSync, writeFileSync, existsSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import {
   config,
   json,
   inventory,
-  validateQueue,
   selectTopic,
   validateDraft,
   markdown,

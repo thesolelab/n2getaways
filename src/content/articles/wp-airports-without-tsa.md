@@ -1,18 +1,24 @@
 ---
-title: "Are Airports Really Operating Without TSA? Here’s What Travelers Need to Know Right Now"
-description: "Airport lines and TSA has been a constant discussion and a valid concern for travelers. It’s been circulating more as government shutdown concerns grow—and understandably, it’s…"
-permalink: "/airports-without-tsa/"
-sourceUrl: "https://n2getaways.com/airports-without-tsa/"
+title: Are Airports Really Operating Without TSA? Here’s What Travelers Need to
+  Know Right Now
+description: Read the N2Getaways archive article about airports without TSA,
+  with a reminder to verify current airport screening arrangements before
+  planning travel.
+permalink: /airports-without-tsa/
+sourceUrl: https://n2getaways.com/airports-without-tsa/
 migrationReview: true
-destination: "Travel tips"
-category: "Travel guide"
-imageAlt: "Illustration of a crowd at an airport security checkpoint"
+destination: Travel tips
+category: Travel guide
+imageAlt: Illustration of a crowd at an airport security checkpoint
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-03-26T00:32:12Z"
-reviewNotes: ["Time-sensitive airport-security reporting: verify dates, shutdown claims and current official guidance before publication."]
-image: "airport-security"
+publishDate: 2026-03-26T00:32:12Z
+reviewNotes:
+  - "Time-sensitive airport-security reporting: verify dates, shutdown claims
+    and current official guidance before publication."
+image: airport-security
+seoTitle: "Airports Without TSA: Understanding the Distinction"
 ---
 
 <p>Airport lines and TSA has been a constant discussion and a valid concern for travelers. It’s been circulating more as government shutdown concerns grow—and understandably, it’s raising a lot of questions.</p>

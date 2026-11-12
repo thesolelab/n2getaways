@@ -2,9 +2,9 @@
 import type { CollectionEntry } from "astro:content";
 import { isProduction } from "../config/site.mjs";
 import Base from "../layouts/Base.astro";
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import { render } from "astro:content";
-import { photos, destinationPath } from "../lib";
+import { photos, destinationPath, getArticles } from "../lib";
 interface Props {
   article: CollectionEntry<"articles">;
 }
@@ -12,30 +12,65 @@ const { article } = Astro.props;
 const { data } = article;
 const coverWidth = data.image ? photos[data.image].width : 1600;
 const { Content, headings } = await render(article);
+const social = data.image
+  ? await getImage({
+      src: photos[data.image],
+      width: 1200,
+      height: 630,
+      fit: data.imageDisplay === "full" ? "contain" : "cover",
+      format: "jpg",
+    })
+  : undefined;
+const researchFiles = import.meta.glob<{
+  default: { sources: { url: string }[] };
+}>("../../editorial/research/*.json", { eager: true });
+const sources = data.editorialTopicId
+  ? researchFiles[
+      `../../editorial/research/${data.editorialTopicId}.json`
+    ]?.default.sources.map((s) => s.url)
+  : undefined;
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: data.destination, path: destinationPath(data.destination) },
+  { name: data.title, path: Astro.url.pathname },
+];
+const related = (await getArticles())
+  .filter(
+    (a) =>
+      a.data.destination === data.destination &&
+      a.data.permalink !== data.permalink,
+  )
+  .slice(0, 3);
 ---
 
 <Base
   title={data.seoTitle ?? data.title}
   description={data.description}
-  image={data.image ? photos[data.image].src : undefined}
+  image={social?.src}
+  imageAlt={data.imageAlt}
+  imageWidth={social ? 1200 : undefined}
+  imageHeight={social ? 630 : undefined}
+  breadcrumbs={crumbs}
+  articleMetadata={{
+    headline: data.title,
+    destination: data.destination,
+    category: data.category,
+    publishDate: data.publishDate,
+    updatedDate: data.updatedDate,
+    draft: data.draft,
+    placeholder: data.placeholder,
+    publicationByline: Boolean(data.editorialTopicId),
+    sources,
+  }}
   article
 >
-  <script
-    type="application/ld+json"
-    set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: data.title,
-      description: data.description,
-      ...(data.image
-        ? { image: new URL(photos[data.image].src, Astro.site).href }
-        : {}),
-      ...(!data.placeholder
-        ? { datePublished: data.publishDate.toISOString() }
-        : {}),
-      mainEntityOfPage: new URL(data.permalink, Astro.site).href,
-    })}
-  />
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href={destinationPath(data.destination)}>{data.destination}</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">{data.title}</span>
+  </nav>
   <article data-editorial-topic={data.editorialTopicId}>
     {data.draft && (
       <p class="notice">
@@ -49,6 +84,24 @@ const { Content, headings } = await render(article);
       </a>
       <h1>{data.title}</h1>
       <p>{data.description}</p>
+      {data.editorialTopicId && (
+        <p class="article-byline">
+          By <a href="/about/">N2Getaways</a>
+        </p>
+      )}
+      {data.updatedDate && !data.draft && (
+        <p>
+          Updated{" "}
+          <time datetime={data.updatedDate.toISOString()}>
+            {data.updatedDate.toLocaleDateString("en-US", {
+              timeZone: "UTC",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </time>
+        </p>
+      )}
       <div class="card-meta">
         {data.placeholder
           ? "Editorial placeholder · "
@@ -80,7 +133,10 @@ const { Content, headings } = await render(article);
     </header>
     {data.image && (
       <Image
-        class="article-cover"
+        class:list={[
+          "article-cover",
+          { "article-cover-full": data.imageDisplay === "full" },
+        ]}
         src={photos[data.image]}
         alt={data.imageAlt}
         width={Math.min(1600, coverWidth)}
@@ -137,5 +193,20 @@ const { Content, headings } = await render(article);
         </a>
       </div>
     </div>
+    {related.length > 0 && (
+      <section class="related-reading">
+        <h2>Continue planning {data.destination}</h2>
+        <ul>
+          {related.map((a) => (
+            <li>
+              <a href={a.data.permalink}>{a.data.title}</a>
+            </li>
+          ))}
+        </ul>
+        <a class="text-link" href={destinationPath(data.destination)}>
+          All {data.destination} guides ↗
+        </a>
+      </section>
+    )}
   </article>
 </Base>

@@ -1,18 +1,23 @@
 ---
 title: "48 Hours in Asheville: A Simple Mountain Getaway"
-description: "Asheville is one of those places that’s easy to get right."
-permalink: "/48-hours-in-asheville/"
-sourceUrl: "https://n2getaways.com/48-hours-in-asheville/"
+description: Plan an Asheville weekend with the N2Getaways 48-hour itinerary,
+  plus related things-to-do coverage to help shape a short North Carolina
+  getaway.
+permalink: /48-hours-in-asheville/
+sourceUrl: https://n2getaways.com/48-hours-in-asheville/
 migrationReview: true
-destination: "Asheville"
-category: "Itinerary"
-imageAlt: "Boston Way street sign beside autumn trees in Biltmore Village"
+destination: Asheville
+category: Itinerary
+imageAlt: Boston Way street sign beside autumn trees in Biltmore Village
 readTime: 3
 placeholder: false
 draft: false
-publishDate: "2026-04-07T15:41:47Z"
-reviewNotes: ["Pilot review findings remain recorded in the migration report."]
-image: "asheville"
+publishDate: 2026-04-07T15:41:47Z
+reviewNotes:
+  - Pilot review findings remain recorded in the migration report.
+image: asheville
+seoTitle: "48 Hours in Asheville: Weekend Itinerary"
+clusterRole: itineraries
 ---
 
 <p>Asheville is one of those places that’s easy to get right.</p>

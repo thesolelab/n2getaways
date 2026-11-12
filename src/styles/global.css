@@ -1166,3 +1166,46 @@ textarea {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Full photographs retain their composition at desktop and mobile widths. */
+.article-cover.article-cover-full { height: auto; object-fit: contain; }
+.breadcrumbs { display:flex; flex-wrap:wrap; gap:0.6rem; max-width:1120px; margin:2rem auto 0; padding:0 6%; font-size:0.8rem; color:var(--teal); }
+.breadcrumbs a, .article-byline a, .related-reading a { text-decoration:underline; text-underline-offset:0.2em; }
+.article-byline { font-size:0.85rem; }
+/* Bounded gutters: viewport-based .section padding collapses capped containers on ultrawide screens. */
+.related-reading { width:100%; min-width:0; border-top:1px solid var(--sand); max-width:1120px; margin:0 auto 3rem; padding:clamp(32px,5vw,64px) clamp(20px,4vw,56px); }
+.related-reading ul { margin:1.5rem 0; padding-inline-start:1.25rem; }
+.related-reading a { overflow-wrap:break-word; }
+.related-reading .text-link { display:inline-block; white-space:normal; }
+.related-reading h2 { font-size:clamp(1.5rem,3vw,2.1rem); }
+.related-reading li { margin:0.65rem 0; }
+.cluster-nav { display:flex; flex-wrap:wrap; gap:0.7rem; margin:1.5rem 0 2.5rem; }
+.cluster-nav a { border:1px solid var(--sand); padding:0.6rem 0.9rem; border-radius:2rem; font-size:0.85rem; }
+/* Topic groups share one responsive grid rather than each reserving three mostly empty columns. */
+.section.destination-hub { width:100%; max-width:1440px; margin-inline:auto; padding:clamp(32px,5vw,72px) clamp(20px,4vw,56px); }
+.cluster-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:36px; align-items:start; }
+.cluster-group { min-width:0; margin:0; scroll-margin-top:2rem; }
+.cluster-group-heading { display:flex; align-items:baseline; flex-wrap:wrap; justify-content:space-between; gap:0.75rem; border-top:1px solid var(--sand); padding-top:1.25rem; margin-bottom:1.25rem; }
+.cluster-group-heading h2 { font-size:clamp(1.4rem,2vw,1.8rem); margin:0; }
+.cluster-group-heading span { font-size:0.75rem; color:#626962; }
+.cluster-articles { display:grid; gap:2rem; }
+.cluster-grid .article-card h3 { font-size:clamp(1.35rem,2vw,1.85rem); }
+.cluster-grid .card-photo { height:auto; aspect-ratio:16/10; }
+.cluster-grid--single { grid-template-columns:1fr; }
+.cluster-grid--single .cluster-articles { grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); }
+.cluster-grid--feature .article-card>a { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:32px; }
+.cluster-grid--feature .article-card>a>.card-photo { grid-column:1; grid-row:1/6; height:100%; min-height:280px; aspect-ratio:auto; }
+.cluster-grid--feature .article-card>a>:not(.card-photo) { grid-column:2; }
+@media(max-width:650px) { .cluster-grid { grid-template-columns:1fr; gap:32px; } .cluster-grid--feature .article-card>a { display:block; } .cluster-grid--feature .article-card>a>.card-photo { height:auto; min-height:0; aspect-ratio:16/10; } }
+.cluster-group>p, .cluster-intro { max-width:750px; }
+
+/* Bounded destination opener: preserve the complete photograph instead of stretching a 900px image across an ultrawide viewport. */
+.destination-hero { display:grid; grid-template-columns:minmax(0,0.9fr) minmax(0,1.4fr); align-items:stretch; width:calc(100% - clamp(32px,8vw,112px)); max-width:1328px; height:auto; min-height:0; margin:32px auto 0; background:var(--teal); color:var(--ivory); overflow:hidden; }
+.destination-hero::after { content:none; }
+.destination-hero>img { grid-column:2; grid-row:1; width:100%; height:auto; align-self:center; object-fit:contain; }
+.destination-hero>div { position:static; inset:auto; grid-column:1; grid-row:1; min-width:0; padding:clamp(28px,4vw,56px); display:flex; flex-direction:column; justify-content:center; }
+.destination-hero h1 { font-size:clamp(40px,4.5vw,64px); line-height:1.08; overflow-wrap:normal; margin:14px 0 20px; }
+.destination-hero p { font-size:0.95rem; line-height:1.7; margin:0; max-width:42ch; }
+.destination-hero .eyebrow { font-size:0.65rem; letter-spacing:0.14em; color:var(--sand); }
+.destination-hero.destination-text { grid-template-columns:1fr; }
+@media(max-width:800px) { .destination-hero { grid-template-columns:1fr; width:calc(100% - 32px); margin-top:16px; } .destination-hero>div { grid-column:1; grid-row:1; padding:32px 24px; } .destination-hero>img { grid-column:1; grid-row:2; } .destination-hero h1 { font-size:clamp(40px,8vw,56px); } }

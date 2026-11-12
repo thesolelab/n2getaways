@@ -1,18 +1,23 @@
 ---
 title: "48 Hours in San Francisco: The Perfect Weekend Itinerary"
-description: "San Francisco is one of those cities where 48 hours can feel packed with adventure. From historic cable cars and waterfront views to incredible food and iconic neighborhoods,…"
-permalink: "/48-hours-in-san-francisco-the-perfect-quick-city-guide/"
-sourceUrl: "https://n2getaways.com/48-hours-in-san-francisco-the-perfect-quick-city-guide/"
+description: Plan 48 hours in San Francisco with a weekend itinerary covering
+  neighborhoods, waterfront stops, cable cars, and ideas for making a short
+  visit count.
+permalink: /48-hours-in-san-francisco-the-perfect-quick-city-guide/
+sourceUrl: https://n2getaways.com/48-hours-in-san-francisco-the-perfect-quick-city-guide/
 migrationReview: true
-destination: "San Francisco"
-category: "Itinerary"
-imageAlt: "A street performer dancing in front of spectators on waterfront steps"
+destination: San Francisco
+category: Itinerary
+imageAlt: A street performer dancing in front of spectators on waterfront steps
 readTime: 5
 placeholder: false
 draft: false
-publishDate: "2026-03-14T08:25:04Z"
-reviewNotes: ["Pilot review findings remain recorded in the migration report."]
-image: "san-francisco"
+publishDate: 2026-03-14T08:25:04Z
+reviewNotes:
+  - Pilot review findings remain recorded in the migration report.
+image: san-francisco
+seoTitle: "San Francisco Weekend Itinerary: 48 Hours"
+clusterRole: itineraries
 ---
 
 ## A Quick San Francisco Itinerary

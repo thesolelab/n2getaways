@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
 export const root = process.cwd();
@@ -56,6 +56,13 @@ export function validateQueue(queue) {
       config().destinations[t.destination],
       `Destination not represented: ${t.destination}`,
     );
+    if (t.clusterRole)
+      assert(
+        ["planning", "itineraries", "food", "stays", "experiences"].includes(
+          t.clusterRole,
+        ),
+        `Invalid cluster role: ${t.id}`,
+      );
     assert(
       Number.isInteger(t.priority) && t.priority > 0,
       `Invalid priority: ${t.id}`,
@@ -124,6 +131,7 @@ export function knownImages() {
     "portugal",
     "asheville",
     "san-francisco",
+    "sf-painted-ladies",
     ...Object.values(received).map((x) => x.key),
   ]);
 }
@@ -189,6 +197,16 @@ export function validateDraft(
     "Invalid publication metadata",
   );
   assert(data.targetKeyword === topic.targetKeyword, "Target keyword mismatch");
+  if (topic.clusterRole)
+    assert(
+      data.clusterRole === topic.clusterRole,
+      "Article must match the planned cluster role",
+    );
+  if (data.updatedDate)
+    assert(
+      Date.parse(data.updatedDate) >= Date.parse(data.publishDate),
+      "Updated date cannot precede publication",
+    );
   assert(
     Number.isInteger(data.readTime) &&
       data.readTime >= 1 &&

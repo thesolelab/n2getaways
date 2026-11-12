@@ -57,6 +57,7 @@ function fixture() {
     editorialTopicId: t.id,
     targetKeyword: t.targetKeyword,
     destination: t.destination,
+    clusterRole: t.clusterRole,
     title: t.title,
     seoTitle: "San Francisco Without a Car: Getting Around",
     description:

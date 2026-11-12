@@ -1,18 +1,22 @@
 ---
-title: "Best Things to Do at The Springs Resort & Spa at Arenal (Costa Rica Guide)"
-description: "If you're staying at The Springs Resort & Spa at Arenal, you’re not just booking a luxury resort — you’re stepping into one of the most experience-packed destinations in Costa…"
-permalink: "/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/"
-sourceUrl: "https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/"
+title: Best Things to Do at The Springs Resort & Spa at Arenal (Costa Rica Guide)
+description: Explore activities covered in the N2Getaways Springs Resort & Spa
+  guide, with related Arenal resort reading for planning a La Fortuna, Costa
+  Rica trip.
+permalink: /best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/
+sourceUrl: https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/
 migrationReview: true
-destination: "Costa Rica"
-category: "Travel guide"
-imageAlt: "Resort buildings and landscaped pools surrounded by tropical gardens"
+destination: Costa Rica
+category: Travel guide
+imageAlt: Resort buildings and landscaped pools surrounded by tropical gardens
 readTime: 4
 placeholder: false
 draft: false
-publishDate: "2026-03-17T17:41:42Z"
+publishDate: 2026-03-17T17:41:42Z
 reviewNotes: []
-image: "springs-resort"
+image: springs-resort
+seoTitle: Things to Do at The Springs Resort, Arenal
+clusterRole: experiences
 ---
 
 <p>If you&#x27;re staying at <strong>The Springs Resort &amp; Spa at Arenal</strong>, you’re not just booking a luxury resort — you’re stepping into one of the most experience-packed destinations in Costa Rica.</p>

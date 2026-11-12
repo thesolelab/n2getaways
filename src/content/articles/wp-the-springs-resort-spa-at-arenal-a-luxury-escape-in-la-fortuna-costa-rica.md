@@ -1,18 +1,22 @@
 ---
 title: "The Springs Resort & Spa at Arenal: A Luxury Escape in La Fortuna, Costa Rica"
-description: "If you're looking for one of the most spectacular luxury resorts in Costa Rica, The Springs Resort & Spa at Arenal should be at the top of your list."
-permalink: "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/"
-sourceUrl: "https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/"
+description: Explore the N2Getaways article about The Springs Resort & Spa near
+  Arenal, Costa Rica, with related resort activity coverage for La Fortuna trip
+  planning.
+permalink: /the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/
+sourceUrl: https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/
 migrationReview: true
-destination: "Costa Rica"
-category: "Review"
-imageAlt: "Arenal Volcano beyond tropical gardens and resort lounge chairs"
+destination: Costa Rica
+category: Review
+imageAlt: Arenal Volcano beyond tropical gardens and resort lounge chairs
 readTime: 7
 placeholder: false
 draft: false
-publishDate: "2026-03-17T00:29:06Z"
+publishDate: 2026-03-17T00:29:06Z
 reviewNotes: []
-image: "arenal-view"
+image: arenal-view
+seoTitle: "The Springs Resort & Spa: Arenal Stay Guide"
+clusterRole: stays
 ---
 
 <p>If you&#x27;re looking for one of the most spectacular luxury resorts in Costa Rica, <strong>The Springs Resort &amp; Spa at Arenal</strong> should be at the top of your list.</p>
