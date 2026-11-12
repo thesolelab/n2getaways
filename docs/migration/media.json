@@ -1,0 +1,12 @@
+{
+  "/48-hours-in-asheville/": {
+    "key": "asheville",
+    "file": "asheville.jpg",
+    "alt": "Boston Way street sign beside autumn trees in Biltmore Village"
+  },
+  "/48-hours-in-san-francisco-the-perfect-quick-city-guide/": {
+    "key": "san-francisco",
+    "file": "san-francisco.jpeg",
+    "alt": "A street performer dancing in front of spectators on waterfront steps"
+  }
+}

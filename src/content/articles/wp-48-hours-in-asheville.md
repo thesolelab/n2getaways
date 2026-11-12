@@ -3,7 +3,8 @@ title: "48 Hours in Asheville: A Simple Mountain Getaway"
 description: "Asheville is one of those places that’s easy to get right."
 destination: "Asheville"
 category: "Itinerary"
-imageAlt: ""
+image: "asheville"
+imageAlt: "Boston Way street sign beside autumn trees in Biltmore Village"
 readTime: 3
 placeholder: false
 draft: false

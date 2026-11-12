@@ -48,6 +48,10 @@ def main(path):
         first=re.search(r'<p>(.*?)</p>',body,re.S)
         description=text(first[1]) if first else title
         meta={'title':title,'description':description,'destination':PILOT[route],'category':'Itinerary','imageAlt':'','readTime':max(1,math.ceil(len(original.split())/220)),'placeholder':False,'draft':False,'publishDate':i.findtext('wp:post_date_gmt',namespaces=NS).replace(' ','T')+'Z','permalink':route,'sourceUrl':url,'migrationReview':True}
+        media_path=Path('docs/migration/media.json')
+        media=json.loads(media_path.read_text()).get(route) if media_path.exists() else None
+        if media and Path('src/assets',media['file']).is_file():
+            meta.update(image=media['key'],imageAlt=media['alt'])
         out=Path('src/content/articles')/('wp-'+route.strip('/')+'.md')
         out.write_text('---\n'+'\n'.join(k+': '+json.dumps(v,ensure_ascii=False) for k,v in meta.items())+'\n---\n\n'+body.strip()+'\n')
         migrated.append({'path':route,'sourceImages':source_images,'proseFidelity':'passed','headings':len(re.findall(r'^#{2,4} ',body,re.M))})

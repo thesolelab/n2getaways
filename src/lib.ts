@@ -2,7 +2,15 @@ import { getCollection } from "astro:content";
 import italy from "./assets/italy.jpg";
 import japan from "./assets/japan.jpg";
 import portugal from "./assets/portugal.jpg";
-export const photos = { italy, japan, portugal };
+import asheville from "./assets/asheville.jpg";
+import sanFrancisco from "./assets/san-francisco.jpeg";
+export const photos = {
+  italy,
+  japan,
+  portugal,
+  asheville,
+  "san-francisco": sanFrancisco,
+};
 export const destinations = [
   {
     slug: "italy",

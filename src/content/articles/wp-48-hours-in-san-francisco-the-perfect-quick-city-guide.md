@@ -3,7 +3,8 @@ title: "48 Hours in San Francisco: The Perfect Weekend Itinerary"
 description: "San Francisco is one of those cities where 48 hours can feel packed with adventure. From historic cable cars and waterfront views to incredible food and iconic neighborhoods, the city offers plenty to explore even on a quick trip."
 destination: "San Francisco"
 category: "Itinerary"
-imageAlt: ""
+image: "san-francisco"
+imageAlt: "A street performer dancing in front of spectators on waterfront steps"
 readTime: 5
 placeholder: false
 draft: false

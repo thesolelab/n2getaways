@@ -26,3 +26,7 @@ The initial milestone is committed and pushed to `main` in https://github.com/th
 ## WordPress pilot update
 
 The supplied export was inventoried (14 posts, 11 pages, 71 attachment records), and two original articles were imported at their existing URL paths. Prose-fidelity checks pass for both. Current static build: 14 pages. Migration checks cover original paths, review labels, single h1, table-of-contents targets and the inquiry recipient. Contact now composes a `mailto:` draft to the owner-specified address; actual website email sending remains unconnected. Source media is blocked by HTTP 202 bot challenges. Details and follow-up review items: `docs/migration/README.md`.
+
+## Pilot photo restoration
+
+Both original pilot photos were received in an owner-uploaded ZIP and restored to article covers, cards and social metadata. No article wording or URL changed. Article image sizes are capped to avoid enlarging these 1024-pixel source files. Importer media mappings retain these photos on subsequent pilot reimports.

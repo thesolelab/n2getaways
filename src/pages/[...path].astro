@@ -11,6 +11,7 @@ export async function getStaticPaths() {
 }
 const { article } = Astro.props;
 const { data } = article;
+const coverWidth = data.image ? photos[data.image].width : 1600;
 const { Content, headings } = await render(article);
 ---
 
@@ -62,8 +63,8 @@ const { Content, headings } = await render(article);
         class="article-cover"
         src={photos[data.image]}
         alt={data.imageAlt}
-        width={1600}
-        widths={[800, 1200, 1600]}
+        width={Math.min(1600, coverWidth)}
+        widths={[800, 1200, 1600].filter((width) => width <= coverWidth)}
         sizes="100vw"
         loading="eager"
       />
@@ -83,7 +84,9 @@ const { Content, headings } = await render(article);
         <p class="notice">
           {data.placeholder
             ? "Sample content — a template demonstration, not a published travel recommendation or account of personal experience."
-            : "Migration review — original WordPress article text. Photography is pending transfer; travel details have not been reverified."}
+            : data.image
+              ? "Migration review — original WordPress article text and supplied photography. Travel details have not been reverified."
+              : "Migration review — original WordPress article text. Photography is pending transfer; travel details have not been reverified."}
         </p>
         <Content />
         <a

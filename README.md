@@ -31,7 +31,7 @@ Open http://localhost:4321 (or the URL Astro prints). In restricted environments
 
 ## Content workflow
 
-Add Markdown in `src/content/articles/`. Schema lives in `src/content.config.ts`. Explicit `permalink` determines the article route, allowing verified existing WordPress URLs to be retained later. `draft: true` and future `publishDate` values exclude articles from generated routes, discovery, and sitemaps. Static pages only update on a rebuild. Sample entries use `placeholder: true`. The two imported WordPress entries use `placeholder: false`, `migrationReview: true`, and a source URL. Their original text is preserved, with media pending transfer. See `docs/migration/README.md`.
+Add Markdown in `src/content/articles/`. Schema lives in `src/content.config.ts`. Explicit `permalink` determines the article route, allowing verified existing WordPress URLs to be retained later. `draft: true` and future `publishDate` values exclude articles from generated routes, discovery, and sitemaps. Static pages only update on a rebuild. Sample entries use `placeholder: true`. The two imported WordPress entries use `placeholder: false`, `migrationReview: true`, and a source URL. Their original text is preserved, with both original cover photos restored. See `docs/migration/README.md`.
 
 Templates can render guides, itineraries, stories, and reviews. No review endorsements or first-hand experiences are fabricated. Replace sample copy only with verified material. Date fields on examples are build gating values, not claimed publication dates.
 
@@ -49,7 +49,7 @@ Before a separately authorized production launch, remove the noindex meta in Bas
 
 ## Eventual migration
 
-Do not guess WordPress slugs. Obtain a full URL/content export and inventory, retain matching paths through `permalink`, and create reviewed 301 redirects in Cloudflare's `_redirects` only for changed paths. The supplied WordPress export has been inventoried and two original articles imported at their existing paths. WordPress media still presents a bot challenge; see the migration report.
+Do not guess WordPress slugs. Obtain a full URL/content export and inventory, retain matching paths through `permalink`, and create reviewed 301 redirects in Cloudflare's `_redirects` only for changed paths. The supplied WordPress export has been inventoried and two original articles imported at their existing paths. The owner supplied the two pilot photos in a ZIP after direct WordPress image downloads were blocked; see the migration report.
 
 ## Images and fonts
 

@@ -8,7 +8,9 @@ const articles = defineCollection({
     description: z.string(),
     destination: z.string(),
     category: z.enum(["Travel guide", "Itinerary", "Travel story", "Review"]),
-    image: z.enum(["italy", "japan", "portugal"]).optional(),
+    image: z
+      .enum(["italy", "japan", "portugal", "asheville", "san-francisco"])
+      .optional(),
     imageAlt: z.string(),
     readTime: z.number(),
     placeholder: z.boolean(),

@@ -9,7 +9,7 @@ User-supplied WXR export: 14 published posts, 11 published pages, 71 attachment 
 - `/48-hours-in-san-francisco-the-perfect-quick-city-guide/`
 - `/48-hours-in-asheville/`
 
-Original article prose, heading wording, inline links and UTC publication dates are preserved. WordPress block comments, classes and style attributes are stripped, with an allowlist for static HTML. Headings become Markdown for Astro's table of contents. No source image is replaced by unrelated imagery. Both pilot image downloads return HTTP 202 `text/html` bot challenges, not image bytes. Their source URLs remain in `pilot.json` for later media transfer. No redirect is needed for these unchanged article paths.
+Original article prose, heading wording, inline links and UTC publication dates are preserved. WordPress block comments, classes and style attributes are stripped, with an allowlist for static HTML. Headings become Markdown for Astro's table of contents. No source image is replaced by unrelated imagery. Direct WordPress image downloads returned bot challenges. The owner subsequently supplied both original article images in a ZIP; they are now stored locally and optimized by Astro. Their source URLs remain in `pilot.json`, and `media.json` maps the files and descriptive alt text. No redirect is needed for these unchanged article paths.
 
 Reproduce with Python 3 (standard library only), from the project root:
 
@@ -27,7 +27,7 @@ The importer is intentionally restricted to these two reviewed paths. It confirm
 - The original article links to other WordPress articles stay absolute until those articles are migrated. This intentionally keeps them working against the current site.
 - Source destination landing pages are inventoried but not yet migrated. Imported article navigation returns to `/migration-review/` instead of inventing destination page copy.
 - Existing sample articles remain clearly labeled. Imported articles show “Migration review”, not “Sample”.
-- Original image captions/alt text in these two posts are empty. Meaningful descriptions need owner review after original files are available.
+- Original image captions/alt text were empty. Descriptive alt text has been added from visual inspection of the supplied photos.
 
 ## Inquiry recipient
 
@@ -37,4 +37,4 @@ Owner specified `hello@n2getaways.com`. The contact form URL-encodes a `mailto:`
 
 Astro check: zero errors, warnings or hints. Static build: 14 pages. Local route/asset and SEO/noindex checks pass. Importer prose fidelity: both articles pass. Browser interaction and real email delivery have not been verified.
 
-For the next batch, obtain `wp-content/uploads` (ZIP or equivalent original media backup), review the pilot, then map the remaining 12 posts and 11 pages. Keep source URL paths whenever feasible; review changed paths before generating redirects. No WordPress changes, DNS edits, production-domain launch or automatic AI publishing are included.
+For the next batch, review the pilot, then map the remaining 12 posts and 11 pages and collect their media in small batches. Keep source URL paths whenever feasible; review changed paths before generating redirects. No WordPress changes, DNS edits, production-domain launch or automatic AI publishing are included.
