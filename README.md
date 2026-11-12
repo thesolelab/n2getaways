@@ -54,3 +54,7 @@ Do not guess WordPress slugs. Obtain a full URL/content export and inventory, re
 ## Images and fonts
 
 Development photographs downloaded from Unsplash under its standard license (https://unsplash.com/license). See ASSETS.md for exact sources. Astro generates responsive WebP variants during build. Fonts load from Google Fonts with system fallbacks and display=swap; self-hosting is a possible pre-launch improvement. No affiliate links, testimonials, or partnerships are represented.
+
+## Hosted design review
+
+A separate owner-private Sites preview is configured in `.openai/hosting.json`. This is a review copy, not the final Cloudflare Pages deployment. It does not change the WordPress site or domain DNS. Preview builds use the Sites origin via `SITE_URL`; Cloudflare Pages setup remains available as documented above.
