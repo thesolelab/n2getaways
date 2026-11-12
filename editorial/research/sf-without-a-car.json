@@ -4,43 +4,50 @@
       "url": "https://www.sfmta.com/visitors",
       "title": "Visitors \u2014 SFMTA",
       "summary": "Lists Muni buses, Metro, historic streetcars and cable cars, with journey-planning and accessibility resources.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "url": "https://www.bart.gov/guide/airport/sfo",
       "title": "Airport Connections: SFO \u2014 BART",
       "summary": "SFO station is in the International Terminal; AirTrain connects terminals. Current instructions describe contactless/Clipper options and using the same payment method at entry and exit.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "url": "https://www.sftravel.com/info/transportation-basics-how-to-get-around-san-francisco",
       "title": "Transportation Basics \u2014 San Francisco Travel",
       "summary": "Tourism-board overview of local and regional transportation. Used for general orientation, not exact fares or universal payment assertions.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "url": "https://www.sfmta.com/getting-around/muni/fares/munimobile",
       "title": "MuniMobile \u2014 SFMTA",
       "summary": "September 1, 2026 ended sales of single-ride tickets in the app; some products remain during the phased retirement.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "url": "https://www.sfmta.com/fares/7-day-visitor-passport",
       "title": "Visitor Passports \u2014 SFMTA",
       "summary": "Describes 1-, 3- and 7-day Muni coverage including cable cars, and excludes BART/airport transportation.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "url": "https://www.sfmta.com/getting-around/muni/cable-cars",
       "title": "Cable Cars \u2014 SFMTA",
       "summary": "Lists California, Powell-Hyde and Powell-Mason lines and states that cable cars do not have accessible boarding.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "url": "https://www.sfmta.com/accessibility-all",
       "title": "Accessibility for All \u2014 SFMTA",
       "summary": "Links to accessible transit information and current Muni Metro elevator status; individual route suitability must be checked.",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-12",
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     }
   ],
   "claims": [
@@ -49,49 +56,56 @@
       "sourceUrls": [
         "https://www.sfmta.com/visitors"
       ],
-      "verificationRequired": false
+      "verificationRequired": false,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "claim": "BART connects SFO and downtown; airport station/terminal access instructions are published by BART.",
       "sourceUrls": [
         "https://www.bart.gov/guide/airport/sfo"
       ],
-      "verificationRequired": true
+      "verificationRequired": true,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "claim": "BART currently describes contactless and Clipper options and requires the same payment method at entry and exit.",
       "sourceUrls": [
         "https://www.bart.gov/guide/airport/sfo"
       ],
-      "verificationRequired": true
+      "verificationRequired": true,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "claim": "MuniMobile stopped selling single-ride tickets on September 1, 2026; products and transition details are changing.",
       "sourceUrls": [
         "https://www.sfmta.com/getting-around/muni/fares/munimobile"
       ],
-      "verificationRequired": true
+      "verificationRequired": true,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "claim": "Visitor Passports cover specified Muni services including cable cars, not BART or SFO airport transportation.",
       "sourceUrls": [
         "https://www.sfmta.com/fares/7-day-visitor-passport"
       ],
-      "verificationRequired": true
+      "verificationRequired": true,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "claim": "Three cable car lines are listed; cable cars do not offer accessible boarding.",
       "sourceUrls": [
         "https://www.sfmta.com/getting-around/muni/cable-cars"
       ],
-      "verificationRequired": true
+      "verificationRequired": true,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     },
     {
       "claim": "SFMTA offers accessible transit and Metro elevator-status resources; suitability is journey-specific.",
       "sourceUrls": [
         "https://www.sfmta.com/accessibility-all"
       ],
-      "verificationRequired": true
+      "verificationRequired": true,
+      "lastVerifiedAt": "2026-11-12T23:49:50.654977Z"
     }
   ],
   "verificationFlags": [
@@ -119,13 +133,16 @@
   "assistedBy": "Existing ChatGPT session; no paid API",
   "preparedAt": "2026-11-12T20:00:45.601Z",
   "review": {
-    "approved": false,
-    "reviewedBy": "",
-    "reviewedAt": "",
-    "sourcesChecked": false,
-    "claimsChecked": false,
-    "linksChecked": false,
-    "imageryChecked": false
+    "approved": true,
+    "reviewedBy": "thesolelab",
+    "reviewedAt": "2026-11-12",
+    "sourcesChecked": true,
+    "claimsChecked": true,
+    "linksChecked": true,
+    "imageryChecked": true,
+    "approvalEvidence": "Owner answered \u201cyes\u201d to \u201cDo you approve publishing Getting Around San Francisco Without a Car?\u201d in this chat.",
+    "checksPerformedBy": "Assistant: reopened all seven official sources, checked mapped claims and links, and retained the owner-selected cover/credit with the previously verified full-image layout.",
+    "checkedAt": "2026-11-12T23:49:50.654977Z"
   },
   "imagery": {
     "status": "owner-selected-file-received",
@@ -138,8 +155,46 @@
     "receivedAt": "2026-11-12",
     "sha256": "95c82f377eff34913fea88f480852dd0cb4737512de2ce6009687cd42f9d9b9f",
     "description": "Colorful Painted Ladies houses with the San Francisco skyline and moon beyond",
-    "note": "Original bytes preserved from owner upload SF Image.zip. Uploaded file depicts the Painted Ladies and skyline, replacing the earlier inline cityscape selection. Owner selection authorizes image use in this draft, not article publication.",
-    "articleApproval": false,
+    "note": "Original bytes preserved from owner upload SF Image.zip. Owner selected this Painted Ladies photograph and explicitly approved publication of the article in chat on November 12, 2026.",
+    "articleApproval": true,
     "sourceVerification": "Photographer and Unsplash photo identifier are taken from the owner-supplied filename; direct source-page retrieval required authentication in this session."
-  }
+  },
+  "verificationResolutions": [
+    {
+      "flag": "Re-open all operator pages before publication: MuniMobile is in a phased transition and payment products may change.",
+      "status": "checked-for-this-release",
+      "result": "Reopened the current SFMTA MuniMobile page: September 1, 2026 single-ride sales change and phased retirement remain supported; the article links to ongoing changes rather than promising future product availability.",
+      "checkedAt": "2026-11-12T23:49:50.654977Z"
+    },
+    {
+      "flag": "Confirm BART payment rules for families and any concession fares; draft deliberately gives no child-fare or price guarantee.",
+      "status": "checked-for-this-release",
+      "result": "Reopened BART SFO airport payment instructions: contactless/Clipper and same-method entry/exit are supported. The article directs families to the operator instructions and does not claim a child/concession fare.",
+      "checkedAt": "2026-11-12T23:49:50.654977Z"
+    },
+    {
+      "flag": "Check current Visitor Passport coverage, validity and purchase methods; no specific fare prices are quoted.",
+      "status": "checked-for-this-release",
+      "result": "Reopened SFMTA passport information: specified Muni/cable-car coverage and exclusion of BART/SFO transportation remain supported. Article avoids fare prices and directs readers to check current terms.",
+      "checkedAt": "2026-11-12T23:49:50.654977Z"
+    },
+    {
+      "flag": "Check cable-car operating lines and accessibility statements against current operator information.",
+      "status": "checked-for-this-release",
+      "result": "Reopened SFMTA cable car guide: three named lines and lack of accessible boarding remain supported. SFMTA accessibility resource links to current Metro elevator status; no individual trip accessibility guarantee is made.",
+      "checkedAt": "2026-11-12T23:49:50.654977Z"
+    },
+    {
+      "flag": "Set actual publication date and confirm all internal links at editorial approval.",
+      "status": "checked-for-this-release",
+      "result": "Set the actual release timestamp, retained the existing concise permalink, and checked the existing destination and 48-hour itinerary links.",
+      "checkedAt": "2026-11-12T23:49:50.654977Z"
+    },
+    {
+      "flag": "Confirm the contextual Painted Ladies cover and alt text in the article layout during final editorial review.",
+      "status": "checked-for-this-release",
+      "result": "Owner-selected Painted Ladies cover is installed with source/credit, descriptive alt text and full proportions. Desktop/mobile rendering was verified; owner subsequently approved this article for publication.",
+      "checkedAt": "2026-11-12T23:49:50.654977Z"
+    }
+  ]
 }
