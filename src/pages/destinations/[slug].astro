@@ -127,7 +127,7 @@ const ungrouped = articles.filter((a) => !a.data.clusterRole);
       · <a href="https://unsplash.com/license">Unsplash License</a>
     </p>
   )}
-  <section class="section">
+  <section class="section destination-hub">
     {!isProduction && (
       <p class="notice">
         {sample
@@ -149,20 +149,33 @@ const ungrouped = articles.filter((a) => !a.data.clusterRole);
         ))}
       </nav>
     )}
-    <div class="section-heading">
-      <h2>Explore {d.name}.</h2>
+    <div
+      class:list={[
+        "cluster-grid",
+        {
+          "cluster-grid--single": groups.length === 1,
+          "cluster-grid--feature":
+            groups.length === 1 && groups[0].articles.length === 1,
+        },
+      ]}
+    >
+      {groups.map((group) => (
+        <section class="cluster-group" id={group.id}>
+          <header class="cluster-group-heading">
+            <h2>{group.name}</h2>
+            <span>
+              {group.articles.length}{" "}
+              {group.articles.length === 1 ? "guide" : "guides"}
+            </span>
+          </header>
+          <div class="cluster-articles">
+            {group.articles.map((article) => (
+              <ArticleCard article={article} />
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
-    {groups.map((group) => (
-      <section class="cluster-group" id={group.id}>
-        <h3>{group.name}</h3>
-        <p>{group.description}</p>
-        <div class="article-grid">
-          {group.articles.map((article) => (
-            <ArticleCard article={article} />
-          ))}
-        </div>
-      </section>
-    ))}
     {ungrouped.length > 0 && (
       <div class="article-grid">
         {ungrouped.map((article) => (
