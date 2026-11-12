@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import MediaFile from "../../components/MediaFile.astro";
 import media from "../../../docs/migration/missing-media.json";
 const priority = media.filter((m) => m.articlePhoto && !m.external);
 const secondary = media.filter((m) => !m.articlePhoto && !m.external);
@@ -13,7 +14,7 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
   title="Photo transfer checklist"
   description="Exact WordPress photo filenames for small migration batches."
 >
-  <section class="section narrow page-intro">
+  <section class="media-checklist page-intro">
     <p class="eyebrow">Migration review</p>
     <h1>Bring the photos along.</h1>
     <p>
@@ -28,21 +29,15 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
       a filename is unavailable, keep it on the checklist rather than
       substituting an unrelated photo.
     </p>
+    <p class="media-copy-status" role="status" aria-live="polite"></p>
     {batches.map((batch, index) => (
       <section class="media-batch">
-        <h2>Article photos · Batch {index + 1}</h2>
-        <ul>
+        <h2>
+          Batch {index + 1} · {batch.length} files
+        </h2>
+        <ul class="media-file-list">
           {batch.map((item) => (
-            <li>
-              <code>
-                {item.folder}/{item.filename}
-              </code>
-              <small>
-                {" "}
-                · Used by {item.usedBy.length} imported page
-                {item.usedBy.length === 1 ? "" : "s"}
-              </small>
-            </li>
+            <MediaFile item={item} />
           ))}
         </ul>
       </section>
@@ -74,13 +69,9 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
         Some are old thumbnails or theme images. Review their relevance and
         licensing before transferring them.
       </p>
-      <ul>
+      <ul class="media-file-list">
         {secondary.map((item) => (
-          <li>
-            <code>
-              {item.folder}/{item.filename}
-            </code>
-          </li>
+          <MediaFile item={item} />
         ))}
       </ul>
     </details>
@@ -91,3 +82,33 @@ const batches = Array.from({ length: Math.ceil(priority.length / 5) }, (_, i) =>
     </p>
   </section>
 </Base>
+
+<script>
+  document
+    .querySelectorAll<HTMLButtonElement>("[data-copy-filename]")
+    .forEach((button) => {
+      button.addEventListener("click", async () => {
+        const status = document.querySelector(".media-copy-status");
+        try {
+          if (!navigator.clipboard) throw new Error("Clipboard unavailable");
+          await navigator.clipboard.writeText(
+            button.dataset.copyFilename || "",
+          );
+          button.textContent = "Copied";
+          if (status) status.textContent = "Filename copied.";
+          setTimeout(() => {
+            button.textContent = "Copy filename";
+          }, 2000);
+        } catch {
+          const input = button
+            .closest(".media-file")
+            ?.querySelector<HTMLInputElement>("input");
+          input?.focus();
+          input?.select();
+          if (status)
+            status.textContent =
+              "Filename selected. Use your device’s Copy command.";
+        }
+      });
+    });
+</script>

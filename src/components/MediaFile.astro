@@ -1,0 +1,34 @@
+---
+interface Props {
+  item: { folder: string; filename: string; usedBy: string[] };
+}
+const { item } = Astro.props;
+---
+
+<li class="media-file">
+  <div class="media-file-heading">
+    <p>
+      <span>Folder</span> <code>{item.folder}</code>
+    </p>
+    <button
+      type="button"
+      class="media-copy"
+      data-copy-filename={item.filename}
+      aria-label={`Copy filename ${item.filename}`}
+    >
+      Copy filename
+    </button>
+  </div>
+  <input
+    class="media-filename"
+    type="text"
+    readonly
+    value={item.filename}
+    aria-label={`Filename: ${item.filename}`}
+    spellcheck="false"
+  />
+  <small>
+    Used by {item.usedBy.length} imported page
+    {item.usedBy.length === 1 ? "" : "s"}
+  </small>
+</li>

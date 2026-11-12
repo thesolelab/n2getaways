@@ -954,7 +954,7 @@ textarea {
   border-bottom: 1px solid #d7d8cd;
 }
 .media-batch li {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 .media-batch code {
   font-size: 12px;
@@ -966,4 +966,110 @@ textarea {
 .archive-notice {
   font-size: 12px;
   color: #825237;
+}
+
+/* Narrow pages must not inherit viewport-based gutters from full-width sections. */
+.section.narrow {
+  width: 100%;
+  padding-inline: clamp(20px, 4vw, 56px);
+}
+.media-checklist {
+  width: 100%;
+  max-width: 1040px;
+  min-width: 0;
+  margin-inline: auto;
+  padding: clamp(36px, 6vw, 72px) clamp(20px, 4vw, 56px);
+}
+.media-checklist h1 {
+  font-size: clamp(38px, 5vw, 64px);
+}
+.media-checklist .media-batch h2 {
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0 0 20px;
+}
+.media-checklist .notice code {
+  overflow-wrap: anywhere;
+}
+.media-file-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+.media-file {
+  min-width: 0;
+  max-width: 100%;
+  padding: 18px;
+  border: 1px solid #d7d8cd;
+  background: #fffdf8;
+}
+.media-file-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.media-file-heading p {
+  margin: 0;
+  font-size: 13px;
+}
+.media-file-heading p span {
+  color: #626962;
+  margin-right: 8px;
+}
+.media-file-heading code {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.media-file .media-filename {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0 0 9px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  background: var(--ivory);
+  white-space: nowrap;
+  border: 1px solid #d7d8cd;
+  padding: 12px;
+  cursor: text;
+}
+.media-file small {
+  display: block;
+  color: #626962;
+  font-size: 11px;
+}
+.media-copy {
+  padding: 9px 12px;
+  min-height: 44px;
+  background: var(--teal);
+  color: var(--ivory);
+  border: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.media-copy:hover {
+  background: #2d5154;
+}
+.media-copy-status {
+  font-size: 12px;
+  color: var(--teal);
+  min-height: 20px;
+}
+@media (max-width: 400px) {
+  .media-file {
+    padding: 13px;
+  }
+  .media-copy {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
 }
