@@ -17,10 +17,12 @@ Initial end-to-end test: [draft PR #1](https://github.com/thesolelab/n2getaways/
 
 No production article, email setting, DNS record, schedule, auto-merge or paid service was changed by this test. New workflow tooling on main deploys normally through the existing Pages project; the test article remains solely in its unmerged branch.
 
-Preview deployments are public and excluded from indexing, not access-controlled. The test covers automatic checks and HTTP output, not a fresh visual/mobile browser inspection or independent transit operations audit.
+Preview deployments are public and excluded from indexing, not access-controlled. The initial test covered automatic checks and HTTP output; independent transit operations verification remains an editorial responsibility.
 
 ## Metadata and destination cluster extension
 
 Ten Node tests now pass, including publisher/page/image/article relationships, draft-date exclusions and script-safe JSON-LD serialization. Preview validation covers 39 HTML pages, full metadata consistency, six destination hubs and 12 published supporting-article backlinks. Twenty additional supporting topics are proposed in the queue, not approved or published. Production validation checks the same cluster/metadata behavior with all draft routes absent. All imported article/page prose and original URLs remain intact; original publication dates are retained.
 
 The draft PR includes enhanced title/description metadata for the imported archive, consistent Open Graph and X/Twitter metadata, optimized social images, visible breadcrumbs and matching structured data, truthful editorial byline/source citations, and related reading. No synthetic update dates, personal experiences, rankings promises or special AI crawler policies are introduced. Full-image cover display is enabled for the supplied Painted Ladies photograph.
+
+Final cover layout check: local Chromium at 1440px desktop and 390px mobile confirmed full image proportions (`object-fit: contain`, automatic height), no horizontal overflow, and visible Painted Ladies houses in screenshots. Font fallbacks were used for this local composition check. The updated Cloudflare branch preview was verified to contain the full-cover class, BlogPosting/BreadcrumbList data and noindex protections. GitHub validation and Cloudflare Pages checks passed for the source change.
