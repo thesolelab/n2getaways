@@ -27,17 +27,13 @@ const git = (args) =>
 const save = (file, data) =>
   writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
 function reservations() {
-  const prs = JSON.parse(
-    gh([
-      "api",
-      "--paginate",
-      "--slurp",
-      `repos/${repo}/pulls?state=all&per_page=100`,
-    ]),
-  ).flat();
-  const branches = JSON.parse(
-    gh(["api", "--paginate", "--slurp", `repos/${repo}/branches?per_page=100`]),
-  ).flat();
+  const list = (endpoint) =>
+    gh(["api", "--paginate", endpoint, "--jq", ".[] | @json"])
+      .split("\n")
+      .filter(Boolean)
+      .map((line) => JSON.parse(line));
+  const prs = list(`repos/${repo}/pulls?state=all&per_page=100`);
+  const branches = list(`repos/${repo}/branches?per_page=100`);
   return [
     ...new Set(
       [...prs.map((p) => p.head.ref), ...branches.map((b) => b.name)]
