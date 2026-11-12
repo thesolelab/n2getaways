@@ -15,4 +15,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run editorial:test
       - run: npm run validate
+        env:
+          ASTRO_TELEMETRY_DISABLED: "1"

@@ -35,13 +35,13 @@ const { data } = Astro.props.article;
         · {data.readTime} min read{" "}
         {data.placeholder
           ? "· Sample"
-          : !isProduction
+          : !isProduction && !data.editorialTopicId
             ? "· Migration review"
             : ""}
       </span>
     </div>
     <h3>{data.title}</h3>
-    <p>{data.description}</p>
+    <p>{data.excerpt ?? data.description}</p>
     <span class="text-link">
       Explore the guide <span>↗</span>
     </span>

@@ -5,6 +5,13 @@ const articles = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/articles" }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
+    excerpt: z.string().optional(),
+    editorialTopicId: z
+      .string()
+      .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)
+      .optional(),
+    targetKeyword: z.string().optional(),
     description: z.string(),
     destination: z.string(),
     category: z.enum(["Travel guide", "Itinerary", "Travel story", "Review"]),

@@ -60,3 +60,7 @@ Development photographs downloaded from Unsplash under its standard license (htt
 A separate owner-private Sites preview is configured in `.openai/hosting.json`. This is a review copy, not the final Cloudflare Pages deployment. It does not change the WordPress site or domain DNS. Preview builds use the Sites origin via `SITE_URL`; Cloudflare Pages setup remains available as documented above.
 
 Cloudflare build variables are maintained in `wrangler.toml`: main production builds target the live origin; branch previews remain noindex and derive their origin from `CF_PAGES_URL`. This does not bind a custom domain. Local builds still default to preview unless explicitly configured.
+
+## Free editorial drafts
+
+Say “Draft the next approved N2Getaways topic” in the connected chat. The editable queue, research record, draft PR procedure and manual publication gate are documented in [editorial/README.md](editorial/README.md). No AI API or scheduled publishing is enabled.

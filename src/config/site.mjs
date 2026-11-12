@@ -22,6 +22,7 @@ export const siteOrigin =
   process.env.SITE_URL || process.env.CF_PAGES_URL || productionOrigin;
 export const reviewRoots = [
   "/samples/",
+  "/editorial-preview/",
   "/migration-review/",
   "/guides/",
   "/destinations/italy/",

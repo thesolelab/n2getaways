@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sf-without-a-car",
+    "title": "Getting Around San Francisco Without a Car: A First-Visit Planning Guide",
+    "destination": "San Francisco",
+    "targetKeyword": "getting around San Francisco without a car",
+    "priority": 1,
+    "status": "approved",
+    "notBefore": "2026-11-12",
+    "image": "golden-gate",
+    "imageAlt": "Golden Gate Bridge in San Francisco",
+    "editorialNotes": "Initial manually requested workflow test. Distinguish Muni, BART and cable cars. Use current official sources. Do not invent fares, schedules, accessibility details or first-hand experience. Do not duplicate the existing 48-hour itinerary. The cover is destination context, not a transit photograph."
+  },
+  {
+    "id": "maui-trip-planning",
+    "title": "Planning a Maui Trip: Reservations and Responsible Travel Basics",
+    "destination": "Maui",
+    "targetKeyword": "Maui trip planning reservations",
+    "priority": 2,
+    "status": "proposed",
+    "editorialNotes": "Owner must approve before selection; verify current local guidance and park reservation requirements."
+  }
+]

@@ -1,0 +1,141 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { isProduction } from "../config/site.mjs";
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import { render } from "astro:content";
+import { photos, destinationPath } from "../lib";
+interface Props {
+  article: CollectionEntry<"articles">;
+}
+const { article } = Astro.props;
+const { data } = article;
+const coverWidth = data.image ? photos[data.image].width : 1600;
+const { Content, headings } = await render(article);
+---
+
+<Base
+  title={data.seoTitle ?? data.title}
+  description={data.description}
+  image={data.image ? photos[data.image].src : undefined}
+  article
+>
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: data.title,
+      description: data.description,
+      ...(data.image
+        ? { image: new URL(photos[data.image].src, Astro.site).href }
+        : {}),
+      ...(!data.placeholder
+        ? { datePublished: data.publishDate.toISOString() }
+        : {}),
+      mainEntityOfPage: new URL(data.permalink, Astro.site).href,
+    })}
+  />
+  <article data-editorial-topic={data.editorialTopicId}>
+    {data.draft && (
+      <p class="notice">
+        Unpublished editorial draft — requires owner approval. Research and
+        claims still need editorial verification.
+      </p>
+    )}
+    <header class="article-heading">
+      <a class="eyebrow" href={destinationPath(data.destination)}>
+        {data.destination} / {data.category}
+      </a>
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
+      <div class="card-meta">
+        {data.placeholder
+          ? "Editorial placeholder · "
+          : data.editorialTopicId
+            ? data.draft
+              ? "Unpublished editorial draft · "
+              : ""
+            : !isProduction
+              ? "Imported from WordPress · Review copy · "
+              : ""}
+        {data.readTime} min read
+      </div>
+      {!data.placeholder && !data.draft && (
+        <p class="archive-notice">
+          {data.editorialTopicId ? "Published" : "Originally published"}{" "}
+          <time datetime={data.publishDate.toISOString()}>
+            {data.publishDate.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              timeZone: "UTC",
+            })}
+          </time>{" "}
+          {!isProduction &&
+            !data.editorialTopicId &&
+            " · Imported archive copy"}
+        </p>
+      )}
+    </header>
+    {data.image && (
+      <Image
+        class="article-cover"
+        src={photos[data.image]}
+        alt={data.imageAlt}
+        width={Math.min(1600, coverWidth)}
+        widths={[800, 1200, 1600].filter((width) => width <= coverWidth)}
+        sizes="100vw"
+        loading="eager"
+      />
+    )}
+    <div class="article-body">
+      <aside>
+        <p class="eyebrow">In this guide</p>
+        <nav aria-label="Table of contents">
+          {headings
+            .filter((h) => h.depth >= 2 && h.depth <= 3)
+            .map((h) => (
+              <a href={`#${h.slug}`}>{h.text}</a>
+            ))}
+        </nav>
+      </aside>
+      <div class="prose">
+        {!isProduction && !data.editorialTopicId && (
+          <p class="notice">
+            {data.placeholder
+              ? "Sample content — a template demonstration, not a published travel recommendation or account of personal experience."
+              : data.image
+                ? "Migration review — original WordPress article text and supplied photography. Travel details have not been reverified."
+                : "Migration review — original WordPress article text. Photography is pending transfer; travel details have not been reverified."}
+          </p>
+        )}
+        {data.reviewNotes
+          .filter((note) => !isProduction || !note.startsWith("Pilot review"))
+          .map((note) => (
+            <p class="notice">
+              {isProduction && note.startsWith("Time-sensitive") ? (
+                <>
+                  Airport security conditions may have changed since this
+                  article was published. Check current{" "}
+                  <a href="https://www.tsa.gov/">TSA</a> and airport information
+                  before travel.
+                </>
+              ) : (
+                note
+              )}
+            </p>
+          ))}
+        <div data-migrated-body>
+          <Content />
+        </div>
+        <a class="text-link" href={destinationPath(data.destination)}>
+          {data.placeholder
+            ? `More from ${data.destination}`
+            : `More from ${data.destination}`}{" "}
+          ↗
+        </a>
+      </div>
+    </div>
+  </article>
+</Base>

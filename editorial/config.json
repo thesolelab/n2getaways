@@ -1,0 +1,53 @@
+{
+  "mode": "manual-chat",
+  "scheduleEnabled": false,
+  "destinations": {
+    "San Francisco": {
+      "path": "/destinations/san-francisco/",
+      "domains": ["sftravel.com", "sfmta.com", "bart.gov", "sf.gov", "nps.gov"]
+    },
+    "Maui": {
+      "path": "/destinations/maui/",
+      "domains": [
+        "gohawaii.com",
+        "mauicounty.gov",
+        "hawaii.gov",
+        "nps.gov",
+        "dlnr.hawaii.gov"
+      ]
+    },
+    "Waikiki": {
+      "path": "/destinations/waikiki/",
+      "domains": [
+        "gohawaii.com",
+        "honolulu.gov",
+        "hawaii.gov",
+        "thebus.org",
+        "dlnr.hawaii.gov"
+      ]
+    },
+    "Costa Rica": {
+      "path": "/destinations/costa-rica/",
+      "domains": ["visitcostarica.com", "sinac.go.cr", "ict.go.cr"]
+    },
+    "Asheville": {
+      "path": "/destinations/asheville/",
+      "domains": [
+        "exploreasheville.com",
+        "ashevillenc.gov",
+        "nps.gov",
+        "fs.usda.gov",
+        "drivenc.gov"
+      ]
+    },
+    "Santorini": {
+      "path": "/destinations/santorini/",
+      "domains": [
+        "visitgreece.gr",
+        "ktel-santorini.gr",
+        "santorini.gr",
+        "fraport-greece.com"
+      ]
+    }
+  }
+}
