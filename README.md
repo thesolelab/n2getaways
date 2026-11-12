@@ -1,6 +1,6 @@
 # N2Getaways — Astro editorial redesign
 
-Astro redesign with all 14 published articles and 11 original page paths migrated from the WordPress export. Only the separate private design preview is deployed; no WordPress site changes, DNS changes, production-domain deployment, or automated AI publishing has occurred.
+Astro redesign with all 14 published articles and 11 original page paths migrated from the WordPress export. A Cloudflare Pages review site and the separate private Sites preview are deployed; no WordPress site changes, DNS changes, production-domain deployment, or automated AI publishing has occurred.
 
 ## Preview locally
 
@@ -35,9 +35,9 @@ Add Markdown in `src/content/articles/`. Schema lives in `src/content.config.ts`
 
 Templates can render guides, itineraries, stories, and reviews. No review endorsements or first-hand experiences are fabricated. Replace sample copy only with verified material. Date fields on examples are build gating values, not claimed publication dates.
 
-## Cloudflare Pages (configured, not deployed)
+## Cloudflare Pages review site
 
-Connect this GitHub repository to a **new preview-only Pages project** after reviewing the initial milestone. Framework: Astro. Build command: `npm run build`. Output directory: `dist`. Node version: `24`. No adapter is needed for this static site. Set `SITE_URL` to that project's actual `https://<project>.pages.dev` URL for preview canonicals and sitemap URLs. The default production base in Astro config is `https://n2getaways.com`; it does not connect or modify that domain.
+GitHub-linked review site: https://n2getaways-preview.pages.dev. This is separate from the existing WordPress production domain. Framework: Astro. Build command: `npm run build`. Output directory: `dist`. Node version: `24`. No adapter is needed for this static site. Set `SITE_URL` to that project's actual `https://<project>.pages.dev` URL for preview canonicals and sitemap URLs. Astro uses an explicit `SITE_URL` first, then Cloudflare's `CF_PAGES_URL`, then `https://n2getaways.com` for other builds. The automatic Cloudflare fallback keeps review metadata on the deployment origin when `SITE_URL` is absent. For the stable review URL, set `SITE_URL=https://n2getaways-preview.pages.dev`; before production launch set the actual production origin explicitly. None of these settings connects or modifies the production domain.
 
 `wrangler.toml` records the output directory. Do not attach the production domain or change DNS during this milestone. The generated sitemap is intentionally non-indexable during development.
 

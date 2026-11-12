@@ -32,6 +32,7 @@ for (const p of pages) {
 }
 for (const p of [
   "index.html",
+  "404.html",
   "destinations/italy/index.html",
   "guides/italian-riviera/index.html",
   "sitemap-index.xml",

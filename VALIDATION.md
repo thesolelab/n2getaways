@@ -52,3 +52,9 @@ Maui's discovery tile and landing-page hero now use a licensed, source-verified 
 ## San Francisco accommodation cover
 
 Added an editorial cover using the owner-supplied Golden Gate Bridge photograph. The two unavailable external image slots from the original accommodation article are retired explicitly in `docs/migration/retired-media.json`, without substituting misleading restaurant or hotel images. All 14 original articles now have rendered covers and no pending-image blocks; this is included in migration validation. Original article prose still matches the export-derived hashes. Six old page-layout image references remain inside source-copy review disclosures.
+
+## Cloudflare Pages preview verification
+
+Review URL: https://n2getaways-preview.pages.dev. Live HTTP checks returned 200 for all 25 original paths and six representative CSS/image assets. The updated Maui image and San Francisco accommodation cover are present. `X-Robots-Tag: noindex, nofollow`, noindex metadata and robots.txt Disallow are active.
+
+Initial checks identified production-domain metadata and SPA-style 200 responses for unknown paths. Source now uses Cloudflare's `CF_PAGES_URL` when an explicit `SITE_URL` is absent and emits a custom `404.html`, excluded from the sitemap. A full validation build using only a simulated Cloudflare deployment URL passed (38 pages), confirming metadata origin fallback and 404 generation. Cloudflare's documented variables and missing-page behavior: https://developers.cloudflare.com/pages/configuration/build-configuration/ and https://developers.cloudflare.com/pages/configuration/serving-pages/ .
