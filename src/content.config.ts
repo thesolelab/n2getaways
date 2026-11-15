@@ -23,6 +23,13 @@ const articles = defineCollection({
       .regex(/^[a-z0-9-]+$/)
       .optional(),
     imageDisplay: z.enum(["cover", "full"]).default("cover"),
+    imageFocus: z
+      .object({
+        x: z.number().min(0).max(100),
+        y: z.number().min(0).max(100),
+        zoom: z.number().min(1).max(2.5),
+      })
+      .optional(),
     imageAlt: z.string(),
     readTime: z.number(),
     placeholder: z.boolean(),
