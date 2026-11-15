@@ -133,18 +133,30 @@ const related = (await getArticles())
       )}
     </header>
     {data.image && (
-      <Image
-        class:list={[
-          "article-cover",
-          { "article-cover-full": data.imageDisplay === "full" },
-        ]}
-        src={photos[data.image]}
-        alt={data.imageAlt}
-        width={Math.min(1600, coverWidth)}
-        widths={[800, 1200, 1600].filter((width) => width <= coverWidth)}
-        sizes="100vw"
-        loading="eager"
-      />
+      <div
+        class:list={{ "article-focus-frame": !!data.imageFocus }}
+        style={
+          data.imageFocus
+            ? `--focus-x:${data.imageFocus.x}%;--focus-y:${data.imageFocus.y}%;--focus-zoom:${data.imageFocus.zoom}`
+            : undefined
+        }
+      >
+        <Image
+          class:list={[
+            "article-cover",
+            { "article-cover-full": data.imageDisplay === "full" },
+          ]}
+          src={photos[data.image]}
+          alt={data.imageAlt}
+          width={Math.min(data.imageFocus ? 2880 : 1600, coverWidth)}
+          widths={(data.imageFocus
+            ? [1200, 2000, 2880]
+            : [800, 1200, 1600]
+          ).filter((width) => width <= coverWidth)}
+          sizes={data.imageFocus ? "180vw" : "100vw"}
+          loading="eager"
+        />
+      </div>
     )}
     <PhotoCredit imageKey={data.image} placement="article" />
     <div class="article-body">

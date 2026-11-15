@@ -87,8 +87,7 @@
     "Morning before 9am, S-minus-two-hours arrival and S-plus-45\u201360-minute dinner are editorial planning allowances, not measured crowd cutoffs, guaranteed access or operator schedules.",
     "Check sunset for the actual travel date and location; the 8pm example is explicitly hypothetical, not a quoted astronomical event. Weather, sightline and access may change.",
     "Check current viewpoint access, private-property boundaries and any local restrictions; no specific viewpoint is promised open or accessible.",
-    "Owner must approve article and set the actual release date before publication.",
-    "REQUIRED COVER REPLACEMENT: owner selected an Oia windmill photograph inline and requested the windmill as the focal point with some sky visible. The original downloadable file is pending. Replace the provisional archive cover and its draft caption before publication."
+    "Owner must approve article and set the actual release date before publication."
   ],
   "overlapReview": "Read the existing Fira 3\u20137-day itinerary, including its brief recommendation to spend an evening in Oia. This draft covers the distinct Oia visit-planning intent in detail: crowd-aware seasons/morning timing, date-relative photography schedule, transport/return decisions and dinner booking. It links to the Fira itinerary instead of replacing its island-wide day plan. Existing proposed Santorini transport/season/stay topics remain broad island-level plans; this article is scoped to one Oia outing.",
   "limitations": [
@@ -98,12 +97,15 @@
     "No exact monthly future-year sunset table is fabricated. Photographer-oriented timing is clearly separated from astronomical sunset data."
   ],
   "imagery": {
-    "status": "awaiting-owner-selected-original-file",
-    "currentKey": "santorini-sunset",
-    "currentImageIsProvisional": true,
+    "status": "owner-provided-original-received",
+    "currentKey": "oia-windmill",
+    "currentImageIsProvisional": false,
     "ownerRequestedImage": "Oia whitewashed buildings and windmills beneath a blue sky",
     "requestedFraming": "Emphasize the main windmill near the left-center; retain some sky above it. Check desktop, mobile and social preview framing.",
-    "articleApproval": false
+    "articleApproval": false,
+    "source": "Owner-supplied Oia.zip / Oia.jpg; original bytes preserved in src/assets/editorial/oia-windmill.jpg",
+    "framing": "CSS focal point 40% 40%, zoom 1.8; original retained. Social image uses standard landscape crop.",
+    "framingChecks": "Visually checked 390px phone and 1440px desktop screenshots: entire main windmill and sky visible; no horizontal overflow. Original photo is daytime, not presented as a sunset photograph."
   },
   "researchQueries": [
     "Oia shoulder season crowd avoidance primary tourism sources",

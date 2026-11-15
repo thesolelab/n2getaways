@@ -9,9 +9,13 @@ excerpt: "A practical Oia planning guide: when to explore, how early to arrive
 destination: Santorini
 clusterRole: planning
 category: Travel guide
-image: santorini-sunset
-imageAlt: Sunset over the sea beside a white church and two glasses on a terrace
-imageDisplay: full
+image: oia-windmill
+imageAlt: Whitewashed buildings and a traditional windmill in Oia, Santorini, beneath a blue sky
+imageDisplay: cover
+imageFocus:
+  x: 40
+  y: 40
+  zoom: 1.8
 readTime: 8
 publishDate: 2026-11-15
 permalink: /planning-a-trip-to-oia-santorini/
@@ -26,8 +30,6 @@ reviewNotes: []
 Planning a trip to Oia is easier when the quiet walk and the sunset outing are treated as two different experiences. Start by considering **April–May or mid-September–October**, give yourself an early-morning visit for exploring, and build the photography evening around the sunset time for your actual travel date. Then choose dinner and the return journey to fit that plan.
 
 Those spring and autumn periods are the ones highlighted by [Discover Greece's Santorini guide](https://www.discovergreece.com/travel-ideas/best-of/top-12-unforgettable-things-do-santorini). They are a starting point for choosing dates, not a promise of empty lanes or clear skies. For the wider trip, explore the [Santorini destination guides](/destinations/santorini/).
-
-*Cover photograph: a sunset image from the N2Getaways Santorini archive, not a verified Oia viewpoint.*
 
 ## When to visit Oia if avoiding crowds matters most
 

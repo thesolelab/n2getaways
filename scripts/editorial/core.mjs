@@ -132,6 +132,7 @@ export function knownImages() {
     "asheville",
     "san-francisco",
     "sf-painted-ladies",
+    "oia-windmill",
     ...Object.values(received).map((x) => x.key),
   ]);
 }
