@@ -4,7 +4,13 @@
   "destinations": {
     "San Francisco": {
       "path": "/destinations/san-francisco/",
-      "domains": ["sftravel.com", "sfmta.com", "bart.gov", "sf.gov", "nps.gov"]
+      "domains": [
+        "sftravel.com",
+        "sfmta.com",
+        "bart.gov",
+        "sf.gov",
+        "nps.gov"
+      ]
     },
     "Maui": {
       "path": "/destinations/maui/",
@@ -28,7 +34,11 @@
     },
     "Costa Rica": {
       "path": "/destinations/costa-rica/",
-      "domains": ["visitcostarica.com", "sinac.go.cr", "ict.go.cr"]
+      "domains": [
+        "visitcostarica.com",
+        "sinac.go.cr",
+        "ict.go.cr"
+      ]
     },
     "Asheville": {
       "path": "/destinations/asheville/",
@@ -46,7 +56,11 @@
         "visitgreece.gr",
         "ktel-santorini.gr",
         "santorini.gr",
-        "fraport-greece.com"
+        "fraport-greece.com",
+        "discovergreece.com",
+        "timeanddate.com",
+        "kastro-oia.com",
+        "oiagefsis.com"
       ]
     }
   }

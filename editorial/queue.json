@@ -215,5 +215,18 @@
     "priority": 21,
     "status": "proposed",
     "editorialNotes": "Research seasonality and service availability from primary sources; no guaranteed weather or crowd predictions."
+  },
+  {
+    "id": "santorini-oia-trip-planning",
+    "title": "Planning Oia, Santorini: Crowds, Sunset Photos and Dinner",
+    "destination": "Santorini",
+    "targetKeyword": "planning a trip to Oia",
+    "clusterRole": "planning",
+    "priority": 1,
+    "status": "approved",
+    "notBefore": "2026-11-15",
+    "image": "santorini-sunset",
+    "imageAlt": "Sunset over the sea beside a white church and two glasses on a terrace",
+    "editorialNotes": "Owner explicitly requested this draft on November 15, 2026: Oia crowd-avoiding seasons/times, sunset photography timing, transport and dinner planning. Complement the existing Fira itinerary. Use relative sunset timing, distinguish editorial timing allowances from measured crowd data, and verify official transport/venue information. Existing Santorini photo is contextual, not a verified Oia viewpoint. Draft only; no publication approval."
   }
 ]
