@@ -4,7 +4,7 @@
       "url": "https://www.discovergreece.com/travel-ideas/best-of/top-12-unforgettable-things-do-santorini",
       "title": "Discover Greece: Top 12 things to do in Santorini",
       "accessedAt": "2026-11-15",
-      "summary": "Greek tourism-sector platform recommends April–May and mid-September–October; describes Oia architecture and island planning. It does not provide measured hourly crowd counts."
+      "summary": "Greek tourism-sector platform recommends April\u2013May and mid-September\u2013October; describes Oia architecture and island planning. It does not provide measured hourly crowd counts."
     },
     {
       "url": "https://www.timeanddate.com/sun/greece/santorini",
@@ -22,7 +22,7 @@
       "url": "https://ktel-santorini.gr/routes/?route=oia",
       "title": "KTEL Santorini: Current route information",
       "accessedAt": "2026-11-15",
-      "summary": "Official new route page identifies Fira–Oia with departure/return columns. Page labels/update dates and legacy cached pages require date-specific reconfirmation; no timetable or fare quoted."
+      "summary": "Official new route page identifies Fira\u2013Oia with departure/return columns. Page labels/update dates and legacy cached pages require date-specific reconfirmation; no timetable or fare quoted."
     },
     {
       "url": "https://kastro-oia.com/contact",
@@ -39,7 +39,7 @@
   ],
   "claims": [
     {
-      "claim": "April–May and mid-September–October are recommended shoulder-season periods by the Greek tourism-sector source; not a guarantee of no crowds.",
+      "claim": "April\u2013May and mid-September\u2013October are recommended shoulder-season periods by the Greek tourism-sector source; not a guarantee of no crowds.",
       "sourceUrls": [
         "https://www.discovergreece.com/travel-ideas/best-of/top-12-unforgettable-things-do-santorini"
       ],
@@ -60,7 +60,7 @@
       "verificationRequired": false
     },
     {
-      "claim": "KTEL official routes identify the Fira–Oia connection and departure/return information.",
+      "claim": "KTEL official routes identify the Fira\u2013Oia connection and departure/return information.",
       "sourceUrls": [
         "https://ktel-santorini.gr/routes/?route=oia"
       ],
@@ -84,13 +84,13 @@
   "verificationFlags": [
     "Reconfirm KTEL date-specific outward and return schedules; old English timetable URLs return errors and the current page has inconsistent seasonal/update labels. No precise bus times, cash-only rules or fares are asserted.",
     "Recheck restaurant operating dates, exact table views, seasonal seating times and booking/cancellation terms before publication; examples are not personal reviews or endorsements.",
-    "Morning before 9am, S-minus-two-hours arrival and S-plus-45–60-minute dinner are editorial planning allowances, not measured crowd cutoffs, guaranteed access or operator schedules.",
+    "Morning before 9am, S-minus-two-hours arrival and S-plus-45\u201360-minute dinner are editorial planning allowances, not measured crowd cutoffs, guaranteed access or operator schedules.",
     "Check sunset for the actual travel date and location; the 8pm example is explicitly hypothetical, not a quoted astronomical event. Weather, sightline and access may change.",
-    "Approve or replace contextual Santorini archive imagery: its exact location is not verified as Oia and this is disclosed in the draft.",
     "Check current viewpoint access, private-property boundaries and any local restrictions; no specific viewpoint is promised open or accessible.",
-    "Owner must approve article and set the actual release date before publication."
+    "Owner must approve article and set the actual release date before publication.",
+    "REQUIRED COVER REPLACEMENT: owner selected an Oia windmill photograph inline and requested the windmill as the focal point with some sky visible. The original downloadable file is pending. Replace the provisional archive cover and its draft caption before publication."
   ],
-  "overlapReview": "Read the existing Fira 3–7-day itinerary, including its brief recommendation to spend an evening in Oia. This draft covers the distinct Oia visit-planning intent in detail: crowd-aware seasons/morning timing, date-relative photography schedule, transport/return decisions and dinner booking. It links to the Fira itinerary instead of replacing its island-wide day plan. Existing proposed Santorini transport/season/stay topics remain broad island-level plans; this article is scoped to one Oia outing.",
+  "overlapReview": "Read the existing Fira 3\u20137-day itinerary, including its brief recommendation to spend an evening in Oia. This draft covers the distinct Oia visit-planning intent in detail: crowd-aware seasons/morning timing, date-relative photography schedule, transport/return decisions and dinner booking. It links to the Fira itinerary instead of replacing its island-wide day plan. Existing proposed Santorini transport/season/stay topics remain broad island-level plans; this article is scoped to one Oia outing.",
   "limitations": [
     "No firsthand visit, restaurant meal, operator endorsement, affiliate partnership, measured crowd count or guaranteed sunset is claimed.",
     "Only primary tourism-sector, transport-operator, venue-owned and astronomical publisher sources are cited; no paid research or inference API used.",
@@ -98,10 +98,11 @@
     "No exact monthly future-year sunset table is fabricated. Photographer-oriented timing is clearly separated from astronomical sunset data."
   ],
   "imagery": {
-    "status": "existing-approved-archive-asset",
-    "key": "santorini-sunset",
-    "contextOnly": true,
-    "oiaLocationVerified": false,
+    "status": "awaiting-owner-selected-original-file",
+    "currentKey": "santorini-sunset",
+    "currentImageIsProvisional": true,
+    "ownerRequestedImage": "Oia whitewashed buildings and windmills beneath a blue sky",
+    "requestedFraming": "Emphasize the main windmill near the left-center; retain some sky above it. Check desktop, mobile and social preview framing.",
     "articleApproval": false
   },
   "researchQueries": [
