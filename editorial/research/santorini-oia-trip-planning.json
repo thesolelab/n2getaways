@@ -1,0 +1,126 @@
+{
+  "sources": [
+    {
+      "url": "https://www.discovergreece.com/travel-ideas/best-of/top-12-unforgettable-things-do-santorini",
+      "title": "Discover Greece: Top 12 things to do in Santorini",
+      "accessedAt": "2026-11-15",
+      "summary": "Greek tourism-sector platform recommends April–May and mid-September–October; describes Oia architecture and island planning. It does not provide measured hourly crowd counts."
+    },
+    {
+      "url": "https://www.timeanddate.com/sun/greece/santorini",
+      "title": "Time and Date: Santorini sunrise, sunset and twilight",
+      "accessedAt": "2026-11-15",
+      "summary": "Date/month/year sun tables use local Santorini time and provide twilight and sunset direction. Used as a planning calculator, not a weather or access forecast."
+    },
+    {
+      "url": "https://www.timeanddate.com/astronomy/blue-hour.html",
+      "title": "Time and Date: The Blue Hour",
+      "accessedAt": "2026-11-15",
+      "summary": "Explains blue hour during twilight and variation with latitude and season; does not promise a fixed half-hour window."
+    },
+    {
+      "url": "https://ktel-santorini.gr/routes/?route=oia",
+      "title": "KTEL Santorini: Current route information",
+      "accessedAt": "2026-11-15",
+      "summary": "Official new route page identifies Fira–Oia with departure/return columns. Page labels/update dates and legacy cached pages require date-specific reconfirmation; no timetable or fare quoted."
+    },
+    {
+      "url": "https://kastro-oia.com/contact",
+      "title": "Kastro Oia: Contact and sunset reservations",
+      "accessedAt": "2026-11-15",
+      "summary": "Venue-owned page lists seasonal sunset reservation times and asks diners not to block other tables. Article cites the policy pattern, not a fixed future-year seating or operating-hours guarantee."
+    },
+    {
+      "url": "https://oiagefsis.com/",
+      "title": "Oia Gefsis: Restaurant and reservation FAQ",
+      "accessedAt": "2026-11-15",
+      "summary": "Venue-owned site promotes a west-facing sunset terrace, recommends reservations and describes sunset as busy. Seating availability and terms must be confirmed directly; no review, award or price claims adopted."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "April–May and mid-September–October are recommended shoulder-season periods by the Greek tourism-sector source; not a guarantee of no crowds.",
+      "sourceUrls": [
+        "https://www.discovergreece.com/travel-ideas/best-of/top-12-unforgettable-things-do-santorini"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Santorini sunset/twilight calculations are date-specific local times, with horizon direction data.",
+      "sourceUrls": [
+        "https://www.timeanddate.com/sun/greece/santorini"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Blue hour occurs during twilight and its duration depends on latitude and season.",
+      "sourceUrls": [
+        "https://www.timeanddate.com/astronomy/blue-hour.html"
+      ],
+      "verificationRequired": false
+    },
+    {
+      "claim": "KTEL official routes identify the Fira–Oia connection and departure/return information.",
+      "sourceUrls": [
+        "https://ktel-santorini.gr/routes/?route=oia"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Kastro publishes season-dependent sunset seating information and table-view etiquette.",
+      "sourceUrls": [
+        "https://kastro-oia.com/contact"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Oia Gefsis advertises sunset terrace views, recommends sunset reservations and describes sunset demand.",
+      "sourceUrls": [
+        "https://oiagefsis.com/"
+      ],
+      "verificationRequired": true
+    }
+  ],
+  "verificationFlags": [
+    "Reconfirm KTEL date-specific outward and return schedules; old English timetable URLs return errors and the current page has inconsistent seasonal/update labels. No precise bus times, cash-only rules or fares are asserted.",
+    "Recheck restaurant operating dates, exact table views, seasonal seating times and booking/cancellation terms before publication; examples are not personal reviews or endorsements.",
+    "Morning before 9am, S-minus-two-hours arrival and S-plus-45–60-minute dinner are editorial planning allowances, not measured crowd cutoffs, guaranteed access or operator schedules.",
+    "Check sunset for the actual travel date and location; the 8pm example is explicitly hypothetical, not a quoted astronomical event. Weather, sightline and access may change.",
+    "Approve or replace contextual Santorini archive imagery: its exact location is not verified as Oia and this is disclosed in the draft.",
+    "Check current viewpoint access, private-property boundaries and any local restrictions; no specific viewpoint is promised open or accessible.",
+    "Owner must approve article and set the actual release date before publication."
+  ],
+  "overlapReview": "Read the existing Fira 3–7-day itinerary, including its brief recommendation to spend an evening in Oia. This draft covers the distinct Oia visit-planning intent in detail: crowd-aware seasons/morning timing, date-relative photography schedule, transport/return decisions and dinner booking. It links to the Fira itinerary instead of replacing its island-wide day plan. Existing proposed Santorini transport/season/stay topics remain broad island-level plans; this article is scoped to one Oia outing.",
+  "limitations": [
+    "No firsthand visit, restaurant meal, operator endorsement, affiliate partnership, measured crowd count or guaranteed sunset is claimed.",
+    "Only primary tourism-sector, transport-operator, venue-owned and astronomical publisher sources are cited; no paid research or inference API used.",
+    "Failed legacy KTEL and alternate calculator/venue URLs were not treated as successful sources. Current accessible canonical pages are used.",
+    "No exact monthly future-year sunset table is fabricated. Photographer-oriented timing is clearly separated from astronomical sunset data."
+  ],
+  "imagery": {
+    "status": "existing-approved-archive-asset",
+    "key": "santorini-sunset",
+    "contextOnly": true,
+    "oiaLocationVerified": false,
+    "articleApproval": false
+  },
+  "researchQueries": [
+    "Oia shoulder season crowd avoidance primary tourism sources",
+    "KTEL Santorini current official Oia route information",
+    "Oia sunset restaurant reservations venue official sites",
+    "Santorini local sunset and blue-hour astronomical calculator"
+  ],
+  "topicId": "santorini-oia-trip-planning",
+  "slug": "planning-a-trip-to-oia-santorini",
+  "assistedBy": "Existing ChatGPT session; no paid API",
+  "preparedAt": "2026-11-15T22:37:00.423Z",
+  "review": {
+    "approved": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "sourcesChecked": false,
+    "claimsChecked": false,
+    "linksChecked": false,
+    "imageryChecked": false
+  }
+}
