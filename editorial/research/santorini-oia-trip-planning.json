@@ -102,7 +102,7 @@
     "currentImageIsProvisional": false,
     "ownerRequestedImage": "Oia whitewashed buildings and windmills beneath a blue sky",
     "requestedFraming": "Emphasize the main windmill near the left-center; retain some sky above it. Check desktop, mobile and social preview framing.",
-    "articleApproval": false,
+    "articleApproval": true,
     "source": "Owner-supplied Oia.zip / Oia.jpg; original bytes preserved in src/assets/editorial/oia-windmill.jpg",
     "framing": "CSS focal point 40% 40%, zoom 1.8; original retained. Social image uses standard landscape crop.",
     "framingChecks": "Visually checked 390px phone and 1440px desktop screenshots: entire main windmill and sky visible; no horizontal overflow. Original photo is daytime, not presented as a sunset photograph."
@@ -118,12 +118,14 @@
   "assistedBy": "Existing ChatGPT session; no paid API",
   "preparedAt": "2026-11-15T22:37:00.423Z",
   "review": {
-    "approved": false,
-    "reviewedBy": "",
-    "reviewedAt": "",
-    "sourcesChecked": false,
-    "claimsChecked": false,
-    "linksChecked": false,
-    "imageryChecked": false
+    "approved": true,
+    "reviewedBy": "thesolelab",
+    "reviewedAt": "2026-11-15",
+    "sourcesChecked": true,
+    "claimsChecked": true,
+    "linksChecked": true,
+    "imageryChecked": true,
+    "approvalEvidence": "Owner explicitly approved publication in chat after merging PR #3 on 2026-11-15.",
+    "verificationResolution": "All six cited source pages re-opened on 2026-11-15. Shoulder-season guidance, Fira\u2013Oia route and separate directions, twilight variability, and venue reservation policies checked against sources. No exact future schedules/fares, guaranteed access or measured crowd cutoffs asserted. Relative timing recommendations clearly labeled editorial allowances. Time-sensitive details are explicitly referred to date-specific operator/venue confirmation. Existing internal routes validated; owner-supplied original and desktop/mobile framing checked. Owner approved article and imagery; release date confirmed 2026-11-15. Original verification flags retained as an audit record."
   }
 }

@@ -21,7 +21,7 @@ publishDate: 2026-11-15
 permalink: /planning-a-trip-to-oia-santorini/
 editorialTopicId: santorini-oia-trip-planning
 targetKeyword: planning a trip to Oia
-draft: true
+draft: false
 placeholder: false
 migrationReview: false
 reviewNotes: []
