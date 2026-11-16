@@ -9,10 +9,31 @@ import {
   localDate,
   weekStart,
 } from "../../scripts/editorial/calendar.mjs";
-const fixture = () => ({
-  calendar: structuredClone(json("editorial/calendar.json")),
-  queue: structuredClone(json("editorial/queue.json")),
-});
+const fixture = () => {
+  const calendar = structuredClone(json("editorial/calendar.json"));
+  const queue = structuredClone(json("editorial/queue.json"));
+  // Scenarios are independent of progress and later approved reprioritization.
+  calendar.revisions = [calendar.revisions[0]];
+  calendar.entries = calendar.revisions[0].order.map((topicId, i) => ({
+    week: i + 1,
+    topicId,
+    experienceBasis: "researched",
+    firsthandAvailability: "unconfirmed",
+  }));
+  for (const entry of calendar.entries) {
+    const topic = queue.find((t) => t.id === entry.topicId);
+    topic.status = "approved";
+    for (const key of [
+      "publishedAt",
+      "publishedUrl",
+      "notBefore",
+      "branch",
+      "permalink",
+    ])
+      delete topic[key];
+  }
+  return { calendar, queue };
+};
 const firstId = "la-fortuna-transport";
 const date = new Date("2026-11-16T18:00:00Z");
 const selection = (f, articles = [], reserved = [], now = date) =>
