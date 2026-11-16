@@ -150,9 +150,11 @@
     "targetKeyword": "getting to La Fortuna",
     "clusterRole": "planning",
     "priority": 1,
-    "status": "approved",
+    "status": "drafted",
     "editorialNotes": "Use official airport/transport operator sources; compare planning choices without guaranteed transfer times. Broader La Fortuna airport-to-accommodation intent; compare SJO/LIR, include The Springs final leg and links to both resort articles. Do not create a separate resort airport clone.",
-    "calendarApproval": "n2getaways-12-week-2026-11"
+    "calendarApproval": "n2getaways-12-week-2026-11",
+    "branch": "editorial/topic-la-fortuna-transport",
+    "permalink": "/getting-to-la-fortuna-costa-rica/"
   },
   {
     "id": "arenal-park-planning",

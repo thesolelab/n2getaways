@@ -181,9 +181,12 @@ export function validateCalendarArticles(
     for (const experience of basis.firsthandExperiences)
       requireThat(
         experience.confirmedBy &&
-          experience.visitDate &&
+          (experience.visitDate ||
+            (article.data.draft &&
+              experience.dateConfirmationRequired === true)) &&
           experience.evidence &&
-          experience.visibleLabel,
+          experience.visibleLabel &&
+          article.body.includes(experience.visibleLabel),
         `Unverified firsthand experience: ${topic.id}`,
       );
     if (!article.data.draft) {

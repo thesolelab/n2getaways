@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  markdown,
   selectTopic,
   validateQueue,
   officialURL,
@@ -179,5 +180,56 @@ test("a stale future publication date cannot make a topic eligible", () => {
   assert.equal(
     selectTopic([{ ...t, notBefore: "2099-02-01" }], [], []),
     undefined,
+  );
+});
+
+test("owner-supplied article retains long first-person copy with auditable provenance", () => {
+  const { data, body } = markdown(
+    "src/content/articles/editorial-la-fortuna-transport.md",
+  );
+  const note = structuredClone(
+    json("editorial/research/la-fortuna-transport.json"),
+  );
+  // Test a draft scenario even after this real article is later approved/published.
+  data.draft = true;
+  note.review.approved = false;
+  note.reviewItems = [
+    { id: "fixture-confirmation", status: "needs-confirmation" },
+  ];
+  validateDraft(data, body, note, inventory());
+  assert.ok(body.split(/\s+/).length > 2000);
+  assert.match(
+    body,
+    /I flew into San José \(SJO\) and booked private transportation/,
+  );
+  assert.equal(data.draft, true);
+  assert.equal(note.review.approved, false);
+  assert.throws(
+    () => validateDraft(data, body + " Unlogged rewrite.", note, inventory()),
+    /adaptation changed/,
+  );
+  const bad = structuredClone(note);
+  bad.sourceContent.sha256 = "0".repeat(64);
+  assert.throws(
+    () => validateDraft(data, body, bad, inventory()),
+    /checksum mismatch/,
+  );
+  bad.sourceContent = {
+    ...note.sourceContent,
+    file: "../unapproved-source.txt",
+  };
+  assert.throws(
+    () => validateDraft(data, body, bad, inventory()),
+    /archive path/,
+  );
+  const noSource = structuredClone(note);
+  delete noSource.sourceContent;
+  assert.throws(
+    () => validateDraft(data, body, noSource, inventory()),
+    /700–2000/,
+  );
+  assert.throws(
+    () => validateDraft({ ...data, draft: false }, body, note, inventory()),
+    /unresolved confirmation/,
   );
 });

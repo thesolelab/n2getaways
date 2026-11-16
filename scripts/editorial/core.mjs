@@ -1,4 +1,5 @@
 import { readFileSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
 import { calendarSelection, localDate } from "./calendar.mjs";
@@ -146,6 +147,44 @@ export function knownImages() {
     ...Object.values(received).map((x) => x.key),
   ]);
 }
+export function validateOwnerSource(data, body, note) {
+  const source = note.sourceContent;
+  if (!source) return false;
+  assert(
+    source.type === "owner-supplied" &&
+      source.confirmedBy?.trim() &&
+      /^\d{4}-\d{2}-\d{2}$/.test(source.confirmedAt || "") &&
+      source.authorization?.trim(),
+    "Owner source authorization required",
+  );
+  assert(
+    source.file === `editorial/sources/${data.editorialTopicId}.txt`,
+    "Owner source must use the topic-specific archive path",
+  );
+  const sha = (value) => createHash("sha256").update(value).digest("hex");
+  assert(
+    sha(readFileSync(source.file)) === source.sha256,
+    "Owner source checksum mismatch",
+  );
+  assert(
+    sha(body.trim()) === source.adaptedBodySha256,
+    "Owner source adaptation changed; update the review diff and digest explicitly",
+  );
+  assert(
+    Array.isArray(source.changes) &&
+      source.changes.length > 0 &&
+      source.metadataStatus?.trim(),
+    "Owner source needs a change log and metadata approval status",
+  );
+  if (/\b(I|we|our|my)\b/i.test(body))
+    assert(
+      note.experienceBasis?.firsthandExperiences?.some(
+        (e) => e.confirmedBy && e.evidence && e.visibleLabel,
+      ),
+      "Owner first-person copy requires documented firsthand confirmation",
+    );
+  return true;
+}
 export function validateDraft(
   data,
   body,
@@ -233,11 +272,14 @@ export function validateDraft(
     "Unknown image or missing alt text",
   );
   assert(data.draft || data.image, "Publication requires approved imagery");
+  const ownerSource = validateOwnerSource(data, body, note);
   assert(
     typeof body === "string" &&
       body.split(/\s+/).length >= 700 &&
-      body.split(/\s+/).length <= 2000,
-    "Expected 700–2000 words",
+      body.split(/\s+/).length <= (ownerSource ? 5000 : 2000),
+    ownerSource
+      ? "Expected 700–5000 words for documented owner-supplied copy"
+      : "Expected 700–2000 words",
   );
   assert(
     !/^# /m.test(body) && (body.match(/^## /gm) || []).length >= 4,
@@ -248,7 +290,7 @@ export function validateDraft(
     "HTML, images, code, or reference links are not permitted in generated copy",
   );
   assert(
-    !/\b(I|we|our|my)\b/i.test(body),
+    ownerSource || !/\b(I|we|our|my)\b/i.test(body),
     "First-person claims require a human rewrite",
   );
   assert(!/\b(TODO|TBD|lorem ipsum)\b/i.test(body), "Unfinished article text");
@@ -316,6 +358,14 @@ export function validateDraft(
       "Flag missing imagery explicitly",
     );
   if (publishing || !data.draft) {
+    if (ownerSource)
+      assert(
+        note.reviewItems?.length &&
+          note.reviewItems.every(
+            (item) => item.status === "resolved" && item.resolution?.trim(),
+          ),
+        "Owner-supplied article has unresolved confirmation items",
+      );
     const r = note.review;
     assert(
       r?.approved === true &&

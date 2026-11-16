@@ -244,3 +244,36 @@ test("six separate optimization tasks keep cadence and never become article topi
   assert.equal(backlog.tasks.length, 6);
   assert.ok(backlog.tasks.every((t) => !f.queue.some((q) => q.id === t.id)));
 });
+
+test("owner-confirmed visit with unknown date can be reviewed as a draft, never published", () => {
+  const f = fixture(),
+    n = note();
+  n.experienceBasis.firsthandExperiences = [
+    {
+      confirmedBy: "Owner",
+      visitDate: null,
+      dateConfirmationRequired: true,
+      evidence: "Owner directly confirmed SJO private transport",
+      visibleLabel: "researched planning guide",
+    },
+  ];
+  validateCalendarArticles(f.calendar, f.queue, [article()], () => n, date);
+  assert.throws(
+    () =>
+      validateCalendarArticles(
+        f.calendar,
+        f.queue,
+        [article(firstId, false)],
+        () => n,
+        date,
+      ),
+    /Unverified firsthand/,
+  );
+  n.experienceBasis.firsthandExperiences[0].visibleLabel =
+    "Missing visible label";
+  assert.throws(
+    () =>
+      validateCalendarArticles(f.calendar, f.queue, [article()], () => n, date),
+    /Unverified firsthand/,
+  );
+});

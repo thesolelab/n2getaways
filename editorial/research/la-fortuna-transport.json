@@ -1,0 +1,253 @@
+{
+  "topicId": "la-fortuna-transport",
+  "slug": "getting-to-la-fortuna-costa-rica",
+  "assistedBy": "Formatting and source checks in existing ChatGPT session; no paid API",
+  "preparedAt": "2026-11-16",
+  "sources": [
+    {
+      "url": "https://www.sjoairport.com/contacts/?lang=en",
+      "title": "Juan Santamaría International Airport: Contact information",
+      "accessedAt": "2026-11-16",
+      "summary": "Airport operator lists Alajuela address; supports location outside downtown San José."
+    },
+    {
+      "url": "https://www.guanacasteairport.com/en/about-us",
+      "title": "Guanacaste Airport: About us",
+      "accessedAt": "2026-11-16",
+      "summary": "Airport operator identifies Daniel Oduber Quirós airport and Guanacaste branding; not used as a source of drive times."
+    },
+    {
+      "url": "https://www.thespringscostarica.com/wp-content/uploads/2020/09/DESDE-THE-SPRINGS-AL-JUAN-SANTAMARIA.pdf",
+      "title": "The Springs Resort: Route map to Juan Santamaría Airport",
+      "accessedAt": "2026-11-16",
+      "summary": "Primary property PDF describes a route via San Ramón. File is an older return-direction map; not proof of present road condition, tolls, optimal routing or transit time."
+    },
+    {
+      "url": "https://travel.gc.ca/destinations/costa-rica",
+      "title": "Government of Canada: Costa Rica travel advice, road safety",
+      "accessedAt": "2026-11-16",
+      "summary": "Road-safety section describes sharp curves, narrow/poor roads, rain-related hazards and avoiding night travel; general country guidance, not a route-specific status report."
+    },
+    {
+      "url": "https://ridecr.com/shuttle/",
+      "title": "RideCR: Shared-shuttle routes and pickup planning",
+      "accessedAt": "2026-11-16",
+      "summary": "Operator-owned current page lists SJO Airport and Liberia Airport departures to La Fortuna/Arenal and requests exact pickup/destination addresses. Does not prove service to The Springs or any particular flight-date availability. Owner has not identified or endorsed this provider."
+    },
+    {
+      "url": "https://www.thespringscostarica.com/contact/",
+      "title": "The Springs Resort: Contact and location",
+      "accessedAt": "2026-11-16",
+      "summary": "Resort describes itself as a 20-minute drive from the main town of La Fortuna; arrival/drop-off must still be confirmed directly."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "SJO is in Alajuela rather than downtown San José.",
+      "sourceUrls": [
+        "https://www.sjoairport.com/contacts/?lang=en"
+      ],
+      "verificationRequired": false
+    },
+    {
+      "claim": "LIR is marketed as Guanacaste Airport / Daniel Oduber Quirós International Airport.",
+      "sourceUrls": [
+        "https://www.guanacasteairport.com/en/about-us"
+      ],
+      "verificationRequired": false
+    },
+    {
+      "claim": "A resort-published return route includes San Ramón; no real-time route recommendation inferred.",
+      "sourceUrls": [
+        "https://www.thespringscostarica.com/wp-content/uploads/2020/09/DESDE-THE-SPRINGS-AL-JUAN-SANTAMARIA.pdf"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "Rain, narrow roads and curves can make driving harder; general night-driving caution.",
+      "sourceUrls": [
+        "https://travel.gc.ca/destinations/costa-rica"
+      ],
+      "verificationRequired": false
+    },
+    {
+      "claim": "Shared-shuttle services are advertised from SJO and LIR to La Fortuna/Arenal; exact pickup/drop-off must be verified.",
+      "sourceUrls": [
+        "https://ridecr.com/shuttle/"
+      ],
+      "verificationRequired": true
+    },
+    {
+      "claim": "The resort describes the town-to-property drive as about 20 minutes.",
+      "sourceUrls": [
+        "https://www.thespringscostarica.com/contact/"
+      ],
+      "verificationRequired": true
+    }
+  ],
+  "verificationFlags": [
+    "visit-date: What month/year was the SJO private-transfer visit? No visit date is supplied; do not infer it from publication/check dates.",
+    "drive-time-ranges: Original 2.5–3.5 h SJO / 2.5–3.5+ h LIR ranges and repeated approximately-three-hour claims are preserved, but not independently substantiated as current general ranges by the opened primary sources. Confirm route/date estimates with accommodation or provider before publication; distinguish drive-only from flight arrival, immigration, baggage, pickup wait and resort drop-off. Suggested alternative for approval: several hours, with a current provider estimate rather than a fixed optimistic lower bound.",
+    "liberia-route: Original Cañas–Tilarán–Lake Arenal route description is preserved, but current primary-source routing/road status was not established. Owner explicitly has not taken this route. Confirm current routing with a provider or approve a less prescriptive wording; do not treat it as a tested route.",
+    "road-observations: The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today.",
+    "service-availability: Confirm travel-date pickup location, resort drop-off, luggage/fees and flight-delay terms. RideCR is a researched example, not the owner’s identified driver; no operator name, booking date or price has been invented. Public-bus connections and the Liberia driving corridor remain to be confirmed; do not imply direct airport buses. Original general cost comparisons and 4x4 advice are conditional, not quoted tariffs or road guarantees.",
+    "seo-metadata: Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review.",
+    "photography: Proposed contextual cover is existing owner-supplied arenal-view, shown uncropped with a context caption. Approve this reuse or supply a route/arrival photograph using the existing upload workflow. No licensed or location-specific image has been invented."
+  ],
+  "reviewItems": [
+    {
+      "id": "visit-date",
+      "status": "needs-confirmation",
+      "question": "What month/year was the SJO private-transfer visit? No visit date is supplied; do not infer it from publication/check dates."
+    },
+    {
+      "id": "drive-time-ranges",
+      "status": "needs-confirmation",
+      "question": "Original 2.5–3.5 h SJO / 2.5–3.5+ h LIR ranges and repeated approximately-three-hour claims are preserved, but not independently substantiated as current general ranges by the opened primary sources. Confirm route/date estimates with accommodation or provider before publication; distinguish drive-only from flight arrival, immigration, baggage, pickup wait and resort drop-off. Suggested alternative for approval: several hours, with a current provider estimate rather than a fixed optimistic lower bound."
+    },
+    {
+      "id": "liberia-route",
+      "status": "needs-confirmation",
+      "question": "Original Cañas–Tilarán–Lake Arenal route description is preserved, but current primary-source routing/road status was not established. Owner explicitly has not taken this route. Confirm current routing with a provider or approve a less prescriptive wording; do not treat it as a tested route."
+    },
+    {
+      "id": "road-observations",
+      "status": "needs-confirmation",
+      "question": "The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today."
+    },
+    {
+      "id": "service-availability",
+      "status": "needs-confirmation",
+      "question": "Confirm travel-date pickup location, resort drop-off, luggage/fees and flight-delay terms. RideCR is a researched example, not the owner’s identified driver; no operator name, booking date or price has been invented. Public-bus connections and the Liberia driving corridor remain to be confirmed; do not imply direct airport buses. Original general cost comparisons and 4x4 advice are conditional, not quoted tariffs or road guarantees."
+    },
+    {
+      "id": "seo-metadata",
+      "status": "needs-confirmation",
+      "question": "Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review."
+    },
+    {
+      "id": "photography",
+      "status": "needs-confirmation",
+      "question": "Proposed contextual cover is existing owner-supplied arenal-view, shown uncropped with a context caption. Approve this reuse or supply a route/arrival photograph using the existing upload workflow. No licensed or location-specific image has been invented."
+    }
+  ],
+  "overlapReview": "Existing Springs overview has only a short arrival section and a resort-centric stay/activity outline; activities article concerns resort experiences. This owner-supplied article addresses broader SJO vs LIR and airport-to-La Fortuna accommodation transport intent, with a clearly bounded Springs final-leg example. Both existing resort articles and hub are linked. The calendar topic ID/order is unchanged; no second generic/resort transport clone is created.",
+  "limitations": [
+    "Drive-time ranges and current Liberia routing are not independently verified; preserve approved text only in draft and require resolution before publication.",
+    "The official ICT bus PDF URL returned 404; no specific current public-bus schedule or fare was adopted.",
+    "Guanacaste location page did not expose its map/address text in fetched content; airport identity supported by its about page instead.",
+    "General private-transfer availability and rental planning were also checked against https://www.visitcostarica.com/travel-trade, and LIR authorized-service guidance at https://www.guanacasteairport.com/en/transport. These support general context, not exact time ranges.",
+    "Source content approval is not publication approval; user explicitly required draft PR and no merge."
+  ],
+  "experienceBasis": {
+    "type": "researched",
+    "checkedAt": "2026-11-16",
+    "firsthandExperiences": [
+      {
+        "confirmedBy": "Owner, in the November 16, 2026 request",
+        "confirmedAt": "2026-11-16",
+        "visitDate": null,
+        "dateConfirmationRequired": true,
+        "evidence": "Owner explicitly states: I personally flew into SJO and booked private transportation to La Fortuna. Owner also supplies and approves the attached personal narrative. Provider identity, date, cost and specific route were not supplied.",
+        "visibleLabel": "I flew into San José (SJO) and booked private transportation",
+        "scope": "Personal SJO arrival/private-transfer preference only; no firsthand Liberia journey or named-provider endorsement inferred."
+      }
+    ]
+  },
+  "sourceContent": {
+    "type": "owner-supplied",
+    "file": "editorial/sources/la-fortuna-transport.txt",
+    "sha256": "34820b8b84f259c236abe719d9ce401e3041deb578653b2751ae80cda8abf5a1",
+    "adaptedBodySha256": "6ab81a8be62cf501eaf80ff55937e1524cb7f45d18605d5fa6a636b844f57485",
+    "confirmedBy": "Owner in current chat request",
+    "confirmedAt": "2026-11-16",
+    "authorization": "Use the attached approved article, preserve conversational style, clarify the personally confirmed SJO private transfer, add metadata/links and flag other substantive changes rather than rewriting. Not approval to publish.",
+    "metadataStatus": "Article title supplied; SEO title/description/excerpt/slug proposed for review because no separate metadata block was attached.",
+    "changes": [
+      {
+        "before": "I flew into San José (SJO) and arranged transportation rather than renting a car.",
+        "after": "I flew into San José (SJO) and booked private transportation to La Fortuna rather than renting a car.",
+        "reason": "Owner explicitly confirmed SJO arrival and private transportation in the current request."
+      },
+      {
+        "before": "This is the approach I took when visiting La Fortuna, and it's the one I'd seriously consider again.",
+        "after": "I booked private transportation from SJO to La Fortuna, and it's the approach I'd seriously consider again.",
+        "reason": "Clarify the confirmed private-transfer experience in the private transportation section, as requested."
+      },
+      {
+        "before": "For my visit, flying into San José and arranging transportation worked well.",
+        "after": "For my visit, flying into San José and booking private transportation to La Fortuna worked well.",
+        "reason": "Reflect the same confirmed personal experience in the conclusion, as requested."
+      },
+      {
+        "before": "**Juan Santamaría International Airport (SJO):**",
+        "after": "**[Juan Santamaría International Airport (SJO)](https://www.sjoairport.com/contacts/?lang=en):**",
+        "reason": "Airport-owned source confirms Alajuela address."
+      },
+      {
+        "before": "**Guanacaste Airport (LIR):**",
+        "after": "**[Guanacaste Airport (LIR)](https://www.guanacasteairport.com/en/about-us):**",
+        "reason": "Airport-owned source confirms airport identity and Guanacaste branding."
+      },
+      {
+        "before": "Through San Ramón |",
+        "after": "Through [San Ramón](https://www.thespringscostarica.com/wp-content/uploads/2020/09/DESDE-THE-SPRINGS-AL-JUAN-SANTAMARIA.pdf) |",
+        "reason": "Resort route PDF supports one San Ramón corridor; older return-direction map is not a real-time routing instruction."
+      },
+      {
+        "before": "**Driving in Costa Rica isn't something I'd recommend taking lightly if you're unfamiliar with the roads.**",
+        "after": "**[Driving in Costa Rica](https://travel.gc.ca/destinations/costa-rica) isn't something I'd recommend taking lightly if you're unfamiliar with the roads.**",
+        "reason": "Government road-condition and night-driving guidance supports general caution, not current route-specific conditions."
+      },
+      {
+        "before": "consider a shared shuttle.",
+        "after": "consider a [shared shuttle](https://ridecr.com/shuttle/).",
+        "reason": "Operator-owned page verifies SJO/LIR–Arenal service listings and asks for exact pickup/destination confirmation; not an owner endorsement."
+      },
+      {
+        "before": "According to the property, it's approximately a 20-minute drive from the town center.",
+        "after": "According to [the property](https://www.thespringscostarica.com/contact/), it's approximately a 20-minute drive from the town center.",
+        "reason": "Property-owned source explicitly gives a 20-minute town-to-resort estimate."
+      },
+      {
+        "before": "https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/",
+        "after": "/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/",
+        "reason": "Use an existing local permalink for internal-link validation."
+      },
+      {
+        "before": "https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/",
+        "after": "/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/",
+        "reason": "Use an existing local permalink for internal-link validation."
+      },
+      {
+        "addition": "*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*",
+        "reason": "Clearly separate firsthand experience from researched information; no travel date or provider invented."
+      },
+      {
+        "addition": "Explore the [Costa Rica destination guides](/destinations/costa-rica/) for more Arenal and La Fortuna planning.",
+        "reason": "Add required link to the existing Costa Rica cluster hub."
+      },
+      {
+        "addition": "*Cover photograph: Arenal Volcano viewed from The Springs Resort; destination context, not a photograph of the airport-transfer route.*",
+        "reason": "Disclose contextual use of existing destination photography; final image selection remains for review."
+      }
+    ]
+  },
+  "imagery": {
+    "status": "existing-asset-proposed-for-review",
+    "key": "arenal-view",
+    "originalFile": "src/assets/wordpress/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
+    "source": "Existing owner-supplied WordPress asset and checksum inventory",
+    "usage": "Contextual destination cover, full composition; not route documentation",
+    "recommendation": "Prefer an owner-supplied SJO arrival/actual transfer-route photograph if available. Do not invent the photographer, provider, airport or route depicted."
+  },
+  "review": {
+    "approved": false,
+    "reviewedBy": "",
+    "reviewedAt": "",
+    "sourcesChecked": false,
+    "claimsChecked": false,
+    "linksChecked": false,
+    "imageryChecked": false
+  }
+}
