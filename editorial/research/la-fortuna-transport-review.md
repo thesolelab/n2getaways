@@ -1,146 +1,91 @@
-# La Fortuna draft: owner review notes
+# La Fortuna article: final editorial review
 
-**Draft only. Do not merge or publish.** Original source text is archived unchanged in `editorial/sources/la-fortuna-transport.txt`; its SHA-256 and every adaptation are recorded in the JSON research record.
+Owner approved publication, confirmed the trip took place in **2022**, selected the supplied town/volcano image, and explicitly approved replacing unverified driving-time and Liberia-routing claims with cautious provider-confirmation wording. Publication date: November 16, 2026. Original supplied file is preserved unchanged; all adaptations and SHA-256 receipts remain in the research JSON.
 
-## What changed
+## Final corrections
 
-- Exact supplied title moved to Astro frontmatter; duplicate Markdown H1 removed. Original subtitle, H2/H3 structure and narrative retained.
-- Three expressly requested clarifications: SJO + private transportation in the introduction, private-transfer section and conclusion.
-- Existing airport/route/road-safety/shared-shuttle/property phrases linked to opened primary references. No exact bus departures, prices, driver/provider identity or travel dates invented.
-- Two absolute N2Getaways article links converted to existing local permalinks; Costa Rica hub link added.
-- A visible research/firsthand distinction and contextual-photo disclosure added. No other narrative sections rewritten. Original travel-time numbers and route descriptions remain unchanged for draft review, not represented as verified.
+Removed asserted 2.5–3.5-hour ranges, repeated roughly-three-hour promises, and unverified route/scenery prescriptions. Both airports now use several-hours/provider-confirmation guidance and distinguish drive time from immigration, luggage, pickup and final accommodation drop-off. The owner's personal narrative, structure, SEO fields and full-composition cover remain intact.
 
-## Proposed SEO metadata
+## Review resolutions
 
-The supplied article includes its title and subtitle but no standalone SEO metadata block. These fields are proposed, not represented as already approved:
+- **visit-date — resolved:** Owner explicitly confirmed 2022. Recorded year precision only, without inventing month/day; added to the introduction and visible experience note.
+- **drive-time-ranges — resolved:** Owner approved the cautious alternative. Removed all asserted SJO/LIR drive ranges and repeated approximately-three-hour claims; added several-hours/provider-confirmation wording and distinction between driving and total arrival-day time. The navigation-app three-hour example is explicitly hypothetical, not a promised journey time.
+- **liberia-route — resolved:** Owner approved replacing unverified routing claims. Removed Cañas/Tilarán/Lake Arenal route instructions and route-specific scenery assertions; both airports now require current provider/accommodation route confirmation. Removed the old PDF from active citations.
+- **road-observations — resolved:** Owner confirmed 2022. The visible note explicitly dates personal road observations to that trip rather than current conditions. General rain/road caution checked against Government of Canada guidance; no present route closure or unfinished-section guarantee is asserted.
+- **service-availability — resolved:** Reopened RideCR route page and property contact page on November 16, 2026. Operator lists SJO and LIR services to Arenal and asks for exact addresses; property gives its own approximate town-to-resort time. Article explicitly asks travelers to confirm current pickups, final drop-off, luggage, costs and connections; it publishes no bus timetable, exact fare or guaranteed service. No operator has been identified as the owner’s own provider.
+- **seo-metadata — resolved:** Owner explicitly approved this article for publication after reviewing the PR/preview containing the proposed title, description, excerpt and permalink. Retained those fields unchanged.
+- **photography — resolved:** Owner supplied and explicitly selected La Fortuna Costa Rica.jpg in the current request. Installed unchanged with full composition and descriptive alt text; no unverified photographer credit added.
 
-- SEO title: Getting to La Fortuna: San José vs. Liberia & Transfers
-- Description: Compare San José and Liberia for getting to La Fortuna, with private transfers, shared shuttles, rental cars, and my experience arriving through SJO.
-- Permalink: `/getting-to-la-fortuna-costa-rica/`
-- Primary keyword: `getting to La Fortuna` (existing approved calendar keyword).
-- Excerpt: I flew into SJO and booked private transportation to La Fortuna. Here’s how to compare airports and choose transport that fits your trip.
-
-## Verification and photography
-
-Airport-owned pages support SJO’s Alajuela address and LIR’s identity/branding. The resort supports its approximately 20-minute town-to-property estimate. RideCR advertises SJO/LIR–Arenal shared routes and asks for exact pickup/drop-off confirmation; it is a researched reference, not an owner-identified provider. Government road guidance supports general caution, not current condition of a specific road. The older resort return-route PDF supports a San Ramón corridor, not current journey times, tolls or optimal navigation.
-
-Owner-selected cover: original `La Fortuna Costa Rica.jpg` from the supplied ZIP, preserved unchanged as `la-fortuna-costa-rica`. Full composition retains the town, church, Arenal Volcano and sky. Alt text describes visible content; no photographer name or capture location is invented. Image selection is approved; publication remains unapproved.
-
-## Required confirmations before publication
-
-- **drive-time-ranges**: Original 2.5–3.5 h SJO / 2.5–3.5+ h LIR ranges and repeated approximately-three-hour claims are preserved, but not independently substantiated as current general ranges by the opened primary sources. Confirm route/date estimates with accommodation or provider before publication; distinguish drive-only from flight arrival, immigration, baggage, pickup wait and resort drop-off. Suggested alternative for approval: several hours, with a current provider estimate rather than a fixed optimistic lower bound.
-- **liberia-route**: Original Cañas–Tilarán–Lake Arenal route description is preserved, but current primary-source routing/road status was not established. Owner explicitly has not taken this route. Confirm current routing with a provider or approve a less prescriptive wording; do not treat it as a tested route.
-- **road-observations**: The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today.
-- **service-availability**: Confirm travel-date pickup location, resort drop-off, luggage/fees and flight-delay terms. RideCR is a researched example, not the owner’s identified driver; no operator name, booking date or price has been invented. Public-bus connections and the Liberia driving corridor remain to be confirmed; do not imply direct airport buses. Original general cost comparisons and 4x4 advice are conditional, not quoted tariffs or road guarantees.
-- **seo-metadata**: Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review.
-
-The owner explicitly approved using the supplied text as source and confirmed personal SJO arrival/private transportation. That does not approve release; review.approved remains false and all publication review checkboxes remain false. The owner confirmed the visit year as 2022; no month/day has been invented. Remaining unresolved confirmation items still block publication. Resolve with evidence or an explicitly owner-approved correction, then rerun validation.
-
-
-## Confirmed visit year
-
-The owner confirmed 2022. The introduction and experience note now identify this as a historical visit, not current road-condition reporting. No travel-time or Liberia-route replacement has been made; that wording choice is still awaiting owner confirmation.
-
-## Source-to-draft diff
+## Source-to-final-body diff
 
 ```diff
 --- Owner-supplied original
-+++ Astro article body
-@@ -1,4 +1,6 @@
++++ Owner-approved article body
+@@ -1 +1,3 @@
 -# Getting to La Fortuna, Costa Rica: San José vs. Liberia and Your Transportation Options
 +*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience from 2022. My road observations describe that visit, not current route conditions. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
 +
 +*Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*
- 
- *Flying into Costa Rica and heading to La Fortuna? Here's what you should know about choosing an airport, arranging transportation, and navigating the journey to the Arenal region.*
- 
-@@ -8,7 +10,7 @@
- 
- One of the first decisions you'll face is whether to fly into San José or Liberia. Both airports can get you to La Fortuna, but your flight schedule, travel plans, and transportation preferences can make one more convenient than the other.
- 
+@@ -11 +13 @@
 -**When I visited La Fortuna, I flew into San José (SJO) and arranged transportation rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
 +**When I visited La Fortuna in 2022, I flew into San José (SJO) and booked private transportation to La Fortuna rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
- 
- And after seeing the road conditions firsthand, it's an approach I'd recommend considering if you're visiting Costa Rica for the first time.
- 
-@@ -26,8 +28,8 @@
- 
- Most international visitors fly into one of two airports:
- 
+@@ -29,2 +31,2 @@
 -- **Juan Santamaría International Airport (SJO):** Located in Alajuela, near San José.
 -- **Guanacaste Airport (LIR):** Located near Liberia in northwestern Costa Rica.
 +- **[Juan Santamaría International Airport (SJO)](https://www.sjoairport.com/contacts/?lang=en):** Located in Alajuela, near San José.
 +- **[Guanacaste Airport (LIR)](https://www.guanacasteairport.com/en/about-us):** Located near Liberia in northwestern Costa Rica.
- 
- Neither airport is particularly close to La Fortuna, so you'll need to arrange ground transportation for the final part of your journey.
- 
-@@ -40,7 +42,7 @@
- | | San José (SJO) | Liberia (LIR) |
- |---|---|---|
- | Approximate drive | 2.5–3.5 hours | 2.5–3.5+ hours |
+@@ -42,2 +44,2 @@
+-| Approximate drive | 2.5–3.5 hours | 2.5–3.5+ hours |
 -| Common route | Through San Ramón | Through Cañas and Tilarán |
-+| Common route | Through [San Ramón](https://www.thespringscostarica.com/wp-content/uploads/2020/09/DESDE-THE-SPRINGS-AL-JUAN-SANTAMARIA.pdf) | Through Cañas and Tilarán |
- | Transportation options | Private transfers, shuttles, rental cars, buses | Private transfers, shuttles, rental cars, buses |
- | Good for combining with | Central Costa Rica destinations | Guanacaste and Pacific beaches |
- | Something to consider | Traffic around the Central Valley | Winding roads near Lake Arenal |
-@@ -141,7 +143,7 @@
- 
- If convenience is your priority, I'd start by looking at private transportation.
- 
++| Journey planning | Allow several hours; confirm your airport-to-hotel estimate with your provider | Allow several hours; confirm your airport-to-hotel estimate with your provider |
++| Route | Confirm the current route with your driver or accommodation | Confirm the current route with your driver or accommodation |
+@@ -46 +48 @@
+-| Something to consider | Traffic around the Central Valley | Winding roads near Lake Arenal |
++| Something to consider | Traffic around the Central Valley | Current route and weather conditions |
+@@ -56 +58 @@
+-From the airport, the drive generally takes around three hours, although I'd recommend allowing extra time.
++Allow several hours and confirm the current route and airport-to-hotel travel estimate with your transportation provider. I'd recommend allowing extra time for immigration, baggage collection, pickup arrangements, and stops.
+@@ -72,3 +74 @@
+-The drive generally passes through Cañas and Tilarán before continuing toward Lake Arenal.
+-
+-This route is known for its scenery, particularly around the lake, but it also includes winding roads and sections where travel can be slower than expected.
++Ask your transportation provider or accommodation to confirm the current route for your pickup point and destination. Weather and road conditions can affect the journey, so leave room in your plans for delays.
+@@ -98 +98 @@
+-The journey typically takes around three hours under favorable conditions, but I'd avoid planning your day around an exact arrival time.
++Allow several hours and confirm your airport-to-hotel travel estimate with your provider. I'd avoid planning your day around an exact arrival time.
+@@ -122,7 +122,3 @@
+-If you're arriving through Liberia, the journey to La Fortuna generally takes around three hours, depending on conditions.
+-
+-A common route travels through Cañas and Tilarán before continuing around Lake Arenal.
+-
+-The scenery is one of the attractions of this drive, with hills, greenery, and views of the lake along the way.
+-
+-However, the route also includes winding sections that require extra attention.
++If you're arriving through Liberia, allow several hours and confirm the current route and airport-to-hotel travel estimate with your transportation provider.
++
++Make sure the estimate covers your actual accommodation, not just downtown La Fortuna. Immigration, baggage collection, pickup waits, weather, and stops can add to the total travel day.
+@@ -144 +140 @@
 -This is the approach I took when visiting La Fortuna, and it's the one I'd seriously consider again.
 +I booked private transportation from SJO to La Fortuna, and it's the approach I'd seriously consider again.
- 
- With a private transfer, you arrange transportation in advance and travel directly to your accommodation.
- 
-@@ -157,7 +159,7 @@
- 
- ### 2. Shared shuttle: A practical middle ground
- 
+@@ -160 +156 @@
 -If you'd rather not drive but want something more budget-friendly than a private transfer, consider a shared shuttle.
 +If you'd rather not drive but want something more budget-friendly than a private transfer, consider a [shared shuttle](https://ridecr.com/shuttle/).
- 
- These services transport multiple travelers along established routes, usually with scheduled departure times.
- 
-@@ -179,7 +181,7 @@
- 
- However, I'd approach this option with some caution.
- 
+@@ -182 +178 @@
 -**Driving in Costa Rica isn't something I'd recommend taking lightly if you're unfamiliar with the roads.**
 +**[Driving in Costa Rica](https://travel.gc.ca/destinations/costa-rica) isn't something I'd recommend taking lightly if you're unfamiliar with the roads.**
- 
- During my trip, I saw firsthand how unfinished road sections could make travel uncomfortable. Rain only adds another challenge, particularly when visibility is reduced.
- 
-@@ -231,7 +233,7 @@
- 
- The resort is located outside downtown La Fortuna, overlooking the surrounding Arenal region.
- 
+@@ -234 +230 @@
 -According to the property, it's approximately a 20-minute drive from the town center.
 +According to [the property](https://www.thespringscostarica.com/contact/), it's approximately a 20-minute drive from the town center.
- 
- That means reaching La Fortuna doesn't necessarily mean you've reached your accommodation.
- 
-@@ -239,7 +241,7 @@
- 
- If you're using a shared shuttle, confirm whether it serves the property directly or requires a separate ride.
- 
+@@ -242 +238 @@
 -For more information about the resort, check out my [guide to The Springs Resort & Spa at Arenal](https://n2getaways.com/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/) and my breakdown of the [best things to do at The Springs Resort](https://n2getaways.com/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/).
 +For more information about the resort, check out my [guide to The Springs Resort & Spa at Arenal](/the-springs-resort-spa-at-arenal-a-luxury-escape-in-la-fortuna-costa-rica/) and my breakdown of the [best things to do at The Springs Resort](/best-things-to-do-at-the-springs-resort-spa-at-arenal-costa-rica-guide/).
- 
- ## A Few Things I'd Recommend Before Traveling to La Fortuna
- 
-@@ -303,7 +305,7 @@
- 
- La Fortuna is absolutely worth including on a Costa Rica itinerary, but getting there is one part of the trip I'd recommend planning ahead.
- 
+@@ -288 +284 @@
+-Plan for approximately 2.5 to 3.5 hours under favorable conditions, with extra time for traffic, rain, and stops.
++Allow several hours and confirm the current route and airport-to-hotel travel estimate with your transportation provider. Leave extra time for airport arrival formalities, pickup arrangements, traffic, rain, and stops.
+@@ -306 +302 @@
 -For my visit, flying into San José and arranging transportation worked well. I didn't have to worry about navigating unfamiliar roads, and I could enjoy the journey instead of concentrating on every turn.
 +For my visit, flying into San José and booking private transportation to La Fortuna worked well. I didn't have to worry about navigating unfamiliar roads, and I could enjoy the journey instead of concentrating on every turn.
- 
- After seeing some of the road conditions, particularly the unfinished sections that can become unpleasant in the rain, I'm glad I made that decision.
- 
-@@ -313,4 +315,6 @@
- 
- **My biggest piece of advice? Choose the transportation option that lets you start your La Fortuna getaway feeling relaxed rather than exhausted.**
- 
+@@ -316 +312,3 @@
 -You'll have plenty of opportunities for adventure once you arrive.+You'll have plenty of opportunities for adventure once you arrive.
 +
 +Explore the [Costa Rica destination guides](/destinations/costa-rica/) for more Arenal and La Fortuna planning.

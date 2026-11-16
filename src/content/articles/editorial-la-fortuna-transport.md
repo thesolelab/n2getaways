@@ -16,7 +16,7 @@ publishDate: '2026-11-16'
 permalink: /getting-to-la-fortuna-costa-rica/
 editorialTopicId: la-fortuna-transport
 targetKeyword: getting to La Fortuna
-draft: true
+draft: false
 placeholder: false
 migrationReview: false
 reviewNotes: []
@@ -65,11 +65,11 @@ The challenge is figuring out which one works best for your particular trip.
 
 | | San José (SJO) | Liberia (LIR) |
 |---|---|---|
-| Approximate drive | 2.5–3.5 hours | 2.5–3.5+ hours |
-| Common route | Through [San Ramón](https://www.thespringscostarica.com/wp-content/uploads/2020/09/DESDE-THE-SPRINGS-AL-JUAN-SANTAMARIA.pdf) | Through Cañas and Tilarán |
+| Journey planning | Allow several hours; confirm your airport-to-hotel estimate with your provider | Allow several hours; confirm your airport-to-hotel estimate with your provider |
+| Route | Confirm the current route with your driver or accommodation | Confirm the current route with your driver or accommodation |
 | Transportation options | Private transfers, shuttles, rental cars, buses | Private transfers, shuttles, rental cars, buses |
 | Good for combining with | Central Costa Rica destinations | Guanacaste and Pacific beaches |
-| Something to consider | Traffic around the Central Valley | Winding roads near Lake Arenal |
+| Something to consider | Traffic around the Central Valley | Current route and weather conditions |
 
 *Travel times are estimates. Traffic, rain, road conditions, and your hotel's location can all affect the journey.*
 
@@ -79,7 +79,7 @@ San José is where I flew into when visiting La Fortuna, and it worked well for 
 
 One thing that's helpful to know is that the airport isn't actually in downtown San José. It's located in Alajuela, which means you may not need to travel through the city center to reach La Fortuna.
 
-From the airport, the drive generally takes around three hours, although I'd recommend allowing extra time.
+Allow several hours and confirm the current route and airport-to-hotel travel estimate with your transportation provider. I'd recommend allowing extra time for immigration, baggage collection, pickup arrangements, and stops.
 
 As you leave the busier areas behind, the scenery gradually changes. You'll pass through smaller towns, rolling hills, and stretches of greenery as you make your way toward the Arenal region.
 
@@ -95,9 +95,7 @@ That's one of the reasons I was glad I'd arranged transportation instead of tryi
 
 Liberia is another option, especially if you're planning to combine La Fortuna with time along Costa Rica's Pacific coast.
 
-The drive generally passes through Cañas and Tilarán before continuing toward Lake Arenal.
-
-This route is known for its scenery, particularly around the lake, but it also includes winding roads and sections where travel can be slower than expected.
+Ask your transportation provider or accommodation to confirm the current route for your pickup point and destination. Weather and road conditions can affect the journey, so leave room in your plans for delays.
 
 I haven't personally taken the Liberia-to-La Fortuna route, so I can't compare the two drives from firsthand experience.
 
@@ -121,7 +119,7 @@ For my trip, San José was the right choice. But depending on your itinerary, Li
 
 If you're flying into SJO, you'll have several ways to reach La Fortuna.
 
-The journey typically takes around three hours under favorable conditions, but I'd avoid planning your day around an exact arrival time.
+Allow several hours and confirm your airport-to-hotel travel estimate with your provider. I'd avoid planning your day around an exact arrival time.
 
 Costa Rica's roads can be unpredictable, especially during rainy weather.
 
@@ -145,13 +143,9 @@ Otherwise, arranging transportation can remove a lot of unnecessary stress from 
 
 ## Getting From Liberia Airport to La Fortuna
 
-If you're arriving through Liberia, the journey to La Fortuna generally takes around three hours, depending on conditions.
+If you're arriving through Liberia, allow several hours and confirm the current route and airport-to-hotel travel estimate with your transportation provider.
 
-A common route travels through Cañas and Tilarán before continuing around Lake Arenal.
-
-The scenery is one of the attractions of this drive, with hills, greenery, and views of the lake along the way.
-
-However, the route also includes winding sections that require extra attention.
+Make sure the estimate covers your actual accommodation, not just downtown La Fortuna. Immigration, baggage collection, pickup waits, weather, and stops can add to the total travel day.
 
 If you're driving yourself, I'd recommend making the trip during daylight and allowing plenty of time.
 
@@ -311,7 +305,7 @@ Both airports are practical options. San José may work better for trips centere
 
 ### How long is the drive from San José to La Fortuna?
 
-Plan for approximately 2.5 to 3.5 hours under favorable conditions, with extra time for traffic, rain, and stops.
+Allow several hours and confirm the current route and airport-to-hotel travel estimate with your transportation provider. Leave extra time for airport arrival formalities, pickup arrangements, traffic, rain, and stops.
 
 ### Can you get to La Fortuna without renting a car?
 
