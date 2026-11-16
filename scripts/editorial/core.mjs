@@ -144,6 +144,7 @@ export function knownImages() {
     "san-francisco",
     "sf-painted-ladies",
     "oia-windmill",
+    "la-fortuna-costa-rica",
     ...Object.values(received).map((x) => x.key),
   ]);
 }

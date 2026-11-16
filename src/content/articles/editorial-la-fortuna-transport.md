@@ -8,9 +8,9 @@ excerpt: I flew into SJO and booked private transportation to La Fortuna. Hereâ€
 destination: Costa Rica
 clusterRole: planning
 category: Travel guide
-image: arenal-view
+image: la-fortuna-costa-rica
 imageDisplay: full
-imageAlt: Arenal Volcano beyond tropical gardens and resort lounge chairs at The Springs Resort
+imageAlt: La Fortuna town and its central church beneath Arenal Volcano and a blue sky
 readTime: 14
 publishDate: '2026-11-16'
 permalink: /getting-to-la-fortuna-costa-rica/
@@ -24,7 +24,7 @@ reviewNotes: []
 
 *A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
 
-*Cover photograph: Arenal Volcano viewed from The Springs Resort; destination context, not a photograph of the airport-transfer route.*
+*Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*
 
 *Flying into Costa Rica and heading to La Fortuna? Here's what you should know about choosing an airport, arranging transportation, and navigating the journey to the Arenal region.*
 

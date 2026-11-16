@@ -38,3 +38,7 @@ All 18 requested files were received in the owner's four ZIPs. They are stored u
 ## Displayed credits
 
 `src/config/photo-credits.json` records the existing known source/credit/license links for Maui, the owner-selected Painted Ladies cover, and the three development sample images. `PhotoCredit.astro` renders these consistently beneath destination or article images. Sample photographs without a recorded photographer name are credited to Unsplash only; unknown individual authors of supplied archive images are not invented. Source provenance above remains unchanged.
+
+## Owner-selected La Fortuna article photograph
+
+`src/assets/editorial/la-fortuna-costa-rica.jpg` is the unchanged `La Fortuna Costa Rica.jpg` from the owner-supplied ZIP, explicitly selected for the La Fortuna transportation draft. It shows the town, central church, Arenal Volcano and sky. Full composition is retained; no photographer identity or precise shooting location is invented. Original SHA-256 is recorded in `editorial/research/la-fortuna-transport.json`. Astro creates optimized display variants.

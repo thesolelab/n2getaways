@@ -91,8 +91,7 @@
     "liberia-route: Original Cañas–Tilarán–Lake Arenal route description is preserved, but current primary-source routing/road status was not established. Owner explicitly has not taken this route. Confirm current routing with a provider or approve a less prescriptive wording; do not treat it as a tested route.",
     "road-observations: The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today.",
     "service-availability: Confirm travel-date pickup location, resort drop-off, luggage/fees and flight-delay terms. RideCR is a researched example, not the owner’s identified driver; no operator name, booking date or price has been invented. Public-bus connections and the Liberia driving corridor remain to be confirmed; do not imply direct airport buses. Original general cost comparisons and 4x4 advice are conditional, not quoted tariffs or road guarantees.",
-    "seo-metadata: Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review.",
-    "photography: Proposed contextual cover is existing owner-supplied arenal-view, shown uncropped with a context caption. Approve this reuse or supply a route/arrival photograph using the existing upload workflow. No licensed or location-specific image has been invented."
+    "seo-metadata: Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review."
   ],
   "reviewItems": [
     {
@@ -127,8 +126,9 @@
     },
     {
       "id": "photography",
-      "status": "needs-confirmation",
-      "question": "Proposed contextual cover is existing owner-supplied arenal-view, shown uncropped with a context caption. Approve this reuse or supply a route/arrival photograph using the existing upload workflow. No licensed or location-specific image has been invented."
+      "status": "resolved",
+      "question": "Proposed contextual cover is existing owner-supplied arenal-view, shown uncropped with a context caption. Approve this reuse or supply a route/arrival photograph using the existing upload workflow. No licensed or location-specific image has been invented.",
+      "resolution": "Owner supplied and explicitly selected La Fortuna Costa Rica.jpg in the current request. Installed unchanged with full composition and descriptive alt text; no unverified photographer credit added."
     }
   ],
   "overlapReview": "Existing Springs overview has only a short arrival section and a resort-centric stay/activity outline; activities article concerns resort experiences. This owner-supplied article addresses broader SJO vs LIR and airport-to-La Fortuna accommodation transport intent, with a clearly bounded Springs final-leg example. Both existing resort articles and hub are linked. The calendar topic ID/order is unchanged; no second generic/resort transport clone is created.",
@@ -158,7 +158,7 @@
     "type": "owner-supplied",
     "file": "editorial/sources/la-fortuna-transport.txt",
     "sha256": "34820b8b84f259c236abe719d9ce401e3041deb578653b2751ae80cda8abf5a1",
-    "adaptedBodySha256": "6ab81a8be62cf501eaf80ff55937e1524cb7f45d18605d5fa6a636b844f57485",
+    "adaptedBodySha256": "a6589c63b67a990946d30195a40df1503e6e5ff36c353dbb7a3ab59e995bc711",
     "confirmedBy": "Owner in current chat request",
     "confirmedAt": "2026-11-16",
     "authorization": "Use the attached approved article, preserve conversational style, clarify the personally confirmed SJO private transfer, add metadata/links and flag other substantive changes rather than rewriting. Not approval to publish.",
@@ -230,16 +230,22 @@
       {
         "addition": "*Cover photograph: Arenal Volcano viewed from The Springs Resort; destination context, not a photograph of the airport-transfer route.*",
         "reason": "Disclose contextual use of existing destination photography; final image selection remains for review."
+      },
+      {
+        "before": "*Cover photograph: Arenal Volcano viewed from The Springs Resort; destination context, not a photograph of the airport-transfer route.*",
+        "after": "*Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*",
+        "reason": "Owner selected replacement cover in La Fortuna Costa Rica.zip; correct caption to match the photograph."
       }
     ]
   },
   "imagery": {
-    "status": "existing-asset-proposed-for-review",
-    "key": "arenal-view",
-    "originalFile": "src/assets/wordpress/Arenal-Volcano-view-from-The-Springs-Resort-Spa-1024x514.jpg",
-    "source": "Existing owner-supplied WordPress asset and checksum inventory",
-    "usage": "Contextual destination cover, full composition; not route documentation",
-    "recommendation": "Prefer an owner-supplied SJO arrival/actual transfer-route photograph if available. Do not invent the photographer, provider, airport or route depicted."
+    "status": "owner-selected-original-received",
+    "key": "la-fortuna-costa-rica",
+    "originalFile": "src/assets/editorial/la-fortuna-costa-rica.jpg",
+    "source": "Owner-supplied La Fortuna Costa Rica.zip / La Fortuna Costa Rica.jpg",
+    "sha256": "27e25c867f2c3dd396816030a7151b1cb0c8b695a989fce83e90c452bf254255",
+    "usage": "Full original composition, showing volcano, town, church and sky; no photographer identity or shooting location inferred.",
+    "selectionApproval": "Owner explicitly requested this image for this article; article publication approval remains false."
   },
   "review": {
     "approved": false,

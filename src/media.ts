@@ -1,4 +1,5 @@
 import type { ImageMetadata } from "astro";
+import laFortuna from "./assets/editorial/la-fortuna-costa-rica.jpg";
 import oiaWindmill from "./assets/editorial/oia-windmill.jpg";
 import sfPaintedLadies from "./assets/editorial/sf-painted-ladies.jpg";
 import mauiCoast from "./assets/maui-coast.jpg";
@@ -13,6 +14,7 @@ const files = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 export const photos: Record<string, ImageMetadata> = {
+  "la-fortuna-costa-rica": laFortuna,
   "maui-coast": mauiCoast,
   "sf-painted-ladies": sfPaintedLadies,
   "oia-windmill": oiaWindmill,

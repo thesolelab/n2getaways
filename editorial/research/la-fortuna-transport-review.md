@@ -24,7 +24,7 @@ The supplied article includes its title and subtitle but no standalone SEO metad
 
 Airport-owned pages support SJO’s Alajuela address and LIR’s identity/branding. The resort supports its approximately 20-minute town-to-property estimate. RideCR advertises SJO/LIR–Arenal shared routes and asks for exact pickup/drop-off confirmation; it is a researched reference, not an owner-identified provider. Government road guidance supports general caution, not current condition of a specific road. The older resort return-route PDF supports a San Ramón corridor, not current journey times, tolls or optimal navigation.
 
-Proposed cover: existing owner-supplied `arenal-view`, shown in full composition and labeled destination context. The file already has provenance/checksum inventory. No new photography is fetched, generated or attributed to an unknown photographer. An original photo from the actual SJO arrival or transfer would be more specific if available; it can be supplied through the existing upload workflow.
+Owner-selected cover: original `La Fortuna Costa Rica.jpg` from the supplied ZIP, preserved unchanged as `la-fortuna-costa-rica`. Full composition retains the town, church, Arenal Volcano and sky. Alt text describes visible content; no photographer name or capture location is invented. Image selection is approved; publication remains unapproved.
 
 ## Required confirmations before publication
 
@@ -34,7 +34,6 @@ Proposed cover: existing owner-supplied `arenal-view`, shown in full composition
 - **road-observations**: The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today.
 - **service-availability**: Confirm travel-date pickup location, resort drop-off, luggage/fees and flight-delay terms. RideCR is a researched example, not the owner’s identified driver; no operator name, booking date or price has been invented. Public-bus connections and the Liberia driving corridor remain to be confirmed; do not imply direct airport buses. Original general cost comparisons and 4x4 advice are conditional, not quoted tariffs or road guarantees.
 - **seo-metadata**: Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review.
-- **photography**: Proposed contextual cover is existing owner-supplied arenal-view, shown uncropped with a context caption. Approve this reuse or supply a route/arrival photograph using the existing upload workflow. No licensed or location-specific image has been invented.
 
 The owner explicitly approved using the supplied text as source and confirmed personal SJO arrival/private transportation. That does not approve release; review.approved remains false and all publication review checkboxes remain false. Unknown visit date is allowed only in a draft; unresolved confirmation items block publication. Resolve with evidence or an explicitly owner-approved correction, then rerun validation.
 
@@ -47,7 +46,7 @@ The owner explicitly approved using the supplied text as source and confirmed pe
 -# Getting to La Fortuna, Costa Rica: San José vs. Liberia and Your Transportation Options
 +*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
 +
-+*Cover photograph: Arenal Volcano viewed from The Springs Resort; destination context, not a photograph of the airport-transfer route.*
++*Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*
  
  *Flying into Costa Rica and heading to La Fortuna? Here's what you should know about choosing an airport, arranging transportation, and navigating the journey to the Arenal region.*
  
