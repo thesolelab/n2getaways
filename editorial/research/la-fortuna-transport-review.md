@@ -28,14 +28,18 @@ Owner-selected cover: original `La Fortuna Costa Rica.jpg` from the supplied ZIP
 
 ## Required confirmations before publication
 
-- **visit-date**: What month/year was the SJO private-transfer visit? No visit date is supplied; do not infer it from publication/check dates.
 - **drive-time-ranges**: Original 2.5–3.5 h SJO / 2.5–3.5+ h LIR ranges and repeated approximately-three-hour claims are preserved, but not independently substantiated as current general ranges by the opened primary sources. Confirm route/date estimates with accommodation or provider before publication; distinguish drive-only from flight arrival, immigration, baggage, pickup wait and resort drop-off. Suggested alternative for approval: several hours, with a current provider estimate rather than a fixed optimistic lower bound.
 - **liberia-route**: Original Cañas–Tilarán–Lake Arenal route description is preserved, but current primary-source routing/road status was not established. Owner explicitly has not taken this route. Confirm current routing with a provider or approve a less prescriptive wording; do not treat it as a tested route.
 - **road-observations**: The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today.
 - **service-availability**: Confirm travel-date pickup location, resort drop-off, luggage/fees and flight-delay terms. RideCR is a researched example, not the owner’s identified driver; no operator name, booking date or price has been invented. Public-bus connections and the Liberia driving corridor remain to be confirmed; do not imply direct airport buses. Original general cost comparisons and 4x4 advice are conditional, not quoted tariffs or road guarantees.
 - **seo-metadata**: Uploaded article contained title and subtitle but no standalone approved SEO title, description or slug. Exact article title is retained; SEO title, description, excerpt and /getting-to-la-fortuna-costa-rica/ are proposed for owner review.
 
-The owner explicitly approved using the supplied text as source and confirmed personal SJO arrival/private transportation. That does not approve release; review.approved remains false and all publication review checkboxes remain false. Unknown visit date is allowed only in a draft; unresolved confirmation items block publication. Resolve with evidence or an explicitly owner-approved correction, then rerun validation.
+The owner explicitly approved using the supplied text as source and confirmed personal SJO arrival/private transportation. That does not approve release; review.approved remains false and all publication review checkboxes remain false. The owner confirmed the visit year as 2022; no month/day has been invented. Remaining unresolved confirmation items still block publication. Resolve with evidence or an explicitly owner-approved correction, then rerun validation.
+
+
+## Confirmed visit year
+
+The owner confirmed 2022. The introduction and experience note now identify this as a historical visit, not current road-condition reporting. No travel-time or Liberia-route replacement has been made; that wording choice is still awaiting owner confirmation.
 
 ## Source-to-draft diff
 
@@ -44,7 +48,7 @@ The owner explicitly approved using the supplied text as source and confirmed pe
 +++ Astro article body
 @@ -1,4 +1,6 @@
 -# Getting to La Fortuna, Costa Rica: San José vs. Liberia and Your Transportation Options
-+*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
++*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience from 2022. My road observations describe that visit, not current route conditions. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
 +
 +*Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*
  
@@ -55,7 +59,7 @@ The owner explicitly approved using the supplied text as source and confirmed pe
  One of the first decisions you'll face is whether to fly into San José or Liberia. Both airports can get you to La Fortuna, but your flight schedule, travel plans, and transportation preferences can make one more convenient than the other.
  
 -**When I visited La Fortuna, I flew into San José (SJO) and arranged transportation rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
-+**When I visited La Fortuna, I flew into San José (SJO) and booked private transportation to La Fortuna rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
++**When I visited La Fortuna in 2022, I flew into San José (SJO) and booked private transportation to La Fortuna rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
  
  And after seeing the road conditions firsthand, it's an approach I'd recommend considering if you're visiting Costa Rica for the first time.
  

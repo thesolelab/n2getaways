@@ -22,7 +22,7 @@ migrationReview: false
 reviewNotes: []
 ---
 
-*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
+*A researched planning guide checked November 16, 2026, with my own SJO arrival and private-transfer experience from 2022. My road observations describe that visit, not current route conditions. I have not personally taken the Liberia route; current service details and driving conditions should be reconfirmed before travel.*
 
 *Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*
 
@@ -34,7 +34,7 @@ Before you can start exploring, though, you'll need to figure out how to get the
 
 One of the first decisions you'll face is whether to fly into San José or Liberia. Both airports can get you to La Fortuna, but your flight schedule, travel plans, and transportation preferences can make one more convenient than the other.
 
-**When I visited La Fortuna, I flew into San José (SJO) and booked private transportation to La Fortuna rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
+**When I visited La Fortuna in 2022, I flew into San José (SJO) and booked private transportation to La Fortuna rather than renting a car.** Having someone familiar with the roads handle the drive made the journey much easier, especially after traveling internationally.
 
 And after seeing the road conditions firsthand, it's an approach I'd recommend considering if you're visiting Costa Rica for the first time.
 

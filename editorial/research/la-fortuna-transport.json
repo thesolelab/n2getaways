@@ -86,7 +86,6 @@
     }
   ],
   "verificationFlags": [
-    "visit-date: What month/year was the SJO private-transfer visit? No visit date is supplied; do not infer it from publication/check dates.",
     "drive-time-ranges: Original 2.5–3.5 h SJO / 2.5–3.5+ h LIR ranges and repeated approximately-three-hour claims are preserved, but not independently substantiated as current general ranges by the opened primary sources. Confirm route/date estimates with accommodation or provider before publication; distinguish drive-only from flight arrival, immigration, baggage, pickup wait and resort drop-off. Suggested alternative for approval: several hours, with a current provider estimate rather than a fixed optimistic lower bound.",
     "liberia-route: Original Cañas–Tilarán–Lake Arenal route description is preserved, but current primary-source routing/road status was not established. Owner explicitly has not taken this route. Confirm current routing with a provider or approve a less prescriptive wording; do not treat it as a tested route.",
     "road-observations: The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today.",
@@ -96,8 +95,9 @@
   "reviewItems": [
     {
       "id": "visit-date",
-      "status": "needs-confirmation",
-      "question": "What month/year was the SJO private-transfer visit? No visit date is supplied; do not infer it from publication/check dates."
+      "status": "resolved",
+      "question": "What month/year was the SJO private-transfer visit? No visit date is supplied; do not infer it from publication/check dates.",
+      "resolution": "Owner explicitly confirmed 2022. Recorded year precision only, without inventing month/day; added to the introduction and visible experience note."
     },
     {
       "id": "drive-time-ranges",
@@ -112,7 +112,7 @@
     {
       "id": "road-observations",
       "status": "needs-confirmation",
-      "question": "The owner-approved source says unfinished road sections were observed firsthand. Confirm the visit period/context; distinguish historic personal observations from the article’s generalized present-tense road claims. Government guidance supports broad caution, not that a particular airport road is unfinished today."
+      "question": "2022 visit date now confirmed and explicitly disclosed. Any present-day route conditions remain subject to independent checks; historical unfinished-road observations are not evidence of today’s road conditions."
     },
     {
       "id": "service-availability",
@@ -146,11 +146,12 @@
       {
         "confirmedBy": "Owner, in the November 16, 2026 request",
         "confirmedAt": "2026-11-16",
-        "visitDate": null,
-        "dateConfirmationRequired": true,
-        "evidence": "Owner explicitly states: I personally flew into SJO and booked private transportation to La Fortuna. Owner also supplies and approves the attached personal narrative. Provider identity, date, cost and specific route were not supplied.",
+        "visitDate": "2022",
+        "dateConfirmationRequired": false,
+        "evidence": "Owner explicitly states: I personally flew into SJO and booked private transportation to La Fortuna. Owner also supplies and approves the attached personal narrative. Provider identity, date, cost and specific route were not supplied. Owner subsequently confirmed the trip was in 2022; month/day remain unspecified.",
         "visibleLabel": "I flew into San José (SJO) and booked private transportation",
-        "scope": "Personal SJO arrival/private-transfer preference only; no firsthand Liberia journey or named-provider endorsement inferred."
+        "scope": "Personal SJO arrival/private-transfer preference only; no firsthand Liberia journey or named-provider endorsement inferred.",
+        "visitDatePrecision": "year"
       }
     ]
   },
@@ -158,7 +159,7 @@
     "type": "owner-supplied",
     "file": "editorial/sources/la-fortuna-transport.txt",
     "sha256": "34820b8b84f259c236abe719d9ce401e3041deb578653b2751ae80cda8abf5a1",
-    "adaptedBodySha256": "a6589c63b67a990946d30195a40df1503e6e5ff36c353dbb7a3ab59e995bc711",
+    "adaptedBodySha256": "977be0eeb5a5537c1b6743e6d9a66419b4b4be9604f87526aff1da422c98e39e",
     "confirmedBy": "Owner in current chat request",
     "confirmedAt": "2026-11-16",
     "authorization": "Use the attached approved article, preserve conversational style, clarify the personally confirmed SJO private transfer, add metadata/links and flag other substantive changes rather than rewriting. Not approval to publish.",
@@ -235,6 +236,16 @@
         "before": "*Cover photograph: Arenal Volcano viewed from The Springs Resort; destination context, not a photograph of the airport-transfer route.*",
         "after": "*Cover photograph: La Fortuna town with Arenal Volcano in the background; destination context, not a photograph of the airport-transfer route.*",
         "reason": "Owner selected replacement cover in La Fortuna Costa Rica.zip; correct caption to match the photograph."
+      },
+      {
+        "before": "with my own SJO arrival and private-transfer experience.",
+        "after": "with my own SJO arrival and private-transfer experience from 2022. My road observations describe that visit, not current route conditions.",
+        "reason": "Owner confirmed the visit was in 2022; distinguish historical observations from current transport advice without inventing a month/day."
+      },
+      {
+        "before": "When I visited La Fortuna, I flew into San José (SJO)",
+        "after": "When I visited La Fortuna in 2022, I flew into San José (SJO)",
+        "reason": "Owner confirmed the visit was in 2022; distinguish historical observations from current transport advice without inventing a month/day."
       }
     ]
   },
