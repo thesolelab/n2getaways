@@ -1,6 +1,7 @@
 /** No inference API, billing integration, or automatic publishing. */
 import { execFileSync } from "node:child_process";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, rmSync } from "node:fs";
+import { calendarSelection, validateCalendarArticles } from "./calendar.mjs";
 import {
   config,
   json,
@@ -58,11 +59,16 @@ async function next() {
   const inv = inventory(),
     reserved = reservations(),
     queue = json("editorial/queue.json");
-  const topic = selectTopic(queue, inv.all, reserved);
+  const selection = calendarSelection(
+    json("editorial/calendar.json"),
+    queue,
+    inv.all,
+    reserved,
+  );
+  const topic = selection.topic;
   if (!topic) {
-    console.log(
-      "No approved, eligible, unreserved topic. Edit editorial/queue.json first.",
-    );
+    rmSync("work/editorial/plan.json", { force: true });
+    console.log(selection.reason);
     return;
   }
   // Similarity is an editorial warning, never permission to copy an existing guide.
@@ -91,7 +97,7 @@ async function next() {
     existingContent: related,
     allowedInternalPaths: [...inv.routes].sort(),
     instructions:
-      "Use current primary sources. Document overlap review. Write 700–2000 original words, cited claims and no first-person experience. Stage only after research and validation.",
+      "Manual request required. Use current primary sources; document overlap. This is a researched planning guide: visibly label research basis and date checked. Supply note.experienceBasis={type: researched, checkedAt: YYYY-MM-DD, firsthandExperiences: []}. Only include firsthand observations separately labeled and owner-confirmed with visitDate/evidence/confirmedBy/visibleLabel. No invented experience. Stage only after research and validation. Publication requires separate article approval and calendar release-window checks.",
   };
   mkdirSync("work/editorial", { recursive: true });
   save("work/editorial/plan.json", plan);
@@ -111,7 +117,13 @@ function stage(file) {
   const queue = json("editorial/queue.json"),
     inv = inventory();
   assert(
-    selectTopic(queue, inv.all, reservations())?.id === plan.topic.id,
+    selectTopic(
+      queue,
+      inv.all,
+      reservations(),
+      undefined,
+      json("editorial/calendar.json"),
+    )?.id === plan.topic.id,
     "Topic no longer next eligible item",
   );
   const input = json(file);
@@ -128,6 +140,7 @@ function stage(file) {
     editorialTopicId: plan.topic.id,
     targetKeyword: plan.topic.targetKeyword,
     destination: plan.topic.destination,
+    clusterRole: plan.topic.clusterRole,
     draft: true,
     placeholder: false,
     migrationReview: false,
@@ -243,10 +256,31 @@ function submit() {
     );
   }
 }
+function status() {
+  const queue = json("editorial/queue.json"),
+    inv = inventory();
+  const result = calendarSelection(
+    json("editorial/calendar.json"),
+    queue,
+    inv.all,
+    reservations(),
+  );
+  console.log(
+    result.topic
+      ? `Next approved topic (Week ${result.entry.week}): ${result.topic.title} [${result.topic.id}]. Manual drafting request required; no article generated.`
+      : result.reason,
+  );
+}
 async function sync() {
   cleanMain();
   const queue = json("editorial/queue.json"),
     inv = inventory();
+  validateCalendarArticles(
+    json("editorial/calendar.json"),
+    queue,
+    inv.all,
+    (id) => json(`editorial/research/${id}.json`),
+  );
   let count = 0;
   for (const topic of queue.filter((t) => t.status === "drafted")) {
     const a = inv.all.find((a) => a.data.editorialTopicId === topic.id);
@@ -285,11 +319,12 @@ async function sync() {
 }
 try {
   const command = process.argv[2];
-  if (command === "next") await next();
+  if (command === "status") status();
+  else if (command === "next") await next();
   else if (command === "stage") stage(process.argv[3]);
   else if (command === "submit") submit();
   else if (command === "sync") await sync();
-  else throw new Error("Use next, stage <input.json>, submit, or sync");
+  else throw new Error("Use status, next, stage <input.json>, submit, or sync");
 } catch (e) {
   console.error(`EDITORIAL FAILED: ${e.message}`);
   process.exitCode = 1;
