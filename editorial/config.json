@@ -62,6 +62,37 @@
         "kastro-oia.com",
         "oiagefsis.com"
       ]
+    },
+    "Travel tips": {
+      "path": "/travel-guides/",
+      "domains": [
+        "ashevillenc.gov",
+        "bart.gov",
+        "discovergreece.com",
+        "dlnr.hawaii.gov",
+        "drivenc.gov",
+        "exploreasheville.com",
+        "fraport-greece.com",
+        "fs.usda.gov",
+        "gohawaii.com",
+        "hawaii.gov",
+        "honolulu.gov",
+        "ict.go.cr",
+        "kastro-oia.com",
+        "ktel-santorini.gr",
+        "mauicounty.gov",
+        "nps.gov",
+        "oiagefsis.com",
+        "santorini.gr",
+        "sf.gov",
+        "sfmta.com",
+        "sftravel.com",
+        "sinac.go.cr",
+        "thebus.org",
+        "timeanddate.com",
+        "visitcostarica.com",
+        "visitgreece.gr"
+      ]
     }
   }
 }

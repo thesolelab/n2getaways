@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
+import { calendarSelection, localDate } from "./calendar.mjs";
 export const root = process.cwd();
 export const json = (p) => JSON.parse(readFileSync(p, "utf8"));
 export const config = () => json("editorial/config.json");
@@ -90,9 +91,18 @@ export function selectTopic(
   queue,
   articles,
   reserved = [],
-  today = new Date().toISOString().slice(0, 10),
+  today = localDate(),
+  calendar,
 ) {
   validateQueue(queue);
+  if (calendar)
+    return calendarSelection(
+      calendar,
+      queue,
+      articles,
+      reserved,
+      new Date(`${today}T18:00:00Z`),
+    ).topic;
   return queue
     .filter(
       (t) =>

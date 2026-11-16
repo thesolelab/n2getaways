@@ -14,7 +14,8 @@
     "editorial:submit": "node scripts/editorial/cli.mjs submit",
     "editorial:sync": "node scripts/editorial/cli.mjs sync",
     "editorial:check": "node scripts/editorial/check.mjs",
-    "editorial:test": "node --test editorial/tests/*.test.mjs"
+    "editorial:test": "node --test editorial/tests/*.test.mjs",
+    "editorial:status": "node scripts/editorial/cli.mjs status"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.9",

@@ -18,13 +18,14 @@
   },
   {
     "id": "maui-trip-planning",
-    "title": "Planning a Maui Trip: Reservations and Responsible Travel Basics",
+    "title": "Maui Reservations: What to Check and Book Before Your Trip",
     "destination": "Maui",
     "targetKeyword": "Maui trip planning reservations",
-    "priority": 2,
-    "status": "proposed",
+    "priority": 11,
+    "status": "approved",
     "editorialNotes": "Owner must approve before selection; verify current local guidance and park reservation requirements.",
-    "clusterRole": "planning"
+    "clusterRole": "planning",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "sf-first-trip-budget",
@@ -48,33 +49,36 @@
   },
   {
     "id": "sf-cable-cars-planning",
-    "title": "Planning a San Francisco Cable Car Ride: Routes and Tickets",
+    "title": "Riding San Francisco Cable Cars: Routes, Boarding and Tickets",
     "destination": "San Francisco",
     "targetKeyword": "San Francisco cable car guide",
     "clusterRole": "experiences",
     "priority": 5,
-    "status": "proposed",
-    "editorialNotes": "Detailed attraction-specific intent; link to car-free transport guide, avoid duplicating its system overview. Verify operator payment, boarding and accessibility details."
+    "status": "approved",
+    "editorialNotes": "Detailed attraction-specific intent; link to car-free transport guide, avoid duplicating its system overview. Verify operator payment, boarding and accessibility details.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "maui-first-visit-itinerary",
-    "title": "A First Maui Itinerary: How to Plan Five Days",
+    "title": "Five Days on Maui: A Flexible First-Visit Itinerary",
     "destination": "Maui",
     "targetKeyword": "Maui 5 day itinerary",
     "clusterRole": "itineraries",
-    "priority": 6,
-    "status": "proposed",
-    "editorialNotes": "Create a geographically workable plan from official sources; verify reservations and local travel guidance. No claimed road testing."
+    "priority": 7,
+    "status": "approved",
+    "editorialNotes": "Create a geographically workable plan from official sources; verify reservations and local travel guidance. No claimed road testing.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "maui-where-to-stay",
-    "title": "Where to Stay on Maui: Choosing an Area for Your Trip",
+    "title": "Where to Stay on Maui: Choosing Your Base",
     "destination": "Maui",
     "targetKeyword": "where to stay on Maui",
     "clusterRole": "stays",
-    "priority": 7,
-    "status": "proposed",
-    "editorialNotes": "Area-level decision guide with clearly sourced transport/geography; no invented hotel visits or affiliate relationships."
+    "priority": 4,
+    "status": "approved",
+    "editorialNotes": "Area-level decision guide with clearly sourced transport/geography; no invented hotel visits or affiliate relationships.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "maui-airport-transport",
@@ -112,39 +116,43 @@
     "destination": "Waikiki",
     "targetKeyword": "where to stay in Waikiki",
     "clusterRole": "stays",
-    "priority": 11,
-    "status": "proposed",
-    "editorialNotes": "Compare location tradeoffs using current official maps and operator information; no fabricated hotel stays."
+    "priority": 10,
+    "status": "approved",
+    "editorialNotes": "Compare location tradeoffs using current official maps and operator information; no fabricated hotel stays.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "waikiki-without-car",
-    "title": "Waikiki Without a Car: Airport and Local Transport Planning",
+    "title": "Waikiki Without a Car: Airport Transfers and Getting Around",
     "destination": "Waikiki",
     "targetKeyword": "Waikiki without a car",
     "clusterRole": "planning",
-    "priority": 12,
-    "status": "proposed",
-    "editorialNotes": "Check TheBus, airport and official transit resources; scope to Waikiki rather than claiming all Oahu works without a car."
+    "priority": 3,
+    "status": "approved",
+    "editorialNotes": "Check TheBus, airport and official transit resources; scope to Waikiki rather than claiming all Oahu works without a car.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "la-fortuna-itinerary",
-    "title": "Three Days in La Fortuna: Arenal Trip Planning",
+    "title": "Three Days in La Fortuna: Arenal Sights and Resort Time",
     "destination": "Costa Rica",
     "targetKeyword": "La Fortuna 3 day itinerary",
     "clusterRole": "itineraries",
-    "priority": 13,
-    "status": "proposed",
-    "editorialNotes": "Extend the existing Arenal resort coverage into an area itinerary. Verify park access and attraction availability; no invented firsthand experience."
+    "priority": 6,
+    "status": "approved",
+    "editorialNotes": "Extend the existing Arenal resort coverage into an area itinerary. Verify park access and attraction availability; no invented firsthand experience.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "la-fortuna-transport",
-    "title": "Getting to La Fortuna: Airport and Transfer Planning",
+    "title": "Getting to La Fortuna: San Jos\u00e9 vs. Liberia and Airport Transfer Options",
     "destination": "Costa Rica",
     "targetKeyword": "getting to La Fortuna",
     "clusterRole": "planning",
-    "priority": 14,
-    "status": "proposed",
-    "editorialNotes": "Use official airport/transport operator sources; compare planning choices without guaranteed transfer times."
+    "priority": 1,
+    "status": "approved",
+    "editorialNotes": "Use official airport/transport operator sources; compare planning choices without guaranteed transfer times. Broader La Fortuna airport-to-accommodation intent; compare SJO/LIR, include The Springs final leg and links to both resort articles. Do not create a separate resort airport clone.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "arenal-park-planning",
@@ -158,23 +166,25 @@
   },
   {
     "id": "asheville-where-to-stay",
-    "title": "Where to Stay in Asheville: Choosing a Weekend Base",
+    "title": "Where to Stay in Asheville for a Weekend: Choosing Your Base",
     "destination": "Asheville",
     "targetKeyword": "where to stay in Asheville",
     "clusterRole": "stays",
-    "priority": 16,
-    "status": "proposed",
-    "editorialNotes": "Area-level guide, not invented property reviews; link the weekend itinerary and attractions archive."
+    "priority": 2,
+    "status": "approved",
+    "editorialNotes": "Area-level guide, not invented property reviews; link the weekend itinerary and attractions archive.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "asheville-food-planning",
-    "title": "Planning Where to Eat in Asheville: Neighborhoods and Reservations",
+    "title": "Planning Where to Eat in Asheville: Areas, Reservations and Your Weekend Route",
     "destination": "Asheville",
-    "targetKeyword": "Asheville food planning",
+    "targetKeyword": "where to eat in Asheville",
     "clusterRole": "food",
-    "priority": 17,
-    "status": "proposed",
-    "editorialNotes": "Research current official tourism and venue sources, verify operating status, avoid personal endorsements and invented meals."
+    "priority": 8,
+    "status": "approved",
+    "editorialNotes": "Research current official tourism and venue sources, verify operating status, avoid personal endorsements and invented meals.",
+    "calendarApproval": "n2getaways-12-week-2026-11"
   },
   {
     "id": "asheville-scenic-drives",
@@ -232,5 +242,27 @@
     "permalink": "/planning-a-trip-to-oia-santorini/",
     "publishedAt": "2026-11-15T23:02:03.355Z",
     "publishedUrl": "https://n2getaways.com/planning-a-trip-to-oia-santorini/"
+  },
+  {
+    "id": "sf-rainy-day-planning",
+    "editorialNotes": "Approved calendar scope; researched planning only. No firsthand experience confirmed.",
+    "title": "San Francisco in the Rain: Indoor Alternatives for Your Trip",
+    "destination": "San Francisco",
+    "targetKeyword": "things to do in San Francisco when it rains",
+    "clusterRole": "experiences",
+    "status": "approved",
+    "priority": 9,
+    "calendarApproval": "n2getaways-12-week-2026-11"
+  },
+  {
+    "id": "short-getaway-sf-asheville-waikiki",
+    "editorialNotes": "Approved calendar scope; researched planning only. No firsthand experience confirmed.",
+    "title": "San Francisco, Asheville or Waikiki: Which Fits Your Short Getaway?",
+    "destination": "Travel tips",
+    "targetKeyword": "San Francisco vs Asheville vs Waikiki",
+    "clusterRole": "planning",
+    "status": "approved",
+    "priority": 12,
+    "calendarApproval": "n2getaways-12-week-2026-11"
   }
 ]

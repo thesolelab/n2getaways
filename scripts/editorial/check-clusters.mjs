@@ -42,9 +42,12 @@ for (const [slug, c] of Object.entries(clusters)) {
     links++;
   }
   assert(
-    queue.filter((t) => t.destination === c.name && t.status === "proposed")
-      .length >= 3,
-    "Cluster needs at least three planned supporting topics",
+    queue.filter(
+      (t) =>
+        t.destination === c.name &&
+        ["proposed", "approved", "drafted", "published"].includes(t.status),
+    ).length >= 3,
+    "Cluster needs at least three tracked supporting topics (planned or delivered)",
   );
   for (const t of queue.filter(
     (t) =>
