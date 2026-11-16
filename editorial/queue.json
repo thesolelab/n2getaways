@@ -145,18 +145,20 @@
   },
   {
     "id": "la-fortuna-transport",
-    "title": "Getting to La Fortuna: San Jos\u00e9 vs. Liberia and Airport Transfer Options",
+    "title": "Getting to La Fortuna: San José vs. Liberia and Airport Transfer Options",
     "destination": "Costa Rica",
     "targetKeyword": "getting to La Fortuna",
     "clusterRole": "planning",
     "priority": 1,
-    "status": "drafted",
+    "status": "published",
     "editorialNotes": "Use official airport/transport operator sources; compare planning choices without guaranteed transfer times. Broader La Fortuna airport-to-accommodation intent; compare SJO/LIR, include The Springs final leg and links to both resort articles. Do not create a separate resort airport clone.",
     "calendarApproval": "n2getaways-12-week-2026-11",
     "branch": "editorial/topic-la-fortuna-transport",
     "permalink": "/getting-to-la-fortuna-costa-rica/",
     "image": "la-fortuna-costa-rica",
-    "imageAlt": "La Fortuna town and its central church beneath Arenal Volcano and a blue sky"
+    "imageAlt": "La Fortuna town and its central church beneath Arenal Volcano and a blue sky",
+    "publishedAt": "2026-11-16T17:47:34.888Z",
+    "publishedUrl": "https://n2getaways.com/getting-to-la-fortuna-costa-rica/"
   },
   {
     "id": "arenal-park-planning",
